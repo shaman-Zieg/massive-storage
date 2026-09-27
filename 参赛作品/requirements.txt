@@ -1,0 +1,3 @@
+numpy>=1.26,<3
+nano-vectordb==0.0.4.3
+Pillow>=10,<13

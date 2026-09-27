@@ -1,0 +1,17 @@
+{
+  "documents": 100,
+  "pages": 1374,
+  "blocks": 14881,
+  "modalities": {
+    "text": 13494,
+    "image": 854,
+    "equation": 236,
+    "table": 297
+  },
+  "images_resolved": 1375,
+  "enriched_blocks": 1094,
+  "edges": 65388,
+  "index_bytes": 12292083,
+  "build_seconds": 3.5374,
+  "scope": "local structural index only; supplied parsing/description/vector construction excluded"
+}

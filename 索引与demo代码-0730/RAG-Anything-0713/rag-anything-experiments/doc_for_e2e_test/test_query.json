@@ -1,0 +1,25 @@
+[
+    {
+        "question": "Which stages are included in Kemmis and McTaggart's 1988 cyclical approach to action research?",
+        "answer": "Kemmis and McTaggart’s (1988) cyclical action research model—often applied in Classroom Action Research (CAR)—follows an iterative sequence of **Plan, Act, Observe, Reflect, and Revise Plan**. In each cycle, the **Plan** phase involves designing the intervention, followed by the **Act** phase where the plan is implemented in practice. The **Observe** and **Reflect** phases are closely linked, focusing on monitoring outcomes and critically evaluating both the process and results. Insights gained from reflection lead to revising the plan, which initiates the next cycle. This continuous loop structure enables progressive improvement and adaptation, making the model particularly effective for refining teaching practices and enhancing learning outcomes over successive cycles.",
+        "gt_image_paths": [
+            "images/education/5882492/5882492_page_0004.png",
+            "images/education/5882492/5882492_page_0005.png"
+        ],
+        "question_type": "factual_retrieval",
+        "answer_type": "image_plus_text_as_answer",
+        "domain": "education",
+        "longdoc_image_paths": [
+            "images/education/5882492/5882492_page_0001.png",
+            "images/education/5882492/5882492_page_0002.png",
+            "images/education/5882492/5882492_page_0003.png",
+            "images/education/5882492/5882492_page_0004.png",
+            "images/education/5882492/5882492_page_0005.png",
+            "images/education/5882492/5882492_page_0006.png",
+            "images/education/5882492/5882492_page_0007.png",
+            "images/education/5882492/5882492_page_0008.png",
+            "images/education/5882492/5882492_page_0009.png"
+        ],
+        "sample_id": "education_image_plus_text_as_answer_0131"
+    }
+]

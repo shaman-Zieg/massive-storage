@@ -1,0 +1,6711 @@
+{
+  "schema_version": 2,
+  "mode": "offline_retrieval_diagnostic",
+  "answer_accuracy": null,
+  "limitations": "No live embedding, reranking, VLM or answer judging. Retrieval hit rate is NOT QA accuracy. The 30 public questions and labels have previously been inspected. This document-grouped dev/holdout partition is a retrospective diagnostic, NOT a blind or independent test. Neither partition estimates hidden-test QA accuracy.",
+  "count": 30,
+  "corpus_sha256": "22835a3d94a5f8b2798451d226c5c030ce3ae8b95cadc0854e6457e88658cc2d",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "use_graph": true,
+  "use_page_index": true,
+  "use_page_neighbors": false,
+  "use_table_rows": true,
+  "candidates": 60,
+  "load_seconds": 2.9888,
+  "mean_query_seconds": 0.0052,
+  "p95_query_seconds": 0.0092,
+  "packing_load_seconds": 0.0101,
+  "mean_packing_seconds": 0.000237,
+  "p95_packing_seconds": 0.000868,
+  "mean_retrieval_and_packing_seconds": 0.00545,
+  "p95_retrieval_and_packing_seconds": 0.009576,
+  "total_retrieval_and_packing_seconds": 0.163494,
+  "timing_protocol": {
+    "clock": "time.perf_counter wall-clock seconds; p95 uses the nearest-rank method",
+    "scope": "Offline local CPU retrieval and text packing diagnostic only; NOT official query_time_s or end-to-end inference latency",
+    "excluded": "Model calls, network, PDF rendering, image loading, answer generation, verification and initial index/packer loading",
+    "combined_definition": "Per-question retrieval elapsed plus production text pack elapsed; neither labels nor bootstrap overhead included"
+  },
+  "overall": {
+    "all_pages@1": 0.233333,
+    "all_pages@10": 0.833333,
+    "all_pages@20": 0.9,
+    "all_pages@3": 0.633333,
+    "all_pages@5": 0.733333,
+    "all_pages@6": 0.766667,
+    "hit@1": 0.733333,
+    "hit@10": 1.0,
+    "hit@20": 1.0,
+    "hit@3": 0.966667,
+    "hit@5": 1.0,
+    "hit@6": 1.0,
+    "packed_text_all_pages": 0.833333,
+    "packed_text_hit": 1.0,
+    "packed_text_page_recall": 0.922222,
+    "page_recall@1": 0.447222,
+    "page_recall@10": 0.916667,
+    "page_recall@20": 0.944444,
+    "page_recall@3": 0.797222,
+    "page_recall@5": 0.869444,
+    "page_recall@6": 0.894444
+  },
+  "details": [
+    {
+      "sample_id": "finance_image_only_0200",
+      "question": "What variation occurred in the Bureau de Change (BDC) segment's average exchange rate in Nigeria between the first quarter of 2012 and the last quarter of 2013, as detailed in the FY-2013 Economic Report and 2014 Outlook?",
+      "domain": "finance",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "finance_3769357",
+          16
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_3769357",
+          16
+        ],
+        [
+          "finance_3769357",
+          15
+        ],
+        [
+          "finance_3769357",
+          3
+        ],
+        [
+          "finance_3769357",
+          14
+        ],
+        [
+          "finance_3769357",
+          8
+        ],
+        [
+          "finance_3769357",
+          10
+        ],
+        [
+          "finance_3769357",
+          4
+        ],
+        [
+          "finance_3769357",
+          7
+        ],
+        [
+          "finance_3769357",
+          6
+        ],
+        [
+          "finance_3769357",
+          13
+        ],
+        [
+          "finance_3769357",
+          1
+        ],
+        [
+          "finance_3769357",
+          5
+        ],
+        [
+          "finance_3769357",
+          17
+        ],
+        [
+          "finance_3769357",
+          2
+        ],
+        [
+          "finance_7501084",
+          6
+        ],
+        [
+          "finance_3769357",
+          11
+        ],
+        [
+          "finance_3769357",
+          12
+        ],
+        [
+          "finance_6440218",
+          3
+        ],
+        [
+          "finance_7501084",
+          21
+        ],
+        [
+          "finance_3769357",
+          18
+        ]
+      ],
+      "seconds": 0.011748899996746331,
+      "packed_text_pages": [
+        [
+          "finance_3769357",
+          1
+        ],
+        [
+          "finance_3769357",
+          3
+        ],
+        [
+          "finance_3769357",
+          8
+        ],
+        [
+          "finance_3769357",
+          10
+        ],
+        [
+          "finance_3769357",
+          14
+        ],
+        [
+          "finance_3769357",
+          15
+        ],
+        [
+          "finance_3769357",
+          16
+        ]
+      ],
+      "packed_text_source_ids": [
+        "finance_3769357:p16:b112",
+        "finance_3769357:p15:b107",
+        "finance_3769357:p3:b12",
+        "finance_3769357:p14:b101",
+        "finance_3769357:p8:b48",
+        "finance_3769357:p10:b64",
+        "finance_3769357:p3:b14",
+        "finance_3769357:p8:b49",
+        "finance_3769357:p15:b110",
+        "finance_3769357:p3:b10",
+        "finance_3769357:p1:b0",
+        "finance_3769357:p14:b100"
+      ],
+      "packing_seconds": 5.780000356025994e-05,
+      "retrieval_and_packing_seconds": 0.011806700000306591,
+      "pack_stats": {
+        "text_chars": 6350,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "construction_table_required_0061",
+      "question": "How do the predicted construction types compare with the reference categories in terms of misclassification rates for S-DH, TH, and MFH?",
+      "domain": "construction",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "construction_4280740",
+          10
+        ],
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "construction_4280740",
+          12
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "construction_4280740",
+          12
+        ],
+        [
+          "construction_4280740",
+          9
+        ],
+        [
+          "construction_4280740",
+          14
+        ],
+        [
+          "construction_4280740",
+          7
+        ],
+        [
+          "construction_4280740",
+          8
+        ],
+        [
+          "construction_4280740",
+          16
+        ],
+        [
+          "construction_4280740",
+          15
+        ],
+        [
+          "construction_4280740",
+          10
+        ],
+        [
+          "construction_4280740",
+          13
+        ],
+        [
+          "energy_4971670",
+          7
+        ],
+        [
+          "construction_6799387",
+          7
+        ],
+        [
+          "construction_6799387",
+          8
+        ],
+        [
+          "crm_6543180",
+          15
+        ],
+        [
+          "construction_4280740",
+          1
+        ],
+        [
+          "education_5138607",
+          7
+        ],
+        [
+          "energy_7116675",
+          11
+        ],
+        [
+          "construction_4280740",
+          5
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          20
+        ],
+        [
+          "crm_5169330",
+          8
+        ]
+      ],
+      "seconds": 0.005051100000855513,
+      "packed_text_pages": [
+        [
+          "construction_4280740",
+          7
+        ],
+        [
+          "construction_4280740",
+          8
+        ],
+        [
+          "construction_4280740",
+          9
+        ],
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "construction_4280740",
+          12
+        ],
+        [
+          "construction_4280740",
+          14
+        ],
+        [
+          "construction_4280740",
+          16
+        ],
+        [
+          "energy_4971670",
+          7
+        ]
+      ],
+      "packed_text_source_ids": [
+        "construction_4280740:p11:b91",
+        "construction_4280740:p12:b96",
+        "construction_4280740:p9:b73",
+        "construction_4280740:p14:b110",
+        "construction_4280740:p7:b60",
+        "construction_4280740:p8:b68",
+        "construction_4280740:p11:b90",
+        "construction_4280740:p11:b92",
+        "construction_4280740:p16:b121",
+        "construction_4280740:p12:b95",
+        "construction_4280740:p14:b109",
+        "energy_4971670:p7:b91"
+      ],
+      "packing_seconds": 0.00047720001020934433,
+      "retrieval_and_packing_seconds": 0.005528300011064857,
+      "pack_stats": {
+        "text_chars": 19020,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.6666666666666666,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.6666666666666666,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.6666666666666666,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 0,
+      "packed_text_page_recall": 0.6666666666666666
+    },
+    {
+      "sample_id": "education_image_only_0120",
+      "question": "How are the z-scores distributed for 'Can obtain beverages at school' across the different models of obesity risk classes?",
+      "domain": "education",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "education_7860274",
+          9
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_7860274",
+          7
+        ],
+        [
+          "education_7860274",
+          9
+        ],
+        [
+          "education_7860274",
+          12
+        ],
+        [
+          "education_7860274",
+          11
+        ],
+        [
+          "education_7860274",
+          6
+        ],
+        [
+          "education_7860274",
+          10
+        ],
+        [
+          "education_7860274",
+          8
+        ],
+        [
+          "finance_1326258",
+          15
+        ],
+        [
+          "finance_1326258",
+          17
+        ],
+        [
+          "education_7860274",
+          4
+        ],
+        [
+          "finance_1326258",
+          19
+        ],
+        [
+          "education_7860274",
+          5
+        ],
+        [
+          "education_7860274",
+          16
+        ],
+        [
+          "education_7860274",
+          14
+        ],
+        [
+          "commerce_manufacturing_3429581",
+          1
+        ],
+        [
+          "healthcare_3428789",
+          1
+        ],
+        [
+          "finance_4070954",
+          19
+        ],
+        [
+          "education_0192892",
+          7
+        ],
+        [
+          "education_7860274",
+          3
+        ],
+        [
+          "education_0192892",
+          10
+        ]
+      ],
+      "seconds": 0.005662100011250004,
+      "packed_text_pages": [
+        [
+          "education_7860274",
+          6
+        ],
+        [
+          "education_7860274",
+          7
+        ],
+        [
+          "education_7860274",
+          8
+        ],
+        [
+          "education_7860274",
+          9
+        ],
+        [
+          "education_7860274",
+          10
+        ],
+        [
+          "education_7860274",
+          11
+        ],
+        [
+          "education_7860274",
+          12
+        ],
+        [
+          "finance_1326258",
+          15
+        ],
+        [
+          "finance_1326258",
+          17
+        ]
+      ],
+      "packed_text_source_ids": [
+        "education_7860274:p7:b83",
+        "education_7860274:p9:b96",
+        "education_7860274:p12:b125",
+        "education_7860274:p11:b120",
+        "education_7860274:p6:b65",
+        "education_7860274:p10:b101",
+        "education_7860274:p8:b91",
+        "education_7860274:p7:b79",
+        "finance_1326258:p17:b127",
+        "education_7860274:p7:b81",
+        "finance_1326258:p15:b111",
+        "education_7860274:p11:b117"
+      ],
+      "packing_seconds": 5.529999907594174e-05,
+      "retrieval_and_packing_seconds": 0.005717400010325946,
+      "pack_stats": {
+        "text_chars": 14185,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "finance_text_only_0236",
+      "question": "What impact does creating a silicon conduit within the SiOx layer have on the resistance levels of a memory cell developed by WBT?",
+      "domain": "finance",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "finance_5492147",
+          7
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "finance_5492147",
+          7
+        ],
+        [
+          "finance_5492147",
+          2
+        ],
+        [
+          "finance_5492147",
+          3
+        ],
+        [
+          "energy_7670244",
+          8
+        ],
+        [
+          "energy_7670244",
+          1
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "finance_5492147",
+          1
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "education_5427083",
+          4
+        ],
+        [
+          "finance_5492147",
+          4
+        ],
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "finance_5492147",
+          5
+        ],
+        [
+          "energy_7670244",
+          4
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "education_4813144",
+          8
+        ],
+        [
+          "energy_5731992",
+          5
+        ],
+        [
+          "energy_7670244",
+          10
+        ],
+        [
+          "energy_0348555",
+          7
+        ]
+      ],
+      "seconds": 0.004968799999915063,
+      "packed_text_pages": [
+        [
+          "education_5427083",
+          4
+        ],
+        [
+          "energy_7670244",
+          1
+        ],
+        [
+          "energy_7670244",
+          8
+        ],
+        [
+          "finance_5492147",
+          2
+        ],
+        [
+          "finance_5492147",
+          3
+        ],
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "finance_5492147",
+          7
+        ]
+      ],
+      "packed_text_source_ids": [
+        "finance_5492147:p6:b94",
+        "finance_5492147:p7:b101",
+        "finance_5492147:p2:b25",
+        "finance_5492147:p3:b44",
+        "energy_7670244:p8:b82",
+        "energy_7670244:p1:b3",
+        "finance_5492147:p6:b93",
+        "finance_5492147:p6:b87",
+        "education_5427083:p4:b71",
+        "finance_5492147:p7:b106",
+        "finance_5492147:p7:b103",
+        "education_5427083:p4:b70"
+      ],
+      "packing_seconds": 5.099999543745071e-05,
+      "retrieval_and_packing_seconds": 0.005019799995352514,
+      "pack_stats": {
+        "text_chars": 6401,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "construction_text_only_0079",
+      "question": "In Indonesia, what drives the interest in LVL, particularly for earthquake-safe building needs and export purposes to Japan, and how is it mainly utilized?",
+      "domain": "construction",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "construction_4005140",
+          8
+        ],
+        [
+          "construction_4005140",
+          9
+        ],
+        [
+          "construction_4005140",
+          17
+        ],
+        [
+          "construction_4005140",
+          18
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_4005140",
+          17
+        ],
+        [
+          "construction_4005140",
+          15
+        ],
+        [
+          "construction_4005140",
+          20
+        ],
+        [
+          "construction_4005140",
+          19
+        ],
+        [
+          "construction_4005140",
+          2
+        ],
+        [
+          "construction_4005140",
+          18
+        ],
+        [
+          "construction_4005140",
+          6
+        ],
+        [
+          "finance_7501084",
+          25
+        ],
+        [
+          "construction_4005140",
+          5
+        ],
+        [
+          "finance_7501084",
+          28
+        ],
+        [
+          "construction_4005140",
+          21
+        ],
+        [
+          "construction_4005140",
+          4
+        ],
+        [
+          "construction_4005140",
+          3
+        ],
+        [
+          "construction_4005140",
+          1
+        ],
+        [
+          "finance_1372325",
+          3
+        ],
+        [
+          "finance_7501084",
+          29
+        ],
+        [
+          "energy_2357218",
+          10
+        ],
+        [
+          "construction_4005140",
+          11
+        ],
+        [
+          "construction_6799387",
+          3
+        ],
+        [
+          "finance_1372325",
+          4
+        ]
+      ],
+      "seconds": 0.003990400000475347,
+      "packed_text_pages": [
+        [
+          "construction_4005140",
+          2
+        ],
+        [
+          "construction_4005140",
+          5
+        ],
+        [
+          "construction_4005140",
+          15
+        ],
+        [
+          "construction_4005140",
+          17
+        ],
+        [
+          "construction_4005140",
+          18
+        ],
+        [
+          "construction_4005140",
+          19
+        ],
+        [
+          "construction_4005140",
+          20
+        ],
+        [
+          "finance_7501084",
+          25
+        ]
+      ],
+      "packed_text_source_ids": [
+        "construction_4005140:p17:b124",
+        "construction_4005140:p15:b110",
+        "construction_4005140:p20:b144",
+        "construction_4005140:p19:b137",
+        "construction_4005140:p2:b11",
+        "construction_4005140:p18:b132",
+        "construction_4005140:p17:b118",
+        "finance_7501084:p25:b177",
+        "construction_4005140:p17:b125",
+        "construction_4005140:p19:b139",
+        "construction_4005140:p18:b130",
+        "construction_4005140:p5:b31"
+      ],
+      "packing_seconds": 4.410000110510737e-05,
+      "retrieval_and_packing_seconds": 0.004034500001580454,
+      "pack_stats": {
+        "text_chars": 4163,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.25,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.25,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.25,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.5,
+      "hit@20": 1,
+      "all_pages@20": 0,
+      "page_recall@20": 0.5,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 0,
+      "packed_text_page_recall": 0.5
+    },
+    {
+      "sample_id": "finance_table_required_0225",
+      "question": "In comparing the various parameters like ω2 and β2, what are their respective η2 measurements?",
+      "domain": "finance",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "finance_1326258",
+          28
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_1326258",
+          27
+        ],
+        [
+          "finance_1326258",
+          16
+        ],
+        [
+          "finance_1326258",
+          28
+        ],
+        [
+          "energy_0348555",
+          7
+        ],
+        [
+          "finance_1326258",
+          17
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "education_0192892",
+          7
+        ],
+        [
+          "finance_1326258",
+          5
+        ],
+        [
+          "education_2442094",
+          8
+        ],
+        [
+          "finance_1659677",
+          3
+        ],
+        [
+          "education_7932805",
+          14
+        ],
+        [
+          "education_0192892",
+          9
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "education_7932805",
+          15
+        ],
+        [
+          "energy_5387778",
+          8
+        ],
+        [
+          "commerce_manufacturing_3429581",
+          12
+        ],
+        [
+          "finance_1659677",
+          4
+        ]
+      ],
+      "seconds": 0.007915299996966496,
+      "packed_text_pages": [
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_0348555",
+          7
+        ],
+        [
+          "finance_1326258",
+          16
+        ],
+        [
+          "finance_1326258",
+          17
+        ],
+        [
+          "finance_1326258",
+          27
+        ],
+        [
+          "finance_1326258",
+          28
+        ]
+      ],
+      "packed_text_source_ids": [
+        "finance_1326258:p27:b164",
+        "finance_1326258:p16:b119",
+        "finance_1326258:p28:b167",
+        "energy_0348555:p7:b91",
+        "finance_1326258:p17:b126",
+        "energy_0348555:p6:b69",
+        "finance_1326258:p27:b165",
+        "energy_0348555:p3:b35",
+        "finance_1326258:p16:b120",
+        "energy_0348555:p4:b50",
+        "finance_1326258:p17:b128",
+        "finance_1326258:p28:b168"
+      ],
+      "packing_seconds": 0.0010123000101884827,
+      "retrieval_and_packing_seconds": 0.008927600007154979,
+      "pack_stats": {
+        "text_chars": 20104,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "crm_image_only_0085",
+      "question": "At the McDixon Apple Orchard, how does water flow from the area with Container Shrubs towards the water purification section?",
+      "domain": "crm",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "crm_4502338",
+          10
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_4502338",
+          10
+        ],
+        [
+          "crm_4502338",
+          15
+        ],
+        [
+          "crm_4502338",
+          14
+        ],
+        [
+          "construction_2928102",
+          11
+        ],
+        [
+          "construction_2844324",
+          1
+        ],
+        [
+          "finance_3702513",
+          8
+        ],
+        [
+          "crm_4502338",
+          17
+        ],
+        [
+          "education_5427083",
+          13
+        ],
+        [
+          "energy_0648106",
+          2
+        ],
+        [
+          "construction_2928102",
+          3
+        ],
+        [
+          "construction_4481874",
+          3
+        ],
+        [
+          "education_5427083",
+          1
+        ],
+        [
+          "construction_2928102",
+          9
+        ],
+        [
+          "energy_5387778",
+          2
+        ],
+        [
+          "energy_2342156",
+          3
+        ],
+        [
+          "education_5427083",
+          3
+        ],
+        [
+          "construction_4481874",
+          18
+        ],
+        [
+          "education_5427083",
+          11
+        ],
+        [
+          "construction_2844324",
+          7
+        ],
+        [
+          "construction_4481874",
+          9
+        ]
+      ],
+      "seconds": 0.00345509999897331,
+      "packed_text_pages": [
+        [
+          "construction_2844324",
+          1
+        ],
+        [
+          "construction_2928102",
+          3
+        ],
+        [
+          "construction_2928102",
+          11
+        ],
+        [
+          "crm_4502338",
+          10
+        ],
+        [
+          "crm_4502338",
+          14
+        ],
+        [
+          "crm_4502338",
+          15
+        ],
+        [
+          "education_5427083",
+          1
+        ],
+        [
+          "education_5427083",
+          13
+        ],
+        [
+          "finance_3702513",
+          8
+        ]
+      ],
+      "packed_text_source_ids": [
+        "crm_4502338:p10:b51",
+        "crm_4502338:p15:b98",
+        "crm_4502338:p14:b86",
+        "construction_2928102:p11:b170",
+        "construction_2844324:p1:b11",
+        "finance_3702513:p8:b60",
+        "crm_4502338:p10:b49",
+        "crm_4502338:p14:b90",
+        "crm_4502338:p14:b88",
+        "education_5427083:p1:b7",
+        "construction_2928102:p3:b38",
+        "education_5427083:p13:b367"
+      ],
+      "packing_seconds": 4.730001091957092e-05,
+      "retrieval_and_packing_seconds": 0.003502400009892881,
+      "pack_stats": {
+        "text_chars": 5392,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "education_image_plus_text_as_answer_0131",
+      "question": "Which stages are included in Kemmis and McTaggart's 1988 cyclical approach to action research?",
+      "domain": "education",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "education_5882492",
+          4
+        ],
+        [
+          "education_5882492",
+          5
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_5882492",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "education_5882492",
+          3
+        ],
+        [
+          "legal_3134069",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          11
+        ],
+        [
+          "commerce_manufacturing_3429581",
+          4
+        ],
+        [
+          "education_7860274",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          1
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "crm_3870349",
+          7
+        ],
+        [
+          "education_7860274",
+          7
+        ],
+        [
+          "finance_5492147",
+          5
+        ],
+        [
+          "healthcare_7083619",
+          4
+        ],
+        [
+          "education_6071633",
+          1
+        ],
+        [
+          "construction_6565973",
+          1
+        ],
+        [
+          "healthcare_2008937",
+          5
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          8
+        ],
+        [
+          "education_5882492",
+          7
+        ],
+        [
+          "education_5882492",
+          5
+        ],
+        [
+          "finance_5913150",
+          15
+        ]
+      ],
+      "seconds": 0.006213300002855249,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          1
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          8
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          11
+        ],
+        [
+          "commerce_manufacturing_3429581",
+          4
+        ],
+        [
+          "education_5882492",
+          3
+        ],
+        [
+          "education_5882492",
+          4
+        ],
+        [
+          "education_5882492",
+          5
+        ],
+        [
+          "education_5882492",
+          7
+        ],
+        [
+          "legal_3134069",
+          3
+        ]
+      ],
+      "packed_text_source_ids": [
+        "education_5882492:p4:b16",
+        "commerce_manufacturing_0999705:p3:b22",
+        "education_5882492:p3:b13",
+        "legal_3134069:p3:b35",
+        "commerce_manufacturing_0999705:p11:b85",
+        "commerce_manufacturing_3429581:p4:b41",
+        "education_5882492:p4:b15",
+        "commerce_manufacturing_0999705:p8:b58",
+        "education_5882492:p4:b21",
+        "education_5882492:p7:b40",
+        "commerce_manufacturing_0999705:p1:b4",
+        "education_5882492:p5:b28"
+      ],
+      "packing_seconds": 5.660000897478312e-05,
+      "retrieval_and_packing_seconds": 0.006269900011830032,
+      "pack_stats": {
+        "text_chars": 8315,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.5,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "energy_image_plus_text_as_answer_0175",
+      "question": "For the rear surface treatment in mono-like silicon PERCs employing a three-layer silicon nitride hydrogenated stack, what exact nanometer-scale dimensions are utilized for each deposited PECVD layer?",
+      "domain": "energy",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          2
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_7670244",
+          1
+        ],
+        [
+          "energy_7670244",
+          4
+        ],
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "energy_7670244",
+          3
+        ],
+        [
+          "energy_4971670",
+          3
+        ],
+        [
+          "crm_3525203",
+          3
+        ],
+        [
+          "energy_0348555",
+          7
+        ],
+        [
+          "legal_1095340",
+          11
+        ],
+        [
+          "education_5427083",
+          8
+        ],
+        [
+          "legal_1095340",
+          4
+        ],
+        [
+          "crm_3525203",
+          4
+        ],
+        [
+          "energy_7670244",
+          8
+        ]
+      ],
+      "seconds": 0.005711200006771833,
+      "packed_text_pages": [
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "energy_7670244",
+          1
+        ],
+        [
+          "energy_7670244",
+          2
+        ]
+      ],
+      "packed_text_source_ids": [
+        "energy_0348555:p1:b6",
+        "energy_0348555:p8:b98",
+        "energy_0348555:p2:b16",
+        "energy_0348555:p4:b51",
+        "energy_7670244:p2:b23",
+        "energy_0348555:p3:b40",
+        "energy_0348555:p1:b8",
+        "energy_0348555:p2:b18",
+        "energy_7670244:p2:b22",
+        "energy_0348555:p4:b49",
+        "energy_7670244:p1:b3",
+        "energy_0348555:p2:b20"
+      ],
+      "packing_seconds": 5.840000812895596e-05,
+      "retrieval_and_packing_seconds": 0.005769600014900789,
+      "pack_stats": {
+        "text_chars": 15257,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "construction_image_only_0046",
+      "question": "In what ways do the flexibility and fire resistance of RC, SRC, S, and CFT structural types differ?",
+      "domain": "construction",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "construction_0992970",
+          2
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_0992970",
+          2
+        ],
+        [
+          "construction_0992970",
+          3
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          17
+        ],
+        [
+          "construction_2844324",
+          5
+        ],
+        [
+          "construction_0992970",
+          7
+        ],
+        [
+          "construction_4005140",
+          13
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          13
+        ],
+        [
+          "energy_4971670",
+          5
+        ],
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "healthcare_0439127",
+          7
+        ],
+        [
+          "construction_0992970",
+          10
+        ],
+        [
+          "education_1871769",
+          3
+        ],
+        [
+          "construction_4005140",
+          7
+        ],
+        [
+          "energy_4971670",
+          2
+        ],
+        [
+          "energy_2357218",
+          7
+        ],
+        [
+          "education_0192892",
+          15
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          2
+        ],
+        [
+          "finance_5913150",
+          15
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          3
+        ],
+        [
+          "energy_4971670",
+          3
+        ]
+      ],
+      "seconds": 0.005559100012760609,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_6066619",
+          13
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          16
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          17
+        ],
+        [
+          "construction_0992970",
+          2
+        ],
+        [
+          "construction_0992970",
+          3
+        ],
+        [
+          "construction_0992970",
+          7
+        ],
+        [
+          "construction_0992970",
+          12
+        ],
+        [
+          "construction_2844324",
+          3
+        ],
+        [
+          "construction_2844324",
+          5
+        ],
+        [
+          "construction_4005140",
+          13
+        ]
+      ],
+      "packed_text_source_ids": [
+        "construction_0992970:p2:b16",
+        "construction_0992970:p3:b24",
+        "commerce_manufacturing_6066619:p17:b302",
+        "construction_2844324:p5:b73",
+        "construction_0992970:p7:b60",
+        "construction_4005140:p13:b96",
+        "construction_2844324:p3:b55",
+        "commerce_manufacturing_6066619:p17:b297",
+        "commerce_manufacturing_6066619:p13:b208",
+        "construction_0992970:p12:b113",
+        "commerce_manufacturing_6066619:p17:b300",
+        "commerce_manufacturing_6066619:p16:b268"
+      ],
+      "packing_seconds": 5.289999535307288e-05,
+      "retrieval_and_packing_seconds": 0.005612000008113682,
+      "pack_stats": {
+        "text_chars": 7164,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "education_table_required_0147",
+      "question": "Between dense flint and crown glasses, which exhibits a larger disparity in refractive indices at the wavelengths 656.3 nm and 404.7 nm?",
+      "domain": "education",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "education_0982243",
+          4
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_0982243",
+          4
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "energy_7670244",
+          7
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_7670244",
+          8
+        ],
+        [
+          "education_5334866",
+          9
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "finance_1326258",
+          8
+        ],
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "finance_1326258",
+          5
+        ],
+        [
+          "healthcare_4455078",
+          10
+        ],
+        [
+          "healthcare_4455078",
+          9
+        ],
+        [
+          "construction_2928102",
+          15
+        ],
+        [
+          "healthcare_4455078",
+          8
+        ],
+        [
+          "energy_7670244",
+          4
+        ],
+        [
+          "construction_4481874",
+          2
+        ],
+        [
+          "education_0192892",
+          19
+        ],
+        [
+          "finance_1326258",
+          9
+        ]
+      ],
+      "seconds": 0.0016419000021414831,
+      "packed_text_pages": [
+        [
+          "education_0982243",
+          3
+        ],
+        [
+          "education_0982243",
+          4
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_7670244",
+          7
+        ],
+        [
+          "energy_7670244",
+          8
+        ]
+      ],
+      "packed_text_source_ids": [
+        "education_0982243:p4:b65",
+        "energy_0348555:p5:b62",
+        "energy_7670244:p7:b71",
+        "energy_0348555:p6:b75",
+        "energy_0348555:p4:b54",
+        "energy_7670244:p8:b82",
+        "education_0982243:p4:b64",
+        "education_0982243:p4:b66",
+        "energy_0348555:p5:b60",
+        "education_0982243:p3:b45",
+        "energy_7670244:p7:b72",
+        "energy_0348555:p5:b59"
+      ],
+      "packing_seconds": 0.00012539999443106353,
+      "retrieval_and_packing_seconds": 0.0017672999965725467,
+      "pack_stats": {
+        "text_chars": 14621,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "energy_image_only_0166",
+      "question": "Which high, medium, and lower voltage dataset categories are managed by the intelligent remote control unit within the advanced substation framework?",
+      "domain": "energy",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "energy_0648106",
+          4
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_0648106",
+          3
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "energy_0648106",
+          2
+        ],
+        [
+          "energy_0648106",
+          1
+        ],
+        [
+          "energy_0648106",
+          4
+        ],
+        [
+          "construction_4280740",
+          14
+        ],
+        [
+          "legal_3134069",
+          4
+        ],
+        [
+          "construction_4280740",
+          13
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          2
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          10
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          8
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          4
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          14
+        ],
+        [
+          "finance_5492147",
+          7
+        ],
+        [
+          "construction_6799387",
+          7
+        ],
+        [
+          "finance_6786265",
+          1
+        ],
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          2
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          5
+        ],
+        [
+          "finance_7501084",
+          16
+        ]
+      ],
+      "seconds": 0.00601230000029318,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "construction_4280740",
+          13
+        ],
+        [
+          "construction_4280740",
+          14
+        ],
+        [
+          "energy_0648106",
+          1
+        ],
+        [
+          "energy_0648106",
+          2
+        ],
+        [
+          "energy_0648106",
+          3
+        ],
+        [
+          "energy_0648106",
+          4
+        ]
+      ],
+      "packed_text_source_ids": [
+        "energy_0648106:p3:b26",
+        "commerce_manufacturing_3341761:p7:b97",
+        "energy_0648106:p2:b19",
+        "energy_0648106:p1:b10",
+        "energy_0648106:p4:b34",
+        "construction_4280740:p14:b107",
+        "energy_0648106:p3:b24",
+        "energy_0648106:p3:b25",
+        "commerce_manufacturing_3341761:p7:b96",
+        "commerce_manufacturing_3341761:p7:b99",
+        "energy_0648106:p2:b18",
+        "construction_4280740:p13:b101"
+      ],
+      "packing_seconds": 0.000222400005441159,
+      "retrieval_and_packing_seconds": 0.006234700005734339,
+      "pack_stats": {
+        "text_chars": 11247,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 0,
+      "all_pages@3": 0,
+      "page_recall@3": 0.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "healthcare_image_plus_text_as_answer_0254",
+      "question": "In what way does the calculated fluidity differ between Species A and Species C as the genome count changes, according to the theoretical model and its variances?",
+      "domain": "healthcare",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "healthcare_1846776",
+          5
+        ],
+        [
+          "healthcare_1846776",
+          6
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_1846776",
+          5
+        ],
+        [
+          "healthcare_1846776",
+          6
+        ],
+        [
+          "healthcare_1846776",
+          7
+        ],
+        [
+          "healthcare_1846776",
+          4
+        ],
+        [
+          "healthcare_1846776",
+          10
+        ],
+        [
+          "healthcare_1846776",
+          3
+        ],
+        [
+          "healthcare_1846776",
+          2
+        ],
+        [
+          "healthcare_1846776",
+          8
+        ],
+        [
+          "healthcare_1846776",
+          9
+        ],
+        [
+          "education_1871769",
+          7
+        ],
+        [
+          "education_5138607",
+          4
+        ],
+        [
+          "education_1871769",
+          2
+        ],
+        [
+          "education_5138607",
+          5
+        ],
+        [
+          "healthcare_1846776",
+          11
+        ],
+        [
+          "education_7860274",
+          10
+        ],
+        [
+          "finance_7812631",
+          5
+        ],
+        [
+          "crm_7646651",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          4
+        ],
+        [
+          "finance_7812631",
+          2
+        ]
+      ],
+      "seconds": 0.005726700008381158,
+      "packed_text_pages": [
+        [
+          "education_5138607",
+          4
+        ],
+        [
+          "healthcare_1846776",
+          3
+        ],
+        [
+          "healthcare_1846776",
+          4
+        ],
+        [
+          "healthcare_1846776",
+          5
+        ],
+        [
+          "healthcare_1846776",
+          6
+        ],
+        [
+          "healthcare_1846776",
+          7
+        ],
+        [
+          "healthcare_1846776",
+          8
+        ],
+        [
+          "healthcare_1846776",
+          10
+        ]
+      ],
+      "packed_text_source_ids": [
+        "healthcare_1846776:p5:b48",
+        "healthcare_1846776:p6:b52",
+        "healthcare_1846776:p7:b61",
+        "healthcare_1846776:p4:b41",
+        "healthcare_1846776:p10:b91",
+        "healthcare_1846776:p3:b28",
+        "healthcare_1846776:p5:b47",
+        "healthcare_1846776:p5:b46",
+        "healthcare_1846776:p7:b63",
+        "healthcare_1846776:p6:b53",
+        "education_5138607:p4:b24",
+        "healthcare_1846776:p8:b68"
+      ],
+      "packing_seconds": 5.23999915458262e-05,
+      "retrieval_and_packing_seconds": 0.005779099999926984,
+      "pack_stats": {
+        "text_chars": 14971,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "construction_image_only_0047",
+      "question": "Which machinery is usually employed to clear snow on River Street during December 2008 as depicted?",
+      "domain": "construction",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "construction_1676343",
+          12
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_1676343",
+          12
+        ],
+        [
+          "construction_1676343",
+          19
+        ],
+        [
+          "construction_1676343",
+          9
+        ],
+        [
+          "construction_1676343",
+          15
+        ],
+        [
+          "construction_1676343",
+          21
+        ],
+        [
+          "construction_1676343",
+          16
+        ],
+        [
+          "construction_1676343",
+          17
+        ],
+        [
+          "finance_5910185",
+          23
+        ],
+        [
+          "construction_1676343",
+          5
+        ],
+        [
+          "education_1871769",
+          16
+        ],
+        [
+          "finance_5910185",
+          21
+        ],
+        [
+          "construction_1676343",
+          4
+        ],
+        [
+          "construction_1676343",
+          10
+        ],
+        [
+          "construction_1676343",
+          1
+        ],
+        [
+          "energy_4343531",
+          14
+        ],
+        [
+          "finance_3769357",
+          11
+        ],
+        [
+          "construction_4005140",
+          15
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          12
+        ],
+        [
+          "education_2765782",
+          7
+        ],
+        [
+          "construction_4481874",
+          11
+        ]
+      ],
+      "seconds": 0.003501300001516938,
+      "packed_text_pages": [
+        [
+          "construction_1676343",
+          9
+        ],
+        [
+          "construction_1676343",
+          12
+        ],
+        [
+          "construction_1676343",
+          15
+        ],
+        [
+          "construction_1676343",
+          16
+        ],
+        [
+          "construction_1676343",
+          19
+        ],
+        [
+          "construction_1676343",
+          21
+        ],
+        [
+          "education_1871769",
+          16
+        ],
+        [
+          "finance_5910185",
+          21
+        ],
+        [
+          "finance_5910185",
+          23
+        ]
+      ],
+      "packed_text_source_ids": [
+        "construction_1676343:p12:b94",
+        "construction_1676343:p19:b153",
+        "construction_1676343:p9:b69",
+        "construction_1676343:p15:b122",
+        "construction_1676343:p21:b165",
+        "construction_1676343:p16:b127",
+        "construction_1676343:p12:b95",
+        "finance_5910185:p23:b238",
+        "finance_5910185:p23:b240",
+        "finance_5910185:p21:b224",
+        "education_1871769:p16:b189",
+        "construction_1676343:p19:b155"
+      ],
+      "packing_seconds": 4.680000711232424e-05,
+      "retrieval_and_packing_seconds": 0.0035481000086292624,
+      "pack_stats": {
+        "text_chars": 3838,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "energy_text_only_0195",
+      "question": "How much energy from biomass is anticipated to be supplied to the UK's total primary energy under the DECC scenario referred to as SBF, when measured in terawatt-hours?",
+      "domain": "energy",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "energy_2357218",
+          15
+        ],
+        [
+          "energy_2357218",
+          16
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_2357218",
+          16
+        ],
+        [
+          "energy_2357218",
+          15
+        ],
+        [
+          "energy_2357218",
+          13
+        ],
+        [
+          "energy_2357218",
+          12
+        ],
+        [
+          "energy_2357218",
+          14
+        ],
+        [
+          "energy_2357218",
+          21
+        ],
+        [
+          "energy_2357218",
+          11
+        ],
+        [
+          "energy_2357218",
+          4
+        ],
+        [
+          "energy_2357218",
+          17
+        ],
+        [
+          "energy_2357218",
+          20
+        ],
+        [
+          "energy_4343531",
+          7
+        ],
+        [
+          "energy_2357218",
+          22
+        ],
+        [
+          "energy_4343531",
+          4
+        ],
+        [
+          "energy_2357218",
+          3
+        ],
+        [
+          "energy_2357218",
+          1
+        ],
+        [
+          "energy_2357218",
+          19
+        ],
+        [
+          "energy_4343531",
+          8
+        ],
+        [
+          "energy_2357218",
+          18
+        ],
+        [
+          "energy_2357218",
+          6
+        ],
+        [
+          "legal_1095340",
+          3
+        ]
+      ],
+      "seconds": 0.009198200001264922,
+      "packed_text_pages": [
+        [
+          "energy_2357218",
+          12
+        ],
+        [
+          "energy_2357218",
+          13
+        ],
+        [
+          "energy_2357218",
+          14
+        ],
+        [
+          "energy_2357218",
+          15
+        ],
+        [
+          "energy_2357218",
+          16
+        ],
+        [
+          "energy_2357218",
+          21
+        ],
+        [
+          "energy_4343531",
+          4
+        ]
+      ],
+      "packed_text_source_ids": [
+        "energy_2357218:p16:b137",
+        "energy_2357218:p15:b134",
+        "energy_2357218:p13:b115",
+        "energy_2357218:p12:b108",
+        "energy_2357218:p14:b127",
+        "energy_2357218:p21:b174",
+        "energy_2357218:p13:b116",
+        "energy_2357218:p15:b133",
+        "energy_2357218:p16:b139",
+        "energy_2357218:p14:b123",
+        "energy_4343531:p4:b38",
+        "energy_2357218:p12:b106"
+      ],
+      "packing_seconds": 0.00037760000850539654,
+      "retrieval_and_packing_seconds": 0.009575800009770319,
+      "pack_stats": {
+        "text_chars": 17108,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "education_table_required_0148",
+      "question": "In the context of the English system, which unit is used to measure kinematic viscosity as outlined in the dimensions chart?",
+      "domain": "education",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "education_5427083",
+          16
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_5427083",
+          9
+        ],
+        [
+          "education_5427083",
+          16
+        ],
+        [
+          "education_5427083",
+          8
+        ],
+        [
+          "energy_7116675",
+          7
+        ],
+        [
+          "energy_7116675",
+          3
+        ],
+        [
+          "energy_7116675",
+          6
+        ],
+        [
+          "energy_7116675",
+          11
+        ],
+        [
+          "construction_2928102",
+          4
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "crm_4159712",
+          5
+        ],
+        [
+          "education_2765782",
+          6
+        ],
+        [
+          "crm_3525203",
+          5
+        ],
+        [
+          "crm_3525203",
+          3
+        ],
+        [
+          "energy_7116675",
+          13
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          16
+        ],
+        [
+          "education_5427083",
+          5
+        ],
+        [
+          "education_3106261",
+          3
+        ],
+        [
+          "construction_2844324",
+          4
+        ],
+        [
+          "education_2765782",
+          15
+        ],
+        [
+          "crm_5963931",
+          20
+        ]
+      ],
+      "seconds": 0.0069894000043859705,
+      "packed_text_pages": [
+        [
+          "education_3106261",
+          3
+        ],
+        [
+          "education_5427083",
+          8
+        ],
+        [
+          "education_5427083",
+          9
+        ],
+        [
+          "education_5427083",
+          16
+        ],
+        [
+          "energy_7116675",
+          3
+        ],
+        [
+          "energy_7116675",
+          6
+        ],
+        [
+          "energy_7116675",
+          7
+        ],
+        [
+          "energy_7670244",
+          2
+        ]
+      ],
+      "packed_text_source_ids": [
+        "education_5427083:p9:b229",
+        "education_5427083:p16:b459",
+        "education_5427083:p8:b196",
+        "energy_7116675:p7:b64",
+        "energy_7116675:p3:b26",
+        "energy_7116675:p6:b59",
+        "education_5427083:p9:b228",
+        "education_5427083:p9:b230",
+        "education_5427083:p8:b194",
+        "education_5427083:p8:b199",
+        "education_3106261:p3:b27",
+        "energy_7670244:p2:b20"
+      ],
+      "packing_seconds": 0.000374700000975281,
+      "retrieval_and_packing_seconds": 0.0073641000053612515,
+      "pack_stats": {
+        "text_chars": 4603,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "healthcare_table_required_0266",
+      "question": "How should the timing of COVID-19 vaccination be managed for patients undergoing autologous HSCT, both prior to and following the procedure?",
+      "domain": "healthcare",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "healthcare_7083619",
+          5
+        ],
+        [
+          "healthcare_7083619",
+          6
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_7083619",
+          2
+        ],
+        [
+          "healthcare_7083619",
+          5
+        ],
+        [
+          "healthcare_7083619",
+          3
+        ],
+        [
+          "healthcare_7083619",
+          4
+        ],
+        [
+          "healthcare_7083619",
+          1
+        ],
+        [
+          "healthcare_7083619",
+          6
+        ],
+        [
+          "crm_5963931",
+          2
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          2
+        ],
+        [
+          "education_5138607",
+          8
+        ],
+        [
+          "education_5138607",
+          18
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          10
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          1
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "education_3501298",
+          1
+        ],
+        [
+          "education_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3274043",
+          12
+        ],
+        [
+          "healthcare_4476277",
+          6
+        ],
+        [
+          "education_2765782",
+          5
+        ],
+        [
+          "healthcare_4476277",
+          1
+        ],
+        [
+          "construction_4481874",
+          16
+        ]
+      ],
+      "seconds": 0.0046421000006375834,
+      "packed_text_pages": [
+        [
+          "healthcare_7083619",
+          1
+        ],
+        [
+          "healthcare_7083619",
+          2
+        ],
+        [
+          "healthcare_7083619",
+          3
+        ],
+        [
+          "healthcare_7083619",
+          4
+        ],
+        [
+          "healthcare_7083619",
+          5
+        ],
+        [
+          "healthcare_7083619",
+          6
+        ]
+      ],
+      "packed_text_source_ids": [
+        "healthcare_7083619:p2:b11",
+        "healthcare_7083619:p5:b43",
+        "healthcare_7083619:p3:b31",
+        "healthcare_7083619:p4:b38",
+        "healthcare_7083619:p1:b6",
+        "healthcare_7083619:p6:b51",
+        "healthcare_7083619:p3:b29",
+        "healthcare_7083619:p5:b48",
+        "healthcare_7083619:p5:b47",
+        "healthcare_7083619:p2:b18",
+        "healthcare_7083619:p2:b20",
+        "healthcare_7083619:p3:b30"
+      ],
+      "packing_seconds": 0.00047250000352505594,
+      "retrieval_and_packing_seconds": 0.005114600004162639,
+      "pack_stats": {
+        "text_chars": 8561,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "crm_image_only_0088",
+      "question": "How effective is Automize's latest service portal application in terms of automation success with ServiceNow?",
+      "domain": "crm",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "crm_3280862",
+          1
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_3280862",
+          1
+        ],
+        [
+          "crm_3280862",
+          2
+        ],
+        [
+          "crm_3280862",
+          3
+        ],
+        [
+          "commerce_manufacturing_2290435",
+          14
+        ],
+        [
+          "crm_3870349",
+          1
+        ],
+        [
+          "construction_4280740",
+          2
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          6
+        ],
+        [
+          "commerce_manufacturing_2290435",
+          5
+        ],
+        [
+          "crm_5169330",
+          7
+        ],
+        [
+          "construction_1676343",
+          9
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          4
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "energy_1803053",
+          4
+        ],
+        [
+          "energy_2357218",
+          19
+        ],
+        [
+          "finance_5910185",
+          28
+        ],
+        [
+          "crm_7720078",
+          5
+        ],
+        [
+          "energy_0648106",
+          4
+        ],
+        [
+          "crm_2114132",
+          8
+        ],
+        [
+          "crm_5963931",
+          20
+        ],
+        [
+          "commerce_manufacturing_0820977",
+          4
+        ]
+      ],
+      "seconds": 0.00652789999730885,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_2290435",
+          5
+        ],
+        [
+          "commerce_manufacturing_2290435",
+          14
+        ],
+        [
+          "construction_4280740",
+          2
+        ],
+        [
+          "crm_3280862",
+          1
+        ],
+        [
+          "crm_3280862",
+          2
+        ],
+        [
+          "crm_3280862",
+          3
+        ],
+        [
+          "crm_3870349",
+          1
+        ]
+      ],
+      "packed_text_source_ids": [
+        "crm_3280862:p1:b6",
+        "crm_3280862:p2:b43",
+        "crm_3280862:p3:b50",
+        "commerce_manufacturing_2290435:p14:b122",
+        "crm_3870349:p1:b7",
+        "construction_4280740:p2:b19",
+        "crm_3280862:p1:b7",
+        "crm_3280862:p1:b8",
+        "crm_3280862:p2:b44",
+        "crm_3280862:p2:b40",
+        "commerce_manufacturing_2290435:p5:b44",
+        "crm_3280862:p3:b48"
+      ],
+      "packing_seconds": 5.199998850002885e-05,
+      "retrieval_and_packing_seconds": 0.006579899985808879,
+      "pack_stats": {
+        "text_chars": 2908,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "legal_text_only_0313",
+      "question": "In the March 2016 town records, what was happening at the location 400 NH RT 45?",
+      "domain": "legal",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "legal_5880007",
+          1
+        ],
+        [
+          "legal_5880007",
+          2
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "legal_5880007",
+          2
+        ],
+        [
+          "legal_5880007",
+          1
+        ],
+        [
+          "legal_5880007",
+          4
+        ],
+        [
+          "legal_5880007",
+          3
+        ],
+        [
+          "finance_4880250",
+          11
+        ],
+        [
+          "finance_4880250",
+          5
+        ],
+        [
+          "finance_4880250",
+          6
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          6
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          19
+        ],
+        [
+          "finance_4880250",
+          10
+        ],
+        [
+          "finance_4880250",
+          1
+        ],
+        [
+          "education_4813144",
+          12
+        ],
+        [
+          "construction_1676343",
+          14
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          16
+        ],
+        [
+          "energy_4343531",
+          7
+        ],
+        [
+          "construction_1676343",
+          19
+        ],
+        [
+          "finance_5910185",
+          4
+        ],
+        [
+          "finance_4880250",
+          12
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          7
+        ],
+        [
+          "finance_4880250",
+          9
+        ]
+      ],
+      "seconds": 0.0027132000104757026,
+      "packed_text_pages": [
+        [
+          "finance_4880250",
+          1
+        ],
+        [
+          "finance_4880250",
+          5
+        ],
+        [
+          "finance_4880250",
+          11
+        ],
+        [
+          "legal_5880007",
+          1
+        ],
+        [
+          "legal_5880007",
+          2
+        ],
+        [
+          "legal_5880007",
+          3
+        ],
+        [
+          "legal_5880007",
+          4
+        ]
+      ],
+      "packed_text_source_ids": [
+        "legal_5880007:p2:b31",
+        "legal_5880007:p1:b5",
+        "legal_5880007:p4:b103",
+        "legal_5880007:p3:b69",
+        "finance_4880250:p11:b133",
+        "finance_4880250:p5:b52",
+        "legal_5880007:p2:b28",
+        "legal_5880007:p1:b13",
+        "legal_5880007:p1:b14",
+        "legal_5880007:p2:b44",
+        "finance_4880250:p1:b3",
+        "finance_4880250:p1:b4"
+      ],
+      "packing_seconds": 0.00013270000636111945,
+      "retrieval_and_packing_seconds": 0.002845900016836822,
+      "pack_stats": {
+        "text_chars": 4016,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "crm_table_required_0105",
+      "question": "In the context of Bosch's system, what is indicated when the FAULT light blinks?",
+      "domain": "crm",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "crm_5963931",
+          7
+        ],
+        [
+          "crm_5963931",
+          8
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_5963931",
+          17
+        ],
+        [
+          "crm_5963931",
+          2
+        ],
+        [
+          "crm_5963931",
+          7
+        ],
+        [
+          "crm_5963931",
+          18
+        ],
+        [
+          "crm_5963931",
+          12
+        ],
+        [
+          "crm_5963931",
+          24
+        ],
+        [
+          "crm_5963931",
+          6
+        ],
+        [
+          "crm_5963931",
+          19
+        ],
+        [
+          "crm_5963931",
+          25
+        ],
+        [
+          "crm_5963931",
+          5
+        ],
+        [
+          "crm_5963931",
+          4
+        ],
+        [
+          "crm_5963931",
+          1
+        ],
+        [
+          "crm_5963931",
+          3
+        ],
+        [
+          "crm_5963931",
+          10
+        ],
+        [
+          "crm_5963931",
+          27
+        ],
+        [
+          "crm_1900612",
+          1
+        ],
+        [
+          "crm_5963931",
+          22
+        ],
+        [
+          "crm_5963931",
+          15
+        ],
+        [
+          "crm_5963931",
+          26
+        ],
+        [
+          "crm_5963931",
+          9
+        ]
+      ],
+      "seconds": 0.007805599991115741,
+      "packed_text_pages": [
+        [
+          "crm_5963931",
+          2
+        ],
+        [
+          "crm_5963931",
+          6
+        ],
+        [
+          "crm_5963931",
+          7
+        ],
+        [
+          "crm_5963931",
+          12
+        ],
+        [
+          "crm_5963931",
+          17
+        ],
+        [
+          "crm_5963931",
+          18
+        ],
+        [
+          "crm_5963931",
+          24
+        ]
+      ],
+      "packed_text_source_ids": [
+        "crm_5963931:p17:b344",
+        "crm_5963931:p2:b7",
+        "crm_5963931:p7:b87",
+        "crm_5963931:p18:b367",
+        "crm_5963931:p12:b214",
+        "crm_5963931:p24:b402",
+        "crm_5963931:p17:b328",
+        "crm_5963931:p7:b78",
+        "crm_5963931:p7:b86",
+        "crm_5963931:p12:b211",
+        "crm_5963931:p12:b212",
+        "crm_5963931:p6:b54"
+      ],
+      "packing_seconds": 0.0003825000021606684,
+      "retrieval_and_packing_seconds": 0.00818809999327641,
+      "pack_stats": {
+        "text_chars": 10246,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.5,
+      "hit@20": 1,
+      "all_pages@20": 0,
+      "page_recall@20": 0.5,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 0,
+      "packed_text_page_recall": 0.5
+    },
+    {
+      "sample_id": "finance_image_plus_text_as_answer_0210",
+      "question": "Can you list the soft caps and min/max contribution limits for ETHERMOON, HANSFRITZ, and Fire Waka Floki Flame tokens available on DxSale?",
+      "domain": "finance",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "finance_3702513",
+          6
+        ],
+        [
+          "finance_3702513",
+          7
+        ],
+        [
+          "finance_3702513",
+          8
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_3702513",
+          7
+        ],
+        [
+          "construction_2928102",
+          4
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          3
+        ],
+        [
+          "construction_4481874",
+          3
+        ],
+        [
+          "finance_3702513",
+          4
+        ],
+        [
+          "finance_3702513",
+          5
+        ],
+        [
+          "healthcare_4455078",
+          1
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          4
+        ],
+        [
+          "crm_2114132",
+          3
+        ],
+        [
+          "legal_6716847",
+          15
+        ],
+        [
+          "education_6071633",
+          14
+        ],
+        [
+          "finance_3702513",
+          9
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          1
+        ],
+        [
+          "energy_5387778",
+          6
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          2
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          5
+        ],
+        [
+          "finance_5913150",
+          9
+        ],
+        [
+          "legal_1128978",
+          3
+        ],
+        [
+          "education_3106261",
+          18
+        ],
+        [
+          "construction_2928102",
+          14
+        ]
+      ],
+      "seconds": 0.003387499993550591,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_0501317",
+          3
+        ],
+        [
+          "construction_2928102",
+          4
+        ],
+        [
+          "construction_2928102",
+          9
+        ],
+        [
+          "construction_4481874",
+          3
+        ],
+        [
+          "crm_2114132",
+          3
+        ],
+        [
+          "finance_3702513",
+          4
+        ],
+        [
+          "finance_3702513",
+          5
+        ],
+        [
+          "finance_3702513",
+          7
+        ]
+      ],
+      "packed_text_source_ids": [
+        "finance_3702513:p7:b53",
+        "construction_2928102:p4:b58",
+        "commerce_manufacturing_0501317:p3:b19",
+        "construction_4481874:p3:b61",
+        "finance_3702513:p4:b33",
+        "finance_3702513:p5:b37",
+        "finance_3702513:p7:b54",
+        "finance_3702513:p7:b52",
+        "commerce_manufacturing_0501317:p3:b24",
+        "commerce_manufacturing_0501317:p3:b29",
+        "construction_2928102:p9:b122",
+        "crm_2114132:p3:b37"
+      ],
+      "packing_seconds": 0.00011580000864341855,
+      "retrieval_and_packing_seconds": 0.0035033000021940097,
+      "pack_stats": {
+        "text_chars": 10707,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.3333333333333333,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.3333333333333333,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.3333333333333333,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.3333333333333333,
+      "hit@20": 1,
+      "all_pages@20": 0,
+      "page_recall@20": 0.3333333333333333,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 0,
+      "packed_text_page_recall": 0.3333333333333333
+    },
+    {
+      "sample_id": "healthcare_image_plus_text_as_answer_0253",
+      "question": "What were the differences in plasma corticosterone levels between the control group and those receiving AHS1, AHS2, and Vit-C water supplements in heat-stressed broiler chickens?",
+      "domain": "healthcare",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "healthcare_0028060",
+          6
+        ],
+        [
+          "healthcare_0028060",
+          7
+        ],
+        [
+          "healthcare_0028060",
+          8
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_0028060",
+          6
+        ],
+        [
+          "healthcare_0028060",
+          9
+        ],
+        [
+          "healthcare_0028060",
+          8
+        ],
+        [
+          "healthcare_0028060",
+          1
+        ],
+        [
+          "healthcare_0028060",
+          7
+        ],
+        [
+          "healthcare_0028060",
+          5
+        ],
+        [
+          "healthcare_0028060",
+          2
+        ],
+        [
+          "healthcare_3428789",
+          4
+        ],
+        [
+          "healthcare_3428789",
+          5
+        ],
+        [
+          "healthcare_0028060",
+          10
+        ],
+        [
+          "healthcare_3428789",
+          3
+        ],
+        [
+          "healthcare_0028060",
+          3
+        ],
+        [
+          "healthcare_3428789",
+          1
+        ],
+        [
+          "healthcare_0028060",
+          11
+        ],
+        [
+          "crm_6543180",
+          17
+        ],
+        [
+          "crm_6543180",
+          9
+        ],
+        [
+          "crm_4502338",
+          18
+        ],
+        [
+          "crm_6543180",
+          13
+        ],
+        [
+          "healthcare_0028060",
+          4
+        ],
+        [
+          "education_0192892",
+          12
+        ]
+      ],
+      "seconds": 0.004928900001686998,
+      "packed_text_pages": [
+        [
+          "healthcare_0028060",
+          1
+        ],
+        [
+          "healthcare_0028060",
+          5
+        ],
+        [
+          "healthcare_0028060",
+          6
+        ],
+        [
+          "healthcare_0028060",
+          7
+        ],
+        [
+          "healthcare_0028060",
+          8
+        ],
+        [
+          "healthcare_0028060",
+          9
+        ],
+        [
+          "healthcare_3428789",
+          4
+        ]
+      ],
+      "packed_text_source_ids": [
+        "healthcare_0028060:p6:b51",
+        "healthcare_0028060:p9:b73",
+        "healthcare_0028060:p8:b61",
+        "healthcare_0028060:p1:b3",
+        "healthcare_0028060:p7:b55",
+        "healthcare_0028060:p5:b38",
+        "healthcare_3428789:p4:b55",
+        "healthcare_0028060:p6:b47",
+        "healthcare_0028060:p6:b48",
+        "healthcare_0028060:p1:b1",
+        "healthcare_0028060:p1:b2",
+        "healthcare_0028060:p9:b69"
+      ],
+      "packing_seconds": 0.0007485999958589673,
+      "retrieval_and_packing_seconds": 0.005677499997545965,
+      "pack_stats": {
+        "text_chars": 15593,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.6666666666666666,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "legal_image_plus_text_as_answer_0294",
+      "question": "How are ion signals for cocaine, heroin, and THC impacted in fingermarks under varying spike conditions in MALDI MS as detailed in the Scientific Reports article with DOI: 10.1038/srep11716?",
+      "domain": "legal",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "legal_1095340",
+          8
+        ],
+        [
+          "legal_1095340",
+          9
+        ],
+        [
+          "legal_1095340",
+          10
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "legal_1095340",
+          10
+        ],
+        [
+          "legal_1095340",
+          11
+        ],
+        [
+          "legal_1095340",
+          1
+        ],
+        [
+          "legal_1095340",
+          9
+        ],
+        [
+          "legal_1095340",
+          7
+        ],
+        [
+          "legal_1095340",
+          2
+        ],
+        [
+          "legal_1095340",
+          8
+        ],
+        [
+          "legal_1095340",
+          5
+        ],
+        [
+          "legal_1095340",
+          13
+        ],
+        [
+          "legal_1095340",
+          3
+        ],
+        [
+          "legal_1095340",
+          6
+        ],
+        [
+          "legal_1095340",
+          12
+        ],
+        [
+          "legal_1095340",
+          4
+        ],
+        [
+          "healthcare_3428789",
+          1
+        ],
+        [
+          "healthcare_1846776",
+          11
+        ],
+        [
+          "education_3106261",
+          14
+        ],
+        [
+          "construction_4280740",
+          1
+        ],
+        [
+          "education_3106261",
+          7
+        ],
+        [
+          "healthcare_0028060",
+          8
+        ],
+        [
+          "crm_5963931",
+          12
+        ]
+      ],
+      "seconds": 0.0039108999917516485,
+      "packed_text_pages": [
+        [
+          "legal_1095340",
+          1
+        ],
+        [
+          "legal_1095340",
+          2
+        ],
+        [
+          "legal_1095340",
+          5
+        ],
+        [
+          "legal_1095340",
+          7
+        ],
+        [
+          "legal_1095340",
+          8
+        ],
+        [
+          "legal_1095340",
+          9
+        ],
+        [
+          "legal_1095340",
+          10
+        ],
+        [
+          "legal_1095340",
+          11
+        ],
+        [
+          "legal_1095340",
+          13
+        ]
+      ],
+      "packed_text_source_ids": [
+        "legal_1095340:p10:b66",
+        "legal_1095340:p11:b73",
+        "legal_1095340:p1:b6",
+        "legal_1095340:p9:b62",
+        "legal_1095340:p7:b51",
+        "legal_1095340:p2:b15",
+        "legal_1095340:p13:b92",
+        "legal_1095340:p5:b40",
+        "legal_1095340:p5:b41",
+        "legal_1095340:p10:b68",
+        "legal_1095340:p8:b57",
+        "legal_1095340:p11:b76"
+      ],
+      "packing_seconds": 0.0008678000012878329,
+      "retrieval_and_packing_seconds": 0.004778699993039481,
+      "pack_stats": {
+        "text_chars": 14174,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.3333333333333333,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.6666666666666666,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.6666666666666666,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "legal_image_only_0288",
+      "question": "In business risk evaluations, what weaknesses are connected to the absence of fire detection mechanisms?",
+      "domain": "legal",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "legal_7691267",
+          12
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "legal_7691267",
+          12
+        ],
+        [
+          "legal_7691267",
+          7
+        ],
+        [
+          "legal_7691267",
+          6
+        ],
+        [
+          "legal_7691267",
+          11
+        ],
+        [
+          "legal_7691267",
+          10
+        ],
+        [
+          "crm_7720078",
+          2
+        ],
+        [
+          "legal_7691267",
+          13
+        ],
+        [
+          "legal_7691267",
+          5
+        ],
+        [
+          "commerce_manufacturing_3274043",
+          10
+        ],
+        [
+          "energy_5731992",
+          3
+        ],
+        [
+          "finance_3702513",
+          1
+        ],
+        [
+          "commerce_manufacturing_6532134",
+          13
+        ],
+        [
+          "legal_3134069",
+          4
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          3
+        ],
+        [
+          "legal_3134069",
+          3
+        ],
+        [
+          "crm_7720078",
+          5
+        ],
+        [
+          "energy_5731992",
+          4
+        ],
+        [
+          "crm_5963931",
+          20
+        ],
+        [
+          "education_6488717",
+          10
+        ]
+      ],
+      "seconds": 0.003145200011203997,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_3341761",
+          5
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "crm_7720078",
+          2
+        ],
+        [
+          "legal_7691267",
+          6
+        ],
+        [
+          "legal_7691267",
+          7
+        ],
+        [
+          "legal_7691267",
+          10
+        ],
+        [
+          "legal_7691267",
+          11
+        ],
+        [
+          "legal_7691267",
+          12
+        ]
+      ],
+      "packed_text_source_ids": [
+        "legal_7691267:p12:b82",
+        "legal_7691267:p7:b50",
+        "legal_7691267:p6:b45",
+        "legal_7691267:p11:b73",
+        "legal_7691267:p10:b67",
+        "crm_7720078:p2:b19",
+        "legal_7691267:p12:b83",
+        "legal_7691267:p12:b85",
+        "commerce_manufacturing_3341761:p5:b69",
+        "legal_7691267:p7:b52",
+        "commerce_manufacturing_3341761:p7:b95",
+        "legal_7691267:p7:b53"
+      ],
+      "packing_seconds": 4.850000550504774e-05,
+      "retrieval_and_packing_seconds": 0.0031937000167090446,
+      "pack_stats": {
+        "text_chars": 10322,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "commerce_manufacturing_image_plus_text_as_answer_0018",
+      "question": "What was the trend in VAP rates over the months after implementing the IHI Ventilator Bundle in the ICU?",
+      "domain": "commerce_manufacturing",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          10
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "education_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          10
+        ],
+        [
+          "education_3501298",
+          10
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          12
+        ],
+        [
+          "education_3501298",
+          12
+        ],
+        [
+          "finance_3769357",
+          12
+        ],
+        [
+          "finance_3769357",
+          13
+        ],
+        [
+          "finance_4070954",
+          6
+        ],
+        [
+          "finance_6786265",
+          9
+        ],
+        [
+          "finance_3769357",
+          17
+        ],
+        [
+          "finance_4880250",
+          8
+        ],
+        [
+          "finance_4070954",
+          15
+        ],
+        [
+          "finance_6440218",
+          18
+        ],
+        [
+          "healthcare_4476277",
+          2
+        ],
+        [
+          "finance_3769357",
+          15
+        ],
+        [
+          "finance_4070954",
+          10
+        ],
+        [
+          "finance_7501084",
+          13
+        ],
+        [
+          "finance_3769357",
+          11
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          12
+        ]
+      ],
+      "seconds": 0.004180000003543682,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          12
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          10
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          12
+        ],
+        [
+          "education_3501298",
+          9
+        ],
+        [
+          "education_3501298",
+          10
+        ],
+        [
+          "education_3501298",
+          12
+        ],
+        [
+          "finance_6440218",
+          13
+        ]
+      ],
+      "packed_text_source_ids": [
+        "commerce_manufacturing_3501298:p9:b74",
+        "education_3501298:p9:b74",
+        "commerce_manufacturing_3501298:p10:b78",
+        "education_3501298:p10:b78",
+        "commerce_manufacturing_3501298:p12:b94",
+        "education_3501298:p12:b94",
+        "commerce_manufacturing_3501298:p9:b73",
+        "education_3501298:p9:b73",
+        "commerce_manufacturing_3501298:p10:b79",
+        "education_3501298:p10:b79",
+        "commerce_manufacturing_0999705:p12:b104",
+        "finance_6440218:p13:b109"
+      ],
+      "packing_seconds": 4.9000009312294424e-05,
+      "retrieval_and_packing_seconds": 0.004229000012855977,
+      "pack_stats": {
+        "text_chars": 13864,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "crm_text_only_0118",
+      "question": "In the Twitter graph study, how does the relationship between affinity and tweet similarity differ from that between ASP distance and tweet similarity?",
+      "domain": "crm",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "crm_4159712",
+          8
+        ],
+        [
+          "crm_4159712",
+          9
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_4159712",
+          1
+        ],
+        [
+          "crm_4159712",
+          8
+        ],
+        [
+          "crm_4159712",
+          9
+        ],
+        [
+          "crm_4159712",
+          7
+        ],
+        [
+          "crm_4159712",
+          4
+        ],
+        [
+          "crm_4159712",
+          6
+        ],
+        [
+          "crm_4159712",
+          2
+        ],
+        [
+          "finance_3702513",
+          9
+        ],
+        [
+          "crm_4159712",
+          3
+        ],
+        [
+          "crm_4159712",
+          5
+        ],
+        [
+          "crm_4159712",
+          10
+        ],
+        [
+          "healthcare_0439127",
+          11
+        ],
+        [
+          "education_2765782",
+          17
+        ],
+        [
+          "energy_4971670",
+          7
+        ],
+        [
+          "crm_2114132",
+          9
+        ],
+        [
+          "construction_4280740",
+          8
+        ],
+        [
+          "education_2765782",
+          14
+        ],
+        [
+          "crm_2114132",
+          6
+        ],
+        [
+          "construction_2844324",
+          5
+        ],
+        [
+          "construction_0992970",
+          13
+        ]
+      ],
+      "seconds": 0.0031993000011425465,
+      "packed_text_pages": [
+        [
+          "crm_4159712",
+          1
+        ],
+        [
+          "crm_4159712",
+          4
+        ],
+        [
+          "crm_4159712",
+          6
+        ],
+        [
+          "crm_4159712",
+          7
+        ],
+        [
+          "crm_4159712",
+          8
+        ],
+        [
+          "crm_4159712",
+          9
+        ]
+      ],
+      "packed_text_source_ids": [
+        "crm_4159712:p1:b15",
+        "crm_4159712:p8:b120",
+        "crm_4159712:p9:b129",
+        "crm_4159712:p7:b106",
+        "crm_4159712:p4:b79",
+        "crm_4159712:p6:b98",
+        "crm_4159712:p9:b122",
+        "crm_4159712:p8:b117",
+        "crm_4159712:p9:b124",
+        "crm_4159712:p8:b119",
+        "crm_4159712:p6:b99",
+        "crm_4159712:p7:b102"
+      ],
+      "packing_seconds": 0.00021279999054968357,
+      "retrieval_and_packing_seconds": 0.00341209999169223,
+      "pack_stats": {
+        "text_chars": 13732,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "energy_table_required_0186",
+      "question": "What was the shift in accumulated profits for EQTEC plc over the period from mid-2015 to the end of 2016?",
+      "domain": "energy",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "energy_4343531",
+          12
+        ],
+        [
+          "energy_4343531",
+          13
+        ],
+        [
+          "energy_4343531",
+          14
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_4343531",
+          13
+        ],
+        [
+          "energy_4343531",
+          14
+        ],
+        [
+          "energy_4343531",
+          10
+        ],
+        [
+          "energy_4343531",
+          1
+        ],
+        [
+          "energy_4343531",
+          11
+        ],
+        [
+          "energy_4343531",
+          9
+        ],
+        [
+          "energy_4343531",
+          16
+        ],
+        [
+          "energy_4343531",
+          2
+        ],
+        [
+          "finance_4880250",
+          7
+        ],
+        [
+          "energy_4343531",
+          3
+        ],
+        [
+          "energy_4343531",
+          12
+        ],
+        [
+          "energy_4343531",
+          23
+        ],
+        [
+          "finance_5910185",
+          9
+        ],
+        [
+          "energy_4343531",
+          4
+        ],
+        [
+          "energy_4343531",
+          19
+        ],
+        [
+          "commerce_manufacturing_4426481",
+          7
+        ],
+        [
+          "energy_4343531",
+          25
+        ],
+        [
+          "finance_4880250",
+          5
+        ],
+        [
+          "energy_4343531",
+          18
+        ],
+        [
+          "finance_4880250",
+          2
+        ]
+      ],
+      "seconds": 0.0048162999883061275,
+      "packed_text_pages": [
+        [
+          "energy_4343531",
+          1
+        ],
+        [
+          "energy_4343531",
+          9
+        ],
+        [
+          "energy_4343531",
+          10
+        ],
+        [
+          "energy_4343531",
+          11
+        ],
+        [
+          "energy_4343531",
+          13
+        ],
+        [
+          "energy_4343531",
+          14
+        ],
+        [
+          "energy_4343531",
+          16
+        ],
+        [
+          "finance_5910185",
+          9
+        ],
+        [
+          "finance_5910185",
+          14
+        ]
+      ],
+      "packed_text_source_ids": [
+        "energy_4343531:p13:b109",
+        "energy_4343531:p14:b126",
+        "energy_4343531:p10:b94",
+        "energy_4343531:p1:b0",
+        "energy_4343531:p11:b95",
+        "energy_4343531:p9:b83",
+        "energy_4343531:p14:b128",
+        "finance_5910185:p9:b80",
+        "finance_5910185:p14:b133",
+        "energy_4343531:p1:b2",
+        "energy_4343531:p16:b145",
+        "energy_4343531:p16:b157"
+      ],
+      "packing_seconds": 0.0006826000026194379,
+      "retrieval_and_packing_seconds": 0.005498899990925565,
+      "pack_stats": {
+        "text_chars": 7947,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.6666666666666666,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.6666666666666666,
+      "hit@6": 1,
+      "all_pages@6": 0,
+      "page_recall@6": 0.6666666666666666,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.6666666666666666,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 0,
+      "packed_text_page_recall": 0.6666666666666666
+    },
+    {
+      "sample_id": "healthcare_text_only_0273",
+      "question": "In terms of deflection, what influence does quantum Maxwell stress have on DNA beams, specifically adjusting the deflection magnitude?",
+      "domain": "healthcare",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "healthcare_4455078",
+          12
+        ],
+        [
+          "healthcare_4455078",
+          13
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_4455078",
+          13
+        ],
+        [
+          "healthcare_4455078",
+          12
+        ],
+        [
+          "healthcare_4455078",
+          10
+        ],
+        [
+          "healthcare_4455078",
+          8
+        ],
+        [
+          "healthcare_4455078",
+          11
+        ],
+        [
+          "healthcare_4455078",
+          3
+        ],
+        [
+          "healthcare_4455078",
+          14
+        ],
+        [
+          "healthcare_4455078",
+          1
+        ],
+        [
+          "healthcare_4455078",
+          5
+        ],
+        [
+          "healthcare_4455078",
+          9
+        ],
+        [
+          "healthcare_4455078",
+          6
+        ],
+        [
+          "healthcare_4455078",
+          4
+        ],
+        [
+          "energy_4971670",
+          7
+        ],
+        [
+          "healthcare_4455078",
+          2
+        ],
+        [
+          "crm_6543180",
+          23
+        ],
+        [
+          "crm_6543180",
+          17
+        ],
+        [
+          "crm_6543180",
+          10
+        ],
+        [
+          "crm_5963931",
+          20
+        ],
+        [
+          "healthcare_4455078",
+          7
+        ],
+        [
+          "construction_4005140",
+          11
+        ]
+      ],
+      "seconds": 0.002811500002280809,
+      "packed_text_pages": [
+        [
+          "healthcare_4455078",
+          3
+        ],
+        [
+          "healthcare_4455078",
+          4
+        ],
+        [
+          "healthcare_4455078",
+          8
+        ],
+        [
+          "healthcare_4455078",
+          10
+        ],
+        [
+          "healthcare_4455078",
+          11
+        ],
+        [
+          "healthcare_4455078",
+          12
+        ],
+        [
+          "healthcare_4455078",
+          13
+        ],
+        [
+          "healthcare_4455078",
+          14
+        ]
+      ],
+      "packed_text_source_ids": [
+        "healthcare_4455078:p13:b179",
+        "healthcare_4455078:p12:b165",
+        "healthcare_4455078:p10:b144",
+        "healthcare_4455078:p8:b129",
+        "healthcare_4455078:p11:b153",
+        "healthcare_4455078:p3:b27",
+        "healthcare_4455078:p13:b180",
+        "healthcare_4455078:p14:b187",
+        "healthcare_4455078:p13:b182",
+        "healthcare_4455078:p10:b143",
+        "healthcare_4455078:p3:b28",
+        "healthcare_4455078:p4:b41"
+      ],
+      "packing_seconds": 4.769999941345304e-05,
+      "retrieval_and_packing_seconds": 0.002859200001694262,
+      "pack_stats": {
+        "text_chars": 10656,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "commerce_manufacturing_text_only_0037",
+      "question": "What are the key steps involved in the value stream mapping process?",
+      "domain": "commerce_manufacturing",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          7
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          7
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          5
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          1
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          9
+        ],
+        [
+          "crm_2114132",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          10
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "energy_5387778",
+          2
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          2
+        ],
+        [
+          "crm_2114132",
+          3
+        ],
+        [
+          "energy_5387778",
+          3
+        ],
+        [
+          "energy_1803053",
+          4
+        ],
+        [
+          "commerce_manufacturing_6532134",
+          5
+        ],
+        [
+          "crm_4159712",
+          4
+        ],
+        [
+          "energy_7116675",
+          11
+        ],
+        [
+          "energy_1803053",
+          2
+        ],
+        [
+          "crm_3870349",
+          6
+        ],
+        [
+          "commerce_manufacturing_6532134",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          8
+        ]
+      ],
+      "seconds": 0.004593399993609637,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          1
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          5
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          7
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          9
+        ],
+        [
+          "crm_2114132",
+          4
+        ],
+        [
+          "energy_5387778",
+          2
+        ]
+      ],
+      "packed_text_source_ids": [
+        "commerce_manufacturing_0999705:p6:b49",
+        "commerce_manufacturing_0999705:p7:b52",
+        "commerce_manufacturing_0999705:p5:b43",
+        "commerce_manufacturing_0999705:p1:b0",
+        "commerce_manufacturing_0999705:p9:b71",
+        "crm_2114132:p4:b48",
+        "commerce_manufacturing_0999705:p6:b45",
+        "commerce_manufacturing_0999705:p6:b48",
+        "commerce_manufacturing_0999705:p1:b4",
+        "commerce_manufacturing_0999705:p5:b44",
+        "commerce_manufacturing_0999705:p7:b54",
+        "energy_5387778:p2:b32"
+      ],
+      "packing_seconds": 5.810000584460795e-05,
+      "retrieval_and_packing_seconds": 0.004651499999454245,
+      "pack_stats": {
+        "text_chars": 9076,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    },
+    {
+      "sample_id": "commerce_manufacturing_table_required_0028",
+      "question": "How did current taxes in Hong Kong and outside Hong Kong differ for the six months ended 30 September 2014 compared to 2013?",
+      "domain": "commerce_manufacturing",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "commerce_manufacturing_6783432",
+          6
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          7
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_6783432",
+          1
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          7
+        ],
+        [
+          "finance_5910185",
+          1
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          2
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          6
+        ],
+        [
+          "finance_5910185",
+          6
+        ],
+        [
+          "finance_5910185",
+          24
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          4
+        ],
+        [
+          "finance_5910185",
+          23
+        ],
+        [
+          "finance_5910185",
+          14
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          12
+        ],
+        [
+          "finance_5910185",
+          21
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          11
+        ],
+        [
+          "finance_5910185",
+          22
+        ],
+        [
+          "finance_5910185",
+          28
+        ],
+        [
+          "finance_4880250",
+          7
+        ],
+        [
+          "finance_6440218",
+          15
+        ],
+        [
+          "finance_6440218",
+          2
+        ],
+        [
+          "finance_5910185",
+          25
+        ],
+        [
+          "finance_6440218",
+          6
+        ]
+      ],
+      "seconds": 0.006371900002704933,
+      "packed_text_pages": [
+        [
+          "commerce_manufacturing_6783432",
+          1
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          2
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          6
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          7
+        ],
+        [
+          "finance_4880250",
+          7
+        ],
+        [
+          "finance_5910185",
+          1
+        ],
+        [
+          "finance_5910185",
+          6
+        ],
+        [
+          "finance_5910185",
+          23
+        ],
+        [
+          "finance_5910185",
+          24
+        ]
+      ],
+      "packed_text_source_ids": [
+        "commerce_manufacturing_6783432:p1:b3",
+        "commerce_manufacturing_6783432:p7:b79",
+        "finance_5910185:p1:b4",
+        "commerce_manufacturing_6783432:p2:b20",
+        "commerce_manufacturing_6783432:p6:b71",
+        "finance_5910185:p6:b34",
+        "commerce_manufacturing_6783432:p1:b0",
+        "finance_5910185:p23:b239",
+        "finance_5910185:p24:b249",
+        "commerce_manufacturing_6783432:p1:b5",
+        "finance_5910185:p24:b247",
+        "finance_4880250:p7:b75"
+      ],
+      "packing_seconds": 0.00013210000179242343,
+      "retrieval_and_packing_seconds": 0.006504000004497357,
+      "pack_stats": {
+        "text_chars": 5912,
+        "images": 0,
+        "warnings": []
+      },
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@6": 1,
+      "all_pages@6": 1,
+      "page_recall@6": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0,
+      "packed_text_hit": 1,
+      "packed_text_all_pages": 1,
+      "packed_text_page_recall": 1.0
+    }
+  ],
+  "evidence_protocol": {
+    "mode": "production_pack_text_only",
+    "use_vision": false,
+    "evidence_blocks": 12,
+    "context_chars": 24000,
+    "configured_max_images": 6,
+    "note": "Packed page presence does not prove the needed block/value survived truncation. Visual and multiround coverage are unmeasured."
+  },
+  "candidate_page_budgets": {
+    "3": {
+      "hit": 0.966667,
+      "all_pages": 0.633333,
+      "page_recall": 0.797222
+    },
+    "6": {
+      "hit": 1.0,
+      "all_pages": 0.766667,
+      "page_recall": 0.894444
+    },
+    "10": {
+      "hit": 1.0,
+      "all_pages": 0.833333,
+      "page_recall": 0.916667
+    }
+  },
+  "split": {
+    "seed": 20260927,
+    "holdout_fraction_by_document_group": 0.3,
+    "method": "Connected reference-document groups; shuffled sorted groups; disjoint documents",
+    "label_exposure": "The 30 public questions and labels have previously been inspected. This document-grouped dev/holdout partition is a retrospective diagnostic, NOT a blind or independent test. Neither partition estimates hidden-test QA accuracy.",
+    "document_groups": 30,
+    "dev": {
+      "count": 21,
+      "documents": [
+        "commerce_manufacturing_0999705",
+        "commerce_manufacturing_6783432",
+        "construction_0992970",
+        "construction_1676343",
+        "construction_4005140",
+        "crm_3280862",
+        "crm_4159712",
+        "crm_4502338",
+        "crm_5963931",
+        "education_0982243",
+        "education_5427083",
+        "education_7860274",
+        "energy_0348555",
+        "energy_0648106",
+        "energy_2357218",
+        "finance_5492147",
+        "healthcare_0028060",
+        "healthcare_1846776",
+        "healthcare_4455078",
+        "legal_1095340",
+        "legal_5880007"
+      ],
+      "sample_ids": [
+        "commerce_manufacturing_table_required_0028",
+        "commerce_manufacturing_text_only_0037",
+        "construction_image_only_0046",
+        "construction_image_only_0047",
+        "construction_text_only_0079",
+        "crm_image_only_0085",
+        "crm_image_only_0088",
+        "crm_table_required_0105",
+        "crm_text_only_0118",
+        "education_image_only_0120",
+        "education_table_required_0147",
+        "education_table_required_0148",
+        "energy_image_only_0166",
+        "energy_image_plus_text_as_answer_0175",
+        "energy_text_only_0195",
+        "finance_text_only_0236",
+        "healthcare_image_plus_text_as_answer_0253",
+        "healthcare_image_plus_text_as_answer_0254",
+        "healthcare_text_only_0273",
+        "legal_image_plus_text_as_answer_0294",
+        "legal_text_only_0313"
+      ],
+      "overall": {
+        "all_pages@1": 0.238095,
+        "all_pages@10": 0.904762,
+        "all_pages@20": 0.904762,
+        "all_pages@3": 0.714286,
+        "all_pages@5": 0.857143,
+        "all_pages@6": 0.857143,
+        "hit@1": 0.714286,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 0.952381,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.904762,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.952381,
+        "page_recall@1": 0.448413,
+        "page_recall@10": 0.952381,
+        "page_recall@20": 0.952381,
+        "page_recall@3": 0.821429,
+        "page_recall@5": 0.924603,
+        "page_recall@6": 0.936508
+      }
+    },
+    "holdout": {
+      "count": 9,
+      "documents": [
+        "commerce_manufacturing_3501298",
+        "construction_4280740",
+        "education_5882492",
+        "energy_4343531",
+        "finance_1326258",
+        "finance_3702513",
+        "finance_3769357",
+        "healthcare_7083619",
+        "legal_7691267"
+      ],
+      "sample_ids": [
+        "commerce_manufacturing_image_plus_text_as_answer_0018",
+        "construction_table_required_0061",
+        "education_image_plus_text_as_answer_0131",
+        "energy_table_required_0186",
+        "finance_image_only_0200",
+        "finance_image_plus_text_as_answer_0210",
+        "finance_table_required_0225",
+        "healthcare_table_required_0266",
+        "legal_image_only_0288"
+      ],
+      "overall": {
+        "all_pages@1": 0.222222,
+        "all_pages@10": 0.666667,
+        "all_pages@20": 0.888889,
+        "all_pages@3": 0.444444,
+        "all_pages@5": 0.444444,
+        "all_pages@6": 0.555556,
+        "hit@1": 0.777778,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.666667,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.851852,
+        "page_recall@1": 0.444444,
+        "page_recall@10": 0.833333,
+        "page_recall@20": 0.925926,
+        "page_recall@3": 0.740741,
+        "page_recall@5": 0.740741,
+        "page_recall@6": 0.796296
+      }
+    }
+  },
+  "confidence_intervals": {
+    "all_pages@1": {
+      "estimate": 0.233333,
+      "low": 0.1,
+      "high": 0.4,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "all_pages@10": {
+      "estimate": 0.833333,
+      "low": 0.7,
+      "high": 0.966667,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "all_pages@20": {
+      "estimate": 0.9,
+      "low": 0.766667,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "all_pages@3": {
+      "estimate": 0.633333,
+      "low": 0.466667,
+      "high": 0.8,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "all_pages@5": {
+      "estimate": 0.733333,
+      "low": 0.566667,
+      "high": 0.9,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "all_pages@6": {
+      "estimate": 0.766667,
+      "low": 0.6,
+      "high": 0.9,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "hit@1": {
+      "estimate": 0.733333,
+      "low": 0.566667,
+      "high": 0.866667,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "hit@10": {
+      "estimate": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "hit@20": {
+      "estimate": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "hit@3": {
+      "estimate": 0.966667,
+      "low": 0.9,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "hit@5": {
+      "estimate": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "hit@6": {
+      "estimate": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "packed_text_all_pages": {
+      "estimate": 0.833333,
+      "low": 0.7,
+      "high": 0.966667,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "packed_text_hit": {
+      "estimate": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "packed_text_page_recall": {
+      "estimate": 0.922222,
+      "low": 0.85,
+      "high": 0.983333,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "page_recall@1": {
+      "estimate": 0.447222,
+      "low": 0.319444,
+      "high": 0.577778,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "page_recall@10": {
+      "estimate": 0.916667,
+      "low": 0.838889,
+      "high": 0.977778,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "page_recall@20": {
+      "estimate": 0.944444,
+      "low": 0.872222,
+      "high": 1.0,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "page_recall@3": {
+      "estimate": 0.797222,
+      "low": 0.691597,
+      "high": 0.894444,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "page_recall@5": {
+      "estimate": 0.869444,
+      "low": 0.780556,
+      "high": 0.95,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    },
+    "page_recall@6": {
+      "estimate": 0.894444,
+      "low": 0.816667,
+      "high": 0.961111,
+      "confidence": 0.95,
+      "method": "document_group_percentile_bootstrap",
+      "document_groups": 30,
+      "resamples": 2000,
+      "warning": null
+    }
+  },
+  "by_domain": {
+    "commerce_manufacturing": {
+      "all_pages@1": 0.0,
+      "all_pages@10": 1.0,
+      "all_pages@20": 1.0,
+      "all_pages@3": 0.666667,
+      "all_pages@5": 1.0,
+      "all_pages@6": 1.0,
+      "hit@1": 0.666667,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 1.0,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 1.0,
+      "page_recall@1": 0.333333,
+      "page_recall@10": 1.0,
+      "page_recall@20": 1.0,
+      "page_recall@3": 0.833333,
+      "page_recall@5": 1.0,
+      "page_recall@6": 1.0
+    },
+    "construction": {
+      "all_pages@1": 0.5,
+      "all_pages@10": 0.75,
+      "all_pages@20": 0.75,
+      "all_pages@3": 0.5,
+      "all_pages@5": 0.5,
+      "all_pages@6": 0.5,
+      "hit@1": 1.0,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.5,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.791667,
+      "page_recall@1": 0.645833,
+      "page_recall@10": 0.875,
+      "page_recall@20": 0.875,
+      "page_recall@3": 0.729167,
+      "page_recall@5": 0.729167,
+      "page_recall@6": 0.791667
+    },
+    "crm": {
+      "all_pages@1": 0.5,
+      "all_pages@10": 0.75,
+      "all_pages@20": 0.75,
+      "all_pages@3": 0.75,
+      "all_pages@5": 0.75,
+      "all_pages@6": 0.75,
+      "hit@1": 0.5,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.75,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.875,
+      "page_recall@1": 0.5,
+      "page_recall@10": 0.875,
+      "page_recall@20": 0.875,
+      "page_recall@3": 0.875,
+      "page_recall@5": 0.875,
+      "page_recall@6": 0.875
+    },
+    "education": {
+      "all_pages@1": 0.25,
+      "all_pages@10": 0.75,
+      "all_pages@20": 1.0,
+      "all_pages@3": 0.75,
+      "all_pages@5": 0.75,
+      "all_pages@6": 0.75,
+      "hit@1": 0.5,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 1.0,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 1.0,
+      "page_recall@1": 0.375,
+      "page_recall@10": 0.875,
+      "page_recall@20": 1.0,
+      "page_recall@3": 0.875,
+      "page_recall@5": 0.875,
+      "page_recall@6": 0.875
+    },
+    "energy": {
+      "all_pages@1": 0.0,
+      "all_pages@10": 0.75,
+      "all_pages@20": 1.0,
+      "all_pages@3": 0.5,
+      "all_pages@5": 0.75,
+      "all_pages@6": 0.75,
+      "hit@1": 0.75,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 0.75,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.75,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.916667,
+      "page_recall@1": 0.333333,
+      "page_recall@10": 0.916667,
+      "page_recall@20": 1.0,
+      "page_recall@3": 0.666667,
+      "page_recall@5": 0.916667,
+      "page_recall@6": 0.916667
+    },
+    "finance": {
+      "all_pages@1": 0.25,
+      "all_pages@10": 0.75,
+      "all_pages@20": 0.75,
+      "all_pages@3": 0.75,
+      "all_pages@5": 0.75,
+      "all_pages@6": 0.75,
+      "hit@1": 0.75,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.75,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.833333,
+      "page_recall@1": 0.458333,
+      "page_recall@10": 0.833333,
+      "page_recall@20": 0.833333,
+      "page_recall@3": 0.833333,
+      "page_recall@5": 0.833333,
+      "page_recall@6": 0.833333
+    },
+    "healthcare": {
+      "all_pages@1": 0.0,
+      "all_pages@10": 1.0,
+      "all_pages@20": 1.0,
+      "all_pages@3": 0.5,
+      "all_pages@5": 0.75,
+      "all_pages@6": 1.0,
+      "hit@1": 0.75,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 1.0,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 1.0,
+      "page_recall@1": 0.333333,
+      "page_recall@10": 1.0,
+      "page_recall@20": 1.0,
+      "page_recall@3": 0.791667,
+      "page_recall@5": 0.875,
+      "page_recall@6": 1.0
+    },
+    "legal": {
+      "all_pages@1": 0.333333,
+      "all_pages@10": 1.0,
+      "all_pages@20": 1.0,
+      "all_pages@3": 0.666667,
+      "all_pages@5": 0.666667,
+      "all_pages@6": 0.666667,
+      "hit@1": 1.0,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 1.0,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 1.0,
+      "page_recall@1": 0.611111,
+      "page_recall@10": 1.0,
+      "page_recall@20": 1.0,
+      "page_recall@3": 0.777778,
+      "page_recall@5": 0.888889,
+      "page_recall@6": 0.888889
+    }
+  },
+  "count_by_domain": {
+    "commerce_manufacturing": 3,
+    "construction": 4,
+    "crm": 4,
+    "education": 4,
+    "energy": 4,
+    "finance": 4,
+    "healthcare": 4,
+    "legal": 3
+  },
+  "by_answer_type": {
+    "image_only": {
+      "all_pages@1": 0.75,
+      "all_pages@10": 1.0,
+      "all_pages@20": 1.0,
+      "all_pages@3": 0.875,
+      "all_pages@5": 1.0,
+      "all_pages@6": 1.0,
+      "hit@1": 0.75,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 0.875,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 1.0,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 1.0,
+      "page_recall@1": 0.75,
+      "page_recall@10": 1.0,
+      "page_recall@20": 1.0,
+      "page_recall@3": 0.875,
+      "page_recall@5": 1.0,
+      "page_recall@6": 1.0
+    },
+    "image_plus_text_as_answer": {
+      "all_pages@1": 0.0,
+      "all_pages@10": 0.714286,
+      "all_pages@20": 0.857143,
+      "all_pages@3": 0.428571,
+      "all_pages@5": 0.571429,
+      "all_pages@6": 0.571429,
+      "hit@1": 1.0,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.857143,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.904762,
+      "page_recall@1": 0.428571,
+      "page_recall@10": 0.833333,
+      "page_recall@20": 0.904762,
+      "page_recall@3": 0.690476,
+      "page_recall@5": 0.785714,
+      "page_recall@6": 0.785714
+    },
+    "table_required": {
+      "all_pages@1": 0.125,
+      "all_pages@10": 0.75,
+      "all_pages@20": 0.875,
+      "all_pages@3": 0.375,
+      "all_pages@5": 0.5,
+      "all_pages@6": 0.625,
+      "hit@1": 0.375,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.625,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.854167,
+      "page_recall@1": 0.208333,
+      "page_recall@10": 0.895833,
+      "page_recall@20": 0.9375,
+      "page_recall@3": 0.729167,
+      "page_recall@5": 0.791667,
+      "page_recall@6": 0.854167
+    },
+    "text_only": {
+      "all_pages@1": 0.0,
+      "all_pages@10": 0.857143,
+      "all_pages@20": 0.857143,
+      "all_pages@3": 0.857143,
+      "all_pages@5": 0.857143,
+      "all_pages@6": 0.857143,
+      "hit@1": 0.857143,
+      "hit@10": 1.0,
+      "hit@20": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@6": 1.0,
+      "packed_text_all_pages": 0.857143,
+      "packed_text_hit": 1.0,
+      "packed_text_page_recall": 0.928571,
+      "page_recall@1": 0.392857,
+      "page_recall@10": 0.928571,
+      "page_recall@20": 0.928571,
+      "page_recall@3": 0.892857,
+      "page_recall@5": 0.892857,
+      "page_recall@6": 0.928571
+    }
+  },
+  "count_by_answer_type": {
+    "image_only": 8,
+    "image_plus_text_as_answer": 7,
+    "table_required": 8,
+    "text_only": 7
+  },
+  "by_document": {
+    "commerce_manufacturing_0999705": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "commerce_manufacturing_3501298": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "commerce_manufacturing_6783432": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.5,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "construction_0992970": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "construction_1676343": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "construction_4005140": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 0.0,
+        "all_pages@20": 0.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.5,
+        "page_recall@1": 0.25,
+        "page_recall@10": 0.5,
+        "page_recall@20": 0.5,
+        "page_recall@3": 0.25,
+        "page_recall@5": 0.25,
+        "page_recall@6": 0.5
+      }
+    },
+    "construction_4280740": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.666667,
+        "page_recall@1": 0.333333,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.666667,
+        "page_recall@5": 0.666667,
+        "page_recall@6": 0.666667
+      }
+    },
+    "crm_3280862": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "crm_4159712": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "crm_4502338": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "crm_5963931": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 0.0,
+        "all_pages@20": 0.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.5,
+        "page_recall@1": 0.0,
+        "page_recall@10": 0.5,
+        "page_recall@20": 0.5,
+        "page_recall@3": 0.5,
+        "page_recall@5": 0.5,
+        "page_recall@6": 0.5
+      }
+    },
+    "education_0982243": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "education_5427083": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "education_5882492": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 0.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 0.5,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.5,
+        "page_recall@5": 0.5,
+        "page_recall@6": 0.5
+      }
+    },
+    "education_7860274": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "energy_0348555": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "energy_0648106": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 0.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "energy_2357218": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "energy_4343531": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 0.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.666667,
+        "page_recall@1": 0.333333,
+        "page_recall@10": 0.666667,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.666667,
+        "page_recall@5": 0.666667,
+        "page_recall@6": 0.666667
+      }
+    },
+    "finance_1326258": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "finance_3702513": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 0.0,
+        "all_pages@20": 0.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 0.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 0.333333,
+        "page_recall@1": 0.333333,
+        "page_recall@10": 0.333333,
+        "page_recall@20": 0.333333,
+        "page_recall@3": 0.333333,
+        "page_recall@5": 0.333333,
+        "page_recall@6": 0.333333
+      }
+    },
+    "finance_3769357": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "finance_5492147": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "healthcare_0028060": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.333333,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.666667,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "healthcare_1846776": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "healthcare_4455078": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "healthcare_7083619": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 1.0,
+        "hit@1": 0.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.5,
+        "page_recall@5": 0.5,
+        "page_recall@6": 1.0
+      }
+    },
+    "legal_1095340": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 0.0,
+        "all_pages@5": 0.0,
+        "all_pages@6": 0.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.333333,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 0.333333,
+        "page_recall@5": 0.666667,
+        "page_recall@6": 0.666667
+      }
+    },
+    "legal_5880007": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 0.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 0.5,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    },
+    "legal_7691267": {
+      "count": 1,
+      "overall": {
+        "all_pages@1": 1.0,
+        "all_pages@10": 1.0,
+        "all_pages@20": 1.0,
+        "all_pages@3": 1.0,
+        "all_pages@5": 1.0,
+        "all_pages@6": 1.0,
+        "hit@1": 1.0,
+        "hit@10": 1.0,
+        "hit@20": 1.0,
+        "hit@3": 1.0,
+        "hit@5": 1.0,
+        "hit@6": 1.0,
+        "packed_text_all_pages": 1.0,
+        "packed_text_hit": 1.0,
+        "packed_text_page_recall": 1.0,
+        "page_recall@1": 1.0,
+        "page_recall@10": 1.0,
+        "page_recall@20": 1.0,
+        "page_recall@3": 1.0,
+        "page_recall@5": 1.0,
+        "page_recall@6": 1.0
+      }
+    }
+  }
+}

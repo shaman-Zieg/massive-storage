@@ -1,0 +1,854 @@
+[
+  {
+    "question": "What variation occurred in the Bureau de Change (BDC) segment's average exchange rate in Nigeria between the first quarter of 2012 and the last quarter of 2013, as detailed in the FY-2013 Economic Report and 2014 Outlook?",
+    "answer": "The average exchange rate for the BDC segment increased from 161.6 NGN/USD in Q1-12 to 167.9 NGN/USD in Q4-13.",
+    "gt_image_paths": [
+      "images/finance/3769357/3769357_page_0016.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "image_only",
+    "domain": "finance",
+    "longdoc_image_paths": [
+      "images/finance/3769357/3769357_page_0001.png",
+      "images/finance/3769357/3769357_page_0002.png",
+      "images/finance/3769357/3769357_page_0003.png",
+      "images/finance/3769357/3769357_page_0004.png",
+      "images/finance/3769357/3769357_page_0005.png",
+      "images/finance/3769357/3769357_page_0006.png",
+      "images/finance/3769357/3769357_page_0007.png",
+      "images/finance/3769357/3769357_page_0008.png",
+      "images/finance/3769357/3769357_page_0009.png",
+      "images/finance/3769357/3769357_page_0010.png",
+      "images/finance/3769357/3769357_page_0011.png",
+      "images/finance/3769357/3769357_page_0012.png",
+      "images/finance/3769357/3769357_page_0013.png",
+      "images/finance/3769357/3769357_page_0014.png",
+      "images/finance/3769357/3769357_page_0015.png",
+      "images/finance/3769357/3769357_page_0016.png",
+      "images/finance/3769357/3769357_page_0017.png",
+      "images/finance/3769357/3769357_page_0018.png"
+    ],
+    "sample_id": "finance_image_only_0200"
+  },
+  {
+    "question": "How do the predicted construction types compare with the reference categories in terms of misclassification rates for S-DH, TH, and MFH?",
+    "answer": "The predicted construction types show the following misclassification rates compared to the reference categories: S-DH is misclassified as TH in 6 instances and as MFH in 3, TH is misclassified as S-DH in 6 cases and as MFH in 4, and MFH is misclassified as S-DH in 1 case and as TH in 4.",
+    "gt_image_paths": [
+      "images/construction/4280740/4280740_page_0010.png",
+      "images/construction/4280740/4280740_page_0011.png",
+      "images/construction/4280740/4280740_page_0012.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "table_required",
+    "domain": "construction",
+    "longdoc_image_paths": [
+      "images/construction/4280740/4280740_page_0001.png",
+      "images/construction/4280740/4280740_page_0002.png",
+      "images/construction/4280740/4280740_page_0003.png",
+      "images/construction/4280740/4280740_page_0004.png",
+      "images/construction/4280740/4280740_page_0005.png",
+      "images/construction/4280740/4280740_page_0006.png",
+      "images/construction/4280740/4280740_page_0007.png",
+      "images/construction/4280740/4280740_page_0008.png",
+      "images/construction/4280740/4280740_page_0009.png",
+      "images/construction/4280740/4280740_page_0010.png",
+      "images/construction/4280740/4280740_page_0011.png",
+      "images/construction/4280740/4280740_page_0012.png",
+      "images/construction/4280740/4280740_page_0013.png",
+      "images/construction/4280740/4280740_page_0014.png",
+      "images/construction/4280740/4280740_page_0015.png",
+      "images/construction/4280740/4280740_page_0016.png",
+      "images/construction/4280740/4280740_page_0017.png",
+      "images/construction/4280740/4280740_page_0018.png",
+      "images/construction/4280740/4280740_page_0019.png",
+      "images/construction/4280740/4280740_page_0020.png"
+    ],
+    "sample_id": "construction_table_required_0061"
+  },
+  {
+    "question": "How are the z-scores distributed for 'Can obtain beverages at school' across the different models of obesity risk classes?",
+    "answer": "For the distribution of z-scores for 'Can obtain beverages at school': one-class model: 0.65; two-class model: 0.35 (first class), 0.76 (second class); three-class model: 0.30 (first class), 0.38 (second class), 0.75 (third class); four-class model: 0.29 (first class), 0.36 (second class), 0.75 (third class), 0.47 (fourth class).",
+    "gt_image_paths": [
+      "images/education/7860274/7860274_page_0009.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_only",
+    "domain": "education",
+    "longdoc_image_paths": [
+      "images/education/7860274/7860274_page_0001.png",
+      "images/education/7860274/7860274_page_0002.png",
+      "images/education/7860274/7860274_page_0003.png",
+      "images/education/7860274/7860274_page_0004.png",
+      "images/education/7860274/7860274_page_0005.png",
+      "images/education/7860274/7860274_page_0006.png",
+      "images/education/7860274/7860274_page_0007.png",
+      "images/education/7860274/7860274_page_0008.png",
+      "images/education/7860274/7860274_page_0009.png",
+      "images/education/7860274/7860274_page_0010.png",
+      "images/education/7860274/7860274_page_0011.png",
+      "images/education/7860274/7860274_page_0012.png",
+      "images/education/7860274/7860274_page_0013.png",
+      "images/education/7860274/7860274_page_0014.png",
+      "images/education/7860274/7860274_page_0015.png",
+      "images/education/7860274/7860274_page_0016.png",
+      "images/education/7860274/7860274_page_0017.png"
+    ],
+    "sample_id": "education_image_only_0120"
+  },
+  {
+    "question": "What impact does creating a silicon conduit within the SiOx layer have on the resistance levels of a memory cell developed by WBT?",
+    "answer": "The formation of a silicon filament in the SiOx layer represents a low resistance state (value of 1), while the absence of the filament indicates a high resistance state (value of 0). By applying a certain voltage, a conductive silicon pathway is formed inside the non-conductive SiOx layer, reducing resistance and storing a value of 1. Reversing the voltage breaks the filament, increasing resistance and storing a value of 0.",
+    "gt_image_paths": [
+      "images/finance/5492147/5492147_page_0006.png",
+      "images/finance/5492147/5492147_page_0007.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "text_only",
+    "domain": "finance",
+    "longdoc_image_paths": [
+      "images/finance/5492147/5492147_page_0001.png",
+      "images/finance/5492147/5492147_page_0002.png",
+      "images/finance/5492147/5492147_page_0003.png",
+      "images/finance/5492147/5492147_page_0004.png",
+      "images/finance/5492147/5492147_page_0005.png",
+      "images/finance/5492147/5492147_page_0006.png",
+      "images/finance/5492147/5492147_page_0007.png",
+      "images/finance/5492147/5492147_page_0008.png",
+      "images/finance/5492147/5492147_page_0009.png"
+    ],
+    "sample_id": "finance_text_only_0236"
+  },
+  {
+    "question": "In Indonesia, what drives the interest in LVL, particularly for earthquake-safe building needs and export purposes to Japan, and how is it mainly utilized?",
+    "answer": "The demand for LVL in Indonesia is driven by its use as an earthquake-resistant construction material, the high housing demand following natural disasters, and its export to Japan. It is mainly utilized in multi-family housing and the manufacturing of I-joists due to its stability and strength.",
+    "gt_image_paths": [
+      "images/construction/4005140/4005140_page_0017.png",
+      "images/construction/4005140/4005140_page_0018.png",
+      "images/construction/4005140/4005140_page_0008.png",
+      "images/construction/4005140/4005140_page_0009.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "text_only",
+    "domain": "construction",
+    "longdoc_image_paths": [
+      "images/construction/4005140/4005140_page_0001.png",
+      "images/construction/4005140/4005140_page_0002.png",
+      "images/construction/4005140/4005140_page_0003.png",
+      "images/construction/4005140/4005140_page_0004.png",
+      "images/construction/4005140/4005140_page_0005.png",
+      "images/construction/4005140/4005140_page_0006.png",
+      "images/construction/4005140/4005140_page_0007.png",
+      "images/construction/4005140/4005140_page_0008.png",
+      "images/construction/4005140/4005140_page_0009.png",
+      "images/construction/4005140/4005140_page_0010.png",
+      "images/construction/4005140/4005140_page_0011.png",
+      "images/construction/4005140/4005140_page_0012.png",
+      "images/construction/4005140/4005140_page_0013.png",
+      "images/construction/4005140/4005140_page_0014.png",
+      "images/construction/4005140/4005140_page_0015.png",
+      "images/construction/4005140/4005140_page_0016.png",
+      "images/construction/4005140/4005140_page_0017.png",
+      "images/construction/4005140/4005140_page_0018.png",
+      "images/construction/4005140/4005140_page_0019.png",
+      "images/construction/4005140/4005140_page_0020.png",
+      "images/construction/4005140/4005140_page_0021.png",
+      "images/construction/4005140/4005140_page_0022.png"
+    ],
+    "sample_id": "construction_text_only_0079"
+  },
+  {
+    "question": "In comparing the various parameters like ω2 and β2, what are their respective η2 measurements?",
+    "answer": "For ω2, the η2 measurements are 9.669 (8.757, 10.665), and for β2, they are 4.434 (4.156, 4.711), 3.827 (3.690, 3.988), 14.412 (12.849, 15.971), and 5.720 (5.291, 6.170).",
+    "gt_image_paths": [
+      "images/finance/1326258/1326258_page_0028.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "table_required",
+    "domain": "finance",
+    "longdoc_image_paths": [
+      "images/finance/1326258/1326258_page_0001.png",
+      "images/finance/1326258/1326258_page_0002.png",
+      "images/finance/1326258/1326258_page_0003.png",
+      "images/finance/1326258/1326258_page_0004.png",
+      "images/finance/1326258/1326258_page_0005.png",
+      "images/finance/1326258/1326258_page_0006.png",
+      "images/finance/1326258/1326258_page_0007.png",
+      "images/finance/1326258/1326258_page_0008.png",
+      "images/finance/1326258/1326258_page_0009.png",
+      "images/finance/1326258/1326258_page_0010.png",
+      "images/finance/1326258/1326258_page_0011.png",
+      "images/finance/1326258/1326258_page_0012.png",
+      "images/finance/1326258/1326258_page_0013.png",
+      "images/finance/1326258/1326258_page_0014.png",
+      "images/finance/1326258/1326258_page_0015.png",
+      "images/finance/1326258/1326258_page_0016.png",
+      "images/finance/1326258/1326258_page_0017.png",
+      "images/finance/1326258/1326258_page_0018.png",
+      "images/finance/1326258/1326258_page_0019.png",
+      "images/finance/1326258/1326258_page_0020.png",
+      "images/finance/1326258/1326258_page_0021.png",
+      "images/finance/1326258/1326258_page_0022.png",
+      "images/finance/1326258/1326258_page_0023.png",
+      "images/finance/1326258/1326258_page_0024.png",
+      "images/finance/1326258/1326258_page_0025.png",
+      "images/finance/1326258/1326258_page_0026.png",
+      "images/finance/1326258/1326258_page_0027.png",
+      "images/finance/1326258/1326258_page_0028.png"
+    ],
+    "sample_id": "finance_table_required_0225"
+  },
+  {
+    "question": "At the McDixon Apple Orchard, how does water flow from the area with Container Shrubs towards the water purification section?",
+    "answer": "The general direction of water flow at the McDixon Apple Orchard is from Block C, Container Shrubs, towards the Canning Barn and then to the Wetlands which is used for water purification.",
+    "gt_image_paths": [
+      "images/crm/4502338/4502338_page_0010.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_only",
+    "domain": "crm",
+    "longdoc_image_paths": [
+      "images/crm/4502338/4502338_page_0001.png",
+      "images/crm/4502338/4502338_page_0002.png",
+      "images/crm/4502338/4502338_page_0003.png",
+      "images/crm/4502338/4502338_page_0004.png",
+      "images/crm/4502338/4502338_page_0005.png",
+      "images/crm/4502338/4502338_page_0006.png",
+      "images/crm/4502338/4502338_page_0007.png",
+      "images/crm/4502338/4502338_page_0008.png",
+      "images/crm/4502338/4502338_page_0009.png",
+      "images/crm/4502338/4502338_page_0010.png",
+      "images/crm/4502338/4502338_page_0011.png",
+      "images/crm/4502338/4502338_page_0012.png",
+      "images/crm/4502338/4502338_page_0013.png",
+      "images/crm/4502338/4502338_page_0014.png",
+      "images/crm/4502338/4502338_page_0015.png",
+      "images/crm/4502338/4502338_page_0016.png",
+      "images/crm/4502338/4502338_page_0017.png",
+      "images/crm/4502338/4502338_page_0018.png",
+      "images/crm/4502338/4502338_page_0019.png",
+      "images/crm/4502338/4502338_page_0020.png",
+      "images/crm/4502338/4502338_page_0021.png",
+      "images/crm/4502338/4502338_page_0022.png",
+      "images/crm/4502338/4502338_page_0023.png",
+      "images/crm/4502338/4502338_page_0024.png",
+      "images/crm/4502338/4502338_page_0025.png"
+    ],
+    "sample_id": "crm_image_only_0085"
+  },
+  {
+    "question": "Which stages are included in Kemmis and McTaggart's 1988 cyclical approach to action research?",
+    "answer": "Kemmis and McTaggart’s (1988) cyclical action research model—often applied in Classroom Action Research (CAR)—follows an iterative sequence of **Plan, Act, Observe, Reflect, and Revise Plan**. In each cycle, the **Plan** phase involves designing the intervention, followed by the **Act** phase where the plan is implemented in practice. The **Observe** and **Reflect** phases are closely linked, focusing on monitoring outcomes and critically evaluating both the process and results. Insights gained from reflection lead to revising the plan, which initiates the next cycle. This continuous loop structure enables progressive improvement and adaptation, making the model particularly effective for refining teaching practices and enhancing learning outcomes over successive cycles.",
+    "gt_image_paths": [
+      "images/education/5882492/5882492_page_0004.png",
+      "images/education/5882492/5882492_page_0005.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "education",
+    "longdoc_image_paths": [
+      "images/education/5882492/5882492_page_0001.png",
+      "images/education/5882492/5882492_page_0002.png",
+      "images/education/5882492/5882492_page_0003.png",
+      "images/education/5882492/5882492_page_0004.png",
+      "images/education/5882492/5882492_page_0005.png",
+      "images/education/5882492/5882492_page_0006.png",
+      "images/education/5882492/5882492_page_0007.png",
+      "images/education/5882492/5882492_page_0008.png",
+      "images/education/5882492/5882492_page_0009.png"
+    ],
+    "sample_id": "education_image_plus_text_as_answer_0131"
+  },
+  {
+    "question": "For the rear surface treatment in mono-like silicon PERCs employing a three-layer silicon nitride hydrogenated stack, what exact nanometer-scale dimensions are utilized for each deposited PECVD layer?",
+    "answer": "For the rear surface treatment in mono-like silicon PERCs employing a three-layer silicon nitride hydrogenated (SiNx:H) stack, the exact nanometer-scale dimensions for each deposited PECVD layer are: 30 nm (n=2.37, SiH4:NH3=0.18), 40 nm (n=2.15, SiH4:NH3=0.14), and 50 nm (n=1.92, SiH4:NH3=0.08), in sequence from the silicon surface outward.",
+    "gt_image_paths": [
+      "images/energy/0348555/0348555_page_0001.png",
+      "images/energy/0348555/0348555_page_0002.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "energy",
+    "longdoc_image_paths": [
+      "images/energy/0348555/0348555_page_0001.png",
+      "images/energy/0348555/0348555_page_0002.png",
+      "images/energy/0348555/0348555_page_0003.png",
+      "images/energy/0348555/0348555_page_0004.png",
+      "images/energy/0348555/0348555_page_0005.png",
+      "images/energy/0348555/0348555_page_0006.png",
+      "images/energy/0348555/0348555_page_0007.png",
+      "images/energy/0348555/0348555_page_0008.png",
+      "images/energy/0348555/0348555_page_0009.png"
+    ],
+    "sample_id": "energy_image_plus_text_as_answer_0175"
+  },
+  {
+    "question": "In what ways do the flexibility and fire resistance of RC, SRC, S, and CFT structural types differ?",
+    "answer": "RC structure is rated as fair for flexibility and high-rise structures, excellent for fire resistance, rigidity and habitability, good for workability. SRC structure is good for both flexibility and high-rise structures, excellent for rigidity and fire resistance, fair for workability. S structure is fair for both regidity and fire resistance, excellent for others, while CFT structure is excellent for flexibility, high-rise structures and workability and good for others.",
+    "gt_image_paths": [
+      "images/construction/0992970/0992970_page_0002.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "image_only",
+    "domain": "construction",
+    "longdoc_image_paths": [
+      "images/construction/0992970/0992970_page_0001.png",
+      "images/construction/0992970/0992970_page_0002.png",
+      "images/construction/0992970/0992970_page_0003.png",
+      "images/construction/0992970/0992970_page_0004.png",
+      "images/construction/0992970/0992970_page_0005.png",
+      "images/construction/0992970/0992970_page_0006.png",
+      "images/construction/0992970/0992970_page_0007.png",
+      "images/construction/0992970/0992970_page_0008.png",
+      "images/construction/0992970/0992970_page_0009.png",
+      "images/construction/0992970/0992970_page_0010.png",
+      "images/construction/0992970/0992970_page_0011.png",
+      "images/construction/0992970/0992970_page_0012.png",
+      "images/construction/0992970/0992970_page_0013.png",
+      "images/construction/0992970/0992970_page_0014.png",
+      "images/construction/0992970/0992970_page_0015.png"
+    ],
+    "sample_id": "construction_image_only_0046"
+  },
+  {
+    "question": "Between dense flint and crown glasses, which exhibits a larger disparity in refractive indices at the wavelengths 656.3 nm and 404.7 nm?",
+    "answer": "Dense flint glass exhibits a larger disparity in refractive indices between the wavelengths 656.3 nm and 404.7 nm, with a difference of 0.0491, compared to crown glass which has a difference of 0.0170.",
+    "gt_image_paths": [
+      "images/education/0982243/0982243_page_0004.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "table_required",
+    "domain": "education",
+    "longdoc_image_paths": [
+      "images/education/0982243/0982243_page_0001.png",
+      "images/education/0982243/0982243_page_0002.png",
+      "images/education/0982243/0982243_page_0003.png",
+      "images/education/0982243/0982243_page_0004.png"
+    ],
+    "sample_id": "education_table_required_0147"
+  },
+  {
+    "question": "Which high, medium, and lower voltage dataset categories are managed by the intelligent remote control unit within the advanced substation framework?",
+    "answer": "500kV, 220kV, and 110kV dataset categories are managed by the intelligent remote control unit within the advanced substation framework.",
+    "gt_image_paths": [
+      "images/energy/0648106/0648106_page_0004.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_only",
+    "domain": "energy",
+    "longdoc_image_paths": [
+      "images/energy/0648106/0648106_page_0001.png",
+      "images/energy/0648106/0648106_page_0002.png",
+      "images/energy/0648106/0648106_page_0003.png",
+      "images/energy/0648106/0648106_page_0004.png",
+      "images/energy/0648106/0648106_page_0005.png"
+    ],
+    "sample_id": "energy_image_only_0166"
+  },
+  {
+    "question": "In what way does the calculated fluidity differ between Species A and Species C as the genome count changes, according to the theoretical model and its variances?",
+    "answer": "Species A has a lower fluidity estimation compared to Species C, with distinct theoretical predictions and variances as indicated by shaded regions. As the number of genomes increases, the fluidity of Species A remains consistently below that of Species C, according to the theoretical model and observed data in the image.",
+    "gt_image_paths": [
+      "images/healthcare/1846776/1846776_page_0005.png",
+      "images/healthcare/1846776/1846776_page_0006.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "healthcare",
+    "longdoc_image_paths": [
+      "images/healthcare/1846776/1846776_page_0001.png",
+      "images/healthcare/1846776/1846776_page_0002.png",
+      "images/healthcare/1846776/1846776_page_0003.png",
+      "images/healthcare/1846776/1846776_page_0004.png",
+      "images/healthcare/1846776/1846776_page_0005.png",
+      "images/healthcare/1846776/1846776_page_0006.png",
+      "images/healthcare/1846776/1846776_page_0007.png",
+      "images/healthcare/1846776/1846776_page_0008.png",
+      "images/healthcare/1846776/1846776_page_0009.png",
+      "images/healthcare/1846776/1846776_page_0010.png",
+      "images/healthcare/1846776/1846776_page_0011.png"
+    ],
+    "sample_id": "healthcare_image_plus_text_as_answer_0254"
+  },
+  {
+    "question": "Which machinery is usually employed to clear snow on River Street during December 2008 as depicted?",
+    "answer": "Snow removal on River Street in December 2008, as depicted, involves coordinated use of heavy machinery, including a **snowplow truck** and a **snow blower (or auger-equipped vehicle)**. The snowplow clears and pushes snow from the roadway, while the blower or auger system helps collect and transfer the snow into a **heavy-duty dump truck** for transport. This integrated operation reflects a typical urban snow-clearing workflow, where multiple machines work together under nighttime conditions to efficiently remove accumulated snow and ice from city streets.",
+    "gt_image_paths": [
+      "images/construction/1676343/1676343_page_0012.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_only",
+    "domain": "construction",
+    "longdoc_image_paths": [
+      "images/construction/1676343/1676343_page_0001.png",
+      "images/construction/1676343/1676343_page_0002.png",
+      "images/construction/1676343/1676343_page_0003.png",
+      "images/construction/1676343/1676343_page_0004.png",
+      "images/construction/1676343/1676343_page_0005.png",
+      "images/construction/1676343/1676343_page_0006.png",
+      "images/construction/1676343/1676343_page_0007.png",
+      "images/construction/1676343/1676343_page_0008.png",
+      "images/construction/1676343/1676343_page_0009.png",
+      "images/construction/1676343/1676343_page_0010.png",
+      "images/construction/1676343/1676343_page_0011.png",
+      "images/construction/1676343/1676343_page_0012.png",
+      "images/construction/1676343/1676343_page_0013.png",
+      "images/construction/1676343/1676343_page_0014.png",
+      "images/construction/1676343/1676343_page_0015.png",
+      "images/construction/1676343/1676343_page_0016.png",
+      "images/construction/1676343/1676343_page_0017.png",
+      "images/construction/1676343/1676343_page_0018.png",
+      "images/construction/1676343/1676343_page_0019.png",
+      "images/construction/1676343/1676343_page_0020.png",
+      "images/construction/1676343/1676343_page_0021.png",
+      "images/construction/1676343/1676343_page_0022.png",
+      "images/construction/1676343/1676343_page_0023.png",
+      "images/construction/1676343/1676343_page_0024.png"
+    ],
+    "sample_id": "construction_image_only_0047"
+  },
+  {
+    "question": "How much energy from biomass is anticipated to be supplied to the UK's total primary energy under the DECC scenario referred to as SBF, when measured in terawatt-hours?",
+    "answer": "The DECC SBF scenario anticipates that 1062 terawatt-hours (TWh) of energy from biomass will be supplied to the UK's total primary energy. (Old correct answer: 1062 TWh)",
+    "gt_image_paths": [
+      "images/energy/2357218/2357218_page_0015.png",
+      "images/energy/2357218/2357218_page_0016.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "text_only",
+    "domain": "energy",
+    "longdoc_image_paths": [
+      "images/energy/2357218/2357218_page_0001.png",
+      "images/energy/2357218/2357218_page_0002.png",
+      "images/energy/2357218/2357218_page_0003.png",
+      "images/energy/2357218/2357218_page_0004.png",
+      "images/energy/2357218/2357218_page_0005.png",
+      "images/energy/2357218/2357218_page_0006.png",
+      "images/energy/2357218/2357218_page_0007.png",
+      "images/energy/2357218/2357218_page_0008.png",
+      "images/energy/2357218/2357218_page_0009.png",
+      "images/energy/2357218/2357218_page_0010.png",
+      "images/energy/2357218/2357218_page_0011.png",
+      "images/energy/2357218/2357218_page_0012.png",
+      "images/energy/2357218/2357218_page_0013.png",
+      "images/energy/2357218/2357218_page_0014.png",
+      "images/energy/2357218/2357218_page_0015.png",
+      "images/energy/2357218/2357218_page_0016.png",
+      "images/energy/2357218/2357218_page_0017.png",
+      "images/energy/2357218/2357218_page_0018.png",
+      "images/energy/2357218/2357218_page_0019.png",
+      "images/energy/2357218/2357218_page_0020.png",
+      "images/energy/2357218/2357218_page_0021.png",
+      "images/energy/2357218/2357218_page_0022.png",
+      "images/energy/2357218/2357218_page_0023.png",
+      "images/energy/2357218/2357218_page_0024.png"
+    ],
+    "sample_id": "energy_text_only_0195"
+  },
+  {
+    "question": "In the context of the English system, which unit is used to measure kinematic viscosity as outlined in the dimensions chart?",
+    "answer": "The preferred unit of kinematic viscosity in the English system is ft²/s.",
+    "gt_image_paths": [
+      "images/education/5427083/5427083_page_0016.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "table_required",
+    "domain": "education",
+    "longdoc_image_paths": [
+      "images/education/5427083/5427083_page_0001.png",
+      "images/education/5427083/5427083_page_0002.png",
+      "images/education/5427083/5427083_page_0003.png",
+      "images/education/5427083/5427083_page_0004.png",
+      "images/education/5427083/5427083_page_0005.png",
+      "images/education/5427083/5427083_page_0006.png",
+      "images/education/5427083/5427083_page_0007.png",
+      "images/education/5427083/5427083_page_0008.png",
+      "images/education/5427083/5427083_page_0009.png",
+      "images/education/5427083/5427083_page_0010.png",
+      "images/education/5427083/5427083_page_0011.png",
+      "images/education/5427083/5427083_page_0012.png",
+      "images/education/5427083/5427083_page_0013.png",
+      "images/education/5427083/5427083_page_0014.png",
+      "images/education/5427083/5427083_page_0015.png",
+      "images/education/5427083/5427083_page_0016.png"
+    ],
+    "sample_id": "education_table_required_0148"
+  },
+  {
+    "question": "How should the timing of COVID-19 vaccination be managed for patients undergoing autologous HSCT, both prior to and following the procedure?",
+    "answer": "Pre-HSCT: > 2 weeks prior to starting conditioning chemotherapy. Post-HSCT: > 3 months post-HSCT.",
+    "gt_image_paths": [
+      "images/healthcare/7083619/7083619_page_0005.png",
+      "images/healthcare/7083619/7083619_page_0006.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "table_required",
+    "domain": "healthcare",
+    "longdoc_image_paths": [
+      "images/healthcare/7083619/7083619_page_0001.png",
+      "images/healthcare/7083619/7083619_page_0002.png",
+      "images/healthcare/7083619/7083619_page_0003.png",
+      "images/healthcare/7083619/7083619_page_0004.png",
+      "images/healthcare/7083619/7083619_page_0005.png",
+      "images/healthcare/7083619/7083619_page_0006.png"
+    ],
+    "sample_id": "healthcare_table_required_0266"
+  },
+  {
+    "question": "How effective is Automize's latest service portal application in terms of automation success with ServiceNow?",
+    "answer": "Automize's latest service portal application achieves a 93% automation success rate with ServiceNow, and it is used by 150 customers, enhancing service delivery and project management.",
+    "gt_image_paths": [
+      "images/crm/3280862/3280862_page_0001.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_only",
+    "domain": "crm",
+    "longdoc_image_paths": [
+      "images/crm/3280862/3280862_page_0001.png",
+      "images/crm/3280862/3280862_page_0002.png",
+      "images/crm/3280862/3280862_page_0003.png"
+    ],
+    "sample_id": "crm_image_only_0088"
+  },
+  {
+    "question": "In the March 2016 town records, what was happening at the location 400 NH RT 45?",
+    "answer": "At the location 400 NH RT 45, the demolition of a building was taking place. The town voted to raise and appropriate funds specifically for removing asbestos and demolishing the building, as noted in Article 6 of the March 2016 town records.",
+    "gt_image_paths": [
+      "images/legal/5880007/5880007_page_0001.png",
+      "images/legal/5880007/5880007_page_0002.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "text_only",
+    "domain": "legal",
+    "longdoc_image_paths": [
+      "images/legal/5880007/5880007_page_0001.png",
+      "images/legal/5880007/5880007_page_0002.png",
+      "images/legal/5880007/5880007_page_0003.png",
+      "images/legal/5880007/5880007_page_0004.png"
+    ],
+    "sample_id": "legal_text_only_0313"
+  },
+  {
+    "question": "In the context of Bosch's system, what is indicated when the FAULT light blinks?",
+    "answer": "There is a system fault that must be acknowledged.",
+    "gt_image_paths": [
+      "images/crm/5963931/5963931_page_0007.png",
+      "images/crm/5963931/5963931_page_0008.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "table_required",
+    "domain": "crm",
+    "longdoc_image_paths": [
+      "images/crm/5963931/5963931_page_0001.png",
+      "images/crm/5963931/5963931_page_0002.png",
+      "images/crm/5963931/5963931_page_0003.png",
+      "images/crm/5963931/5963931_page_0004.png",
+      "images/crm/5963931/5963931_page_0005.png",
+      "images/crm/5963931/5963931_page_0006.png",
+      "images/crm/5963931/5963931_page_0007.png",
+      "images/crm/5963931/5963931_page_0008.png",
+      "images/crm/5963931/5963931_page_0009.png",
+      "images/crm/5963931/5963931_page_0010.png",
+      "images/crm/5963931/5963931_page_0011.png",
+      "images/crm/5963931/5963931_page_0012.png",
+      "images/crm/5963931/5963931_page_0013.png",
+      "images/crm/5963931/5963931_page_0014.png",
+      "images/crm/5963931/5963931_page_0015.png",
+      "images/crm/5963931/5963931_page_0016.png",
+      "images/crm/5963931/5963931_page_0017.png",
+      "images/crm/5963931/5963931_page_0018.png",
+      "images/crm/5963931/5963931_page_0019.png",
+      "images/crm/5963931/5963931_page_0020.png",
+      "images/crm/5963931/5963931_page_0021.png",
+      "images/crm/5963931/5963931_page_0022.png",
+      "images/crm/5963931/5963931_page_0023.png",
+      "images/crm/5963931/5963931_page_0024.png",
+      "images/crm/5963931/5963931_page_0025.png",
+      "images/crm/5963931/5963931_page_0026.png",
+      "images/crm/5963931/5963931_page_0027.png",
+      "images/crm/5963931/5963931_page_0028.png"
+    ],
+    "sample_id": "crm_table_required_0105"
+  },
+  {
+    "question": "Can you list the soft caps and min/max contribution limits for ETHERMOON, HANSFRITZ, and Fire Waka Floki Flame tokens available on DxSale?",
+    "answer": "ETHERMOON: Soft Cap 50 ETH, Min: 0.10 / Max: 1.00; HANSFRITZ: Soft Cap 10 ETH, Min: 0.10 / Max: 1.00; Fire Waka Floki Flame: Soft Cap 5 ETH, Min: 0.05 / Max: 0.10",
+    "gt_image_paths": [
+      "images/finance/3702513/3702513_page_0006.png",
+      "images/finance/3702513/3702513_page_0007.png",
+      "images/finance/3702513/3702513_page_0008.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "finance",
+    "longdoc_image_paths": [
+      "images/finance/3702513/3702513_page_0001.png",
+      "images/finance/3702513/3702513_page_0002.png",
+      "images/finance/3702513/3702513_page_0003.png",
+      "images/finance/3702513/3702513_page_0004.png",
+      "images/finance/3702513/3702513_page_0005.png",
+      "images/finance/3702513/3702513_page_0006.png",
+      "images/finance/3702513/3702513_page_0007.png",
+      "images/finance/3702513/3702513_page_0008.png",
+      "images/finance/3702513/3702513_page_0009.png",
+      "images/finance/3702513/3702513_page_0010.png",
+      "images/finance/3702513/3702513_page_0011.png",
+      "images/finance/3702513/3702513_page_0012.png",
+      "images/finance/3702513/3702513_page_0013.png"
+    ],
+    "sample_id": "finance_image_plus_text_as_answer_0210"
+  },
+  {
+    "question": "What were the differences in plasma corticosterone levels between the control group and those receiving AHS1, AHS2, and Vit-C water supplements in heat-stressed broiler chickens?",
+    "answer": "Control: ~9 ng/mL; AHS1: ~6 ng/mL; AHS2: ~6 ng/mL; Vit-C: ~7 ng/mL. Plasma corticosterone levels were significantly lower in the AHS1, AHS2, and Vit-C groups compared to the control group.",
+    "gt_image_paths": [
+      "images/healthcare/0028060/0028060_page_0006.png",
+      "images/healthcare/0028060/0028060_page_0007.png",
+      "images/healthcare/0028060/0028060_page_0008.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "healthcare",
+    "longdoc_image_paths": [
+      "images/healthcare/0028060/0028060_page_0001.png",
+      "images/healthcare/0028060/0028060_page_0002.png",
+      "images/healthcare/0028060/0028060_page_0003.png",
+      "images/healthcare/0028060/0028060_page_0004.png",
+      "images/healthcare/0028060/0028060_page_0005.png",
+      "images/healthcare/0028060/0028060_page_0006.png",
+      "images/healthcare/0028060/0028060_page_0007.png",
+      "images/healthcare/0028060/0028060_page_0008.png",
+      "images/healthcare/0028060/0028060_page_0009.png",
+      "images/healthcare/0028060/0028060_page_0010.png",
+      "images/healthcare/0028060/0028060_page_0011.png"
+    ],
+    "sample_id": "healthcare_image_plus_text_as_answer_0253"
+  },
+  {
+    "question": "How are ion signals for cocaine, heroin, and THC impacted in fingermarks under varying spike conditions in MALDI MS as detailed in the Scientific Reports article with DOI: 10.1038/srep11716?",
+    "answer": "In 'high spiked' marks, drugs like cocaine, heroin, and THC show clearer ion signal detection with images revealing more distinct ridge patterns. In 'low spiked' marks, cocaine and BZE could be suitably mapped, while partial or discontinuous ridge detail was observed for EME and 6-MAM. No images were recovered for morphine, MDA, THC, and THCA.",
+    "gt_image_paths": [
+      "images/legal/1095340/1095340_page_0008.png",
+      "images/legal/1095340/1095340_page_0009.png",
+      "images/legal/1095340/1095340_page_0010.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "legal",
+    "longdoc_image_paths": [
+      "images/legal/1095340/1095340_page_0001.png",
+      "images/legal/1095340/1095340_page_0002.png",
+      "images/legal/1095340/1095340_page_0003.png",
+      "images/legal/1095340/1095340_page_0004.png",
+      "images/legal/1095340/1095340_page_0005.png",
+      "images/legal/1095340/1095340_page_0006.png",
+      "images/legal/1095340/1095340_page_0007.png",
+      "images/legal/1095340/1095340_page_0008.png",
+      "images/legal/1095340/1095340_page_0009.png",
+      "images/legal/1095340/1095340_page_0010.png",
+      "images/legal/1095340/1095340_page_0011.png",
+      "images/legal/1095340/1095340_page_0012.png",
+      "images/legal/1095340/1095340_page_0013.png"
+    ],
+    "sample_id": "legal_image_plus_text_as_answer_0294"
+  },
+  {
+    "question": "In business risk evaluations, what weaknesses are connected to the absence of fire detection mechanisms?",
+    "answer": "The weaknesses connected to the absence of fire detection mechanisms include 'no smoke detection' and 'no fire detection system'. These vulnerabilities highlight a lack of proper fire protection measures.",
+    "gt_image_paths": [
+      "images/legal/7691267/7691267_page_0012.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "image_only",
+    "domain": "legal",
+    "longdoc_image_paths": [
+      "images/legal/7691267/7691267_page_0001.png",
+      "images/legal/7691267/7691267_page_0002.png",
+      "images/legal/7691267/7691267_page_0003.png",
+      "images/legal/7691267/7691267_page_0004.png",
+      "images/legal/7691267/7691267_page_0005.png",
+      "images/legal/7691267/7691267_page_0006.png",
+      "images/legal/7691267/7691267_page_0007.png",
+      "images/legal/7691267/7691267_page_0008.png",
+      "images/legal/7691267/7691267_page_0009.png",
+      "images/legal/7691267/7691267_page_0010.png",
+      "images/legal/7691267/7691267_page_0011.png",
+      "images/legal/7691267/7691267_page_0012.png",
+      "images/legal/7691267/7691267_page_0013.png",
+      "images/legal/7691267/7691267_page_0014.png",
+      "images/legal/7691267/7691267_page_0015.png"
+    ],
+    "sample_id": "legal_image_only_0288"
+  },
+  {
+    "question": "What was the trend in VAP rates over the months after implementing the IHI Ventilator Bundle in the ICU?",
+    "answer": "The VAP rate decreased from around 5 in January to 0 by December of the next year.",
+    "gt_image_paths": [
+      "images/commerce_manufacturing/3501298/3501298_page_0009.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0010.png"
+    ],
+    "question_type": "summarization",
+    "answer_type": "image_plus_text_as_answer",
+    "domain": "commerce_manufacturing",
+    "longdoc_image_paths": [
+      "images/commerce_manufacturing/3501298/3501298_page_0001.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0002.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0003.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0004.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0005.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0006.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0007.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0008.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0009.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0010.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0011.png",
+      "images/commerce_manufacturing/3501298/3501298_page_0012.png"
+    ],
+    "sample_id": "commerce_manufacturing_image_plus_text_as_answer_0018"
+  },
+  {
+    "question": "In the Twitter graph study, how does the relationship between affinity and tweet similarity differ from that between ASP distance and tweet similarity?",
+    "answer": "The correlation between affinity and tweet similarity is stronger and more positively sloped than the correlation between ASP distance and tweet similarity. The affinity measure shows a stronger relationship with tweet similarity, as depicted in the slanted curve in Figure 12, and is further supported by correlation coefficients indicating higher correlation with tweet similarity compared to ASP distance.",
+    "gt_image_paths": [
+      "images/crm/4159712/4159712_page_0008.png",
+      "images/crm/4159712/4159712_page_0009.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "text_only",
+    "domain": "crm",
+    "longdoc_image_paths": [
+      "images/crm/4159712/4159712_page_0001.png",
+      "images/crm/4159712/4159712_page_0002.png",
+      "images/crm/4159712/4159712_page_0003.png",
+      "images/crm/4159712/4159712_page_0004.png",
+      "images/crm/4159712/4159712_page_0005.png",
+      "images/crm/4159712/4159712_page_0006.png",
+      "images/crm/4159712/4159712_page_0007.png",
+      "images/crm/4159712/4159712_page_0008.png",
+      "images/crm/4159712/4159712_page_0009.png",
+      "images/crm/4159712/4159712_page_0010.png"
+    ],
+    "sample_id": "crm_text_only_0118"
+  },
+  {
+    "question": "What was the shift in accumulated profits for EQTEC plc over the period from mid-2015 to the end of 2016?",
+    "answer": "Retained earnings (accumulated profits) for EQTEC plc decreased from €(38,811,449) at 1 July 2015 to €(40,846,516) at 31 December 2016, representing a decline of €2,035,067 over the period.",
+    "gt_image_paths": [
+      "images/energy/4343531/4343531_page_0012.png",
+      "images/energy/4343531/4343531_page_0013.png",
+      "images/energy/4343531/4343531_page_0014.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "table_required",
+    "domain": "energy",
+    "longdoc_image_paths": [
+      "images/energy/4343531/4343531_page_0001.png",
+      "images/energy/4343531/4343531_page_0002.png",
+      "images/energy/4343531/4343531_page_0003.png",
+      "images/energy/4343531/4343531_page_0004.png",
+      "images/energy/4343531/4343531_page_0005.png",
+      "images/energy/4343531/4343531_page_0006.png",
+      "images/energy/4343531/4343531_page_0007.png",
+      "images/energy/4343531/4343531_page_0008.png",
+      "images/energy/4343531/4343531_page_0009.png",
+      "images/energy/4343531/4343531_page_0010.png",
+      "images/energy/4343531/4343531_page_0011.png",
+      "images/energy/4343531/4343531_page_0012.png",
+      "images/energy/4343531/4343531_page_0013.png",
+      "images/energy/4343531/4343531_page_0014.png",
+      "images/energy/4343531/4343531_page_0015.png",
+      "images/energy/4343531/4343531_page_0016.png",
+      "images/energy/4343531/4343531_page_0017.png",
+      "images/energy/4343531/4343531_page_0018.png",
+      "images/energy/4343531/4343531_page_0019.png",
+      "images/energy/4343531/4343531_page_0020.png",
+      "images/energy/4343531/4343531_page_0021.png",
+      "images/energy/4343531/4343531_page_0022.png",
+      "images/energy/4343531/4343531_page_0023.png",
+      "images/energy/4343531/4343531_page_0024.png",
+      "images/energy/4343531/4343531_page_0025.png"
+    ],
+    "sample_id": "energy_table_required_0186"
+  },
+  {
+    "question": "In terms of deflection, what influence does quantum Maxwell stress have on DNA beams, specifically adjusting the deflection magnitude?",
+    "answer": "The maximum deflection of the DNA beam is reduced from 4.6 Å to 3.7 Å due to the presence of quantum Maxwell stress.",
+    "gt_image_paths": [
+      "images/healthcare/4455078/4455078_page_0012.png",
+      "images/healthcare/4455078/4455078_page_0013.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "text_only",
+    "domain": "healthcare",
+    "longdoc_image_paths": [
+      "images/healthcare/4455078/4455078_page_0001.png",
+      "images/healthcare/4455078/4455078_page_0002.png",
+      "images/healthcare/4455078/4455078_page_0003.png",
+      "images/healthcare/4455078/4455078_page_0004.png",
+      "images/healthcare/4455078/4455078_page_0005.png",
+      "images/healthcare/4455078/4455078_page_0006.png",
+      "images/healthcare/4455078/4455078_page_0007.png",
+      "images/healthcare/4455078/4455078_page_0008.png",
+      "images/healthcare/4455078/4455078_page_0009.png",
+      "images/healthcare/4455078/4455078_page_0010.png",
+      "images/healthcare/4455078/4455078_page_0011.png",
+      "images/healthcare/4455078/4455078_page_0012.png",
+      "images/healthcare/4455078/4455078_page_0013.png",
+      "images/healthcare/4455078/4455078_page_0014.png",
+      "images/healthcare/4455078/4455078_page_0015.png"
+    ],
+    "sample_id": "healthcare_text_only_0273"
+  },
+  {
+    "question": "What are the key steps involved in the value stream mapping process?",
+    "answer": "The key steps are selecting a product family, drawing the current-state map, drawing the future-state map, and planning and implementing the action plan.",
+    "gt_image_paths": [
+      "images/commerce_manufacturing/0999705/0999705_page_0006.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0007.png"
+    ],
+    "question_type": "factual_retrieval",
+    "answer_type": "text_only",
+    "domain": "commerce_manufacturing",
+    "longdoc_image_paths": [
+      "images/commerce_manufacturing/0999705/0999705_page_0001.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0002.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0003.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0004.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0005.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0006.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0007.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0008.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0009.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0010.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0011.png",
+      "images/commerce_manufacturing/0999705/0999705_page_0012.png"
+    ],
+    "sample_id": "commerce_manufacturing_text_only_0037"
+  },
+  {
+    "question": "How did current taxes in Hong Kong and outside Hong Kong differ for the six months ended 30 September 2014 compared to 2013?",
+    "answer": "In 2014, Hong Kong current tax was $6,289,000 and outside Hong Kong was $1,228,000. In 2013, Hong Kong was $11,926,000 and outside Hong Kong was $4,831,000.",
+    "gt_image_paths": [
+      "images/commerce_manufacturing/6783432/6783432_page_0006.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0007.png"
+    ],
+    "question_type": "comparison",
+    "answer_type": "table_required",
+    "domain": "commerce_manufacturing",
+    "longdoc_image_paths": [
+      "images/commerce_manufacturing/6783432/6783432_page_0001.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0002.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0003.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0004.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0005.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0006.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0007.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0008.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0009.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0010.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0011.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0012.png",
+      "images/commerce_manufacturing/6783432/6783432_page_0013.png"
+    ],
+    "sample_id": "commerce_manufacturing_table_required_0028"
+  }
+]

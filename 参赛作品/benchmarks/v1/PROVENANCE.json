@@ -1,0 +1,14 @@
+{
+  "source_archive_sha256": "d8d6efd346a8b0441e482a688d1e7ce53380157e5b36461a25d7c0b913478ce9",
+  "purpose": "Immutable V1 source snapshot for same-evaluator offline comparison; not an official baseline.",
+  "files": {
+    "agent.py": "3d273e20e4ec2782e8b28e46db12a183fcdefacc71e23daef69ac7f487af8a48",
+    "evaluate.py": "76e98e5cdb6b754235e5bb16cd919f6773f96d8fdfe233b8f3aaf8b610faf82d",
+    "index.py": "ac4662aa6907a1fda2c8b5da37a2ce84aec2d55a8c7f23655834bba2ade38d87",
+    "models.py": "ccee2655b3c164c77e913f6928af14b2c240e8ba76749590e36a2e22a95fd462",
+    "retrieval.py": "42dfb77c11e4d18e267eb92ee87c420ff3888e9536cf7acd6bf785409dee384d",
+    "server.py": "e270eb87740b287a6f17b946653e4f68f06d537c8e710c4d84c6beef34d5bc42",
+    "__init__.py": "e458ea017c68c8955412e1ad2a637b6c8b108dbc7c53421de4b6fd2922743603",
+    "__main__.py": "6f308914d2198f7202138e8306b7b9503611d64adcd1c6d0e142f66fd3fb7e96"
+  }
+}

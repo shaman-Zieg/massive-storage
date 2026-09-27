@@ -1,0 +1,11 @@
+# Archive packages are intentionally excluded from this repository.
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+*.xz
+*.tgz
+*.zst
+*.whl

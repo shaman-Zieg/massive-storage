@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "numpy": true,
+    "nano_vectordb": true,
+    "Pillow": true,
+    "pdftoppm": true,
+    "corpus": true,
+    "embedding": "ModelError",
+    "rerank": "ModelError",
+    "llm": "ModelError"
+  },
+  "ready": false,
+  "note": "Connectivity check only; model identity and official hardware must be verified separately"
+}

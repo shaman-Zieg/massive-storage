@@ -1,0 +1,3459 @@
+{
+  "mode": "offline_retrieval_diagnostic",
+  "answer_accuracy": null,
+  "limitations": "No live embedding, reranking, VLM or answer judging. Retrieval hit rate is NOT QA accuracy. Public development set only.",
+  "count": 30,
+  "corpus_sha256": "22835a3d94a5f8b2798451d226c5c030ce3ae8b95cadc0854e6457e88658cc2d",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "use_graph": true,
+  "candidates": 60,
+  "load_seconds": 3.077,
+  "mean_query_seconds": 0.0047,
+  "p95_query_seconds": 0.0075,
+  "overall": {
+    "hit@1": 0.566667,
+    "all_pages@1": 0.166667,
+    "page_recall@1": 0.347222,
+    "hit@3": 0.9,
+    "all_pages@3": 0.566667,
+    "page_recall@3": 0.719444,
+    "hit@5": 1.0,
+    "all_pages@5": 0.7,
+    "page_recall@5": 0.855556,
+    "hit@10": 1.0,
+    "all_pages@10": 0.833333,
+    "page_recall@10": 0.916667,
+    "hit@20": 1.0,
+    "all_pages@20": 0.9,
+    "page_recall@20": 0.952778
+  },
+  "by_answer_type": {
+    "image_only": {
+      "hit@1": 0.5,
+      "all_pages@1": 0.5,
+      "page_recall@1": 0.5,
+      "hit@3": 0.875,
+      "all_pages@3": 0.875,
+      "page_recall@3": 0.875,
+      "hit@5": 1.0,
+      "all_pages@5": 1.0,
+      "page_recall@5": 1.0,
+      "hit@10": 1.0,
+      "all_pages@10": 1.0,
+      "page_recall@10": 1.0,
+      "hit@20": 1.0,
+      "all_pages@20": 1.0,
+      "page_recall@20": 1.0
+    },
+    "image_plus_text_as_answer": {
+      "hit@1": 0.714286,
+      "all_pages@1": 0.0,
+      "page_recall@1": 0.333333,
+      "hit@3": 1.0,
+      "all_pages@3": 0.428571,
+      "page_recall@3": 0.642857,
+      "hit@5": 1.0,
+      "all_pages@5": 0.428571,
+      "page_recall@5": 0.690476,
+      "hit@10": 1.0,
+      "all_pages@10": 0.714286,
+      "page_recall@10": 0.833333,
+      "hit@20": 1.0,
+      "all_pages@20": 0.857143,
+      "page_recall@20": 0.904762
+    },
+    "table_required": {
+      "hit@1": 0.375,
+      "all_pages@1": 0.125,
+      "page_recall@1": 0.229167,
+      "hit@3": 0.75,
+      "all_pages@3": 0.375,
+      "page_recall@3": 0.604167,
+      "hit@5": 1.0,
+      "all_pages@5": 0.5,
+      "page_recall@5": 0.791667,
+      "hit@10": 1.0,
+      "all_pages@10": 0.75,
+      "page_recall@10": 0.895833,
+      "hit@20": 1.0,
+      "all_pages@20": 0.875,
+      "page_recall@20": 0.9375
+    },
+    "text_only": {
+      "hit@1": 0.714286,
+      "all_pages@1": 0.0,
+      "page_recall@1": 0.321429,
+      "hit@3": 1.0,
+      "all_pages@3": 0.571429,
+      "page_recall@3": 0.75,
+      "hit@5": 1.0,
+      "all_pages@5": 0.857143,
+      "page_recall@5": 0.928571,
+      "hit@10": 1.0,
+      "all_pages@10": 0.857143,
+      "page_recall@10": 0.928571,
+      "hit@20": 1.0,
+      "all_pages@20": 0.857143,
+      "page_recall@20": 0.964286
+    }
+  },
+  "details": [
+    {
+      "sample_id": "finance_image_only_0200",
+      "question": "What variation occurred in the Bureau de Change (BDC) segment's average exchange rate in Nigeria between the first quarter of 2012 and the last quarter of 2013, as detailed in the FY-2013 Economic Report and 2014 Outlook?",
+      "domain": "finance",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "finance_3769357",
+          16
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_3769357",
+          16
+        ],
+        [
+          "finance_3769357",
+          15
+        ],
+        [
+          "finance_3769357",
+          3
+        ],
+        [
+          "finance_3769357",
+          8
+        ],
+        [
+          "finance_3769357",
+          14
+        ],
+        [
+          "finance_3769357",
+          1
+        ],
+        [
+          "finance_3769357",
+          4
+        ],
+        [
+          "finance_3769357",
+          7
+        ],
+        [
+          "finance_3769357",
+          6
+        ],
+        [
+          "finance_3769357",
+          10
+        ],
+        [
+          "finance_7501084",
+          6
+        ],
+        [
+          "finance_3769357",
+          2
+        ],
+        [
+          "finance_6440218",
+          3
+        ],
+        [
+          "finance_3769357",
+          11
+        ],
+        [
+          "finance_3769357",
+          17
+        ],
+        [
+          "finance_3769357",
+          13
+        ],
+        [
+          "finance_3769357",
+          5
+        ],
+        [
+          "finance_3769357",
+          12
+        ],
+        [
+          "finance_7501084",
+          21
+        ],
+        [
+          "finance_3769357",
+          9
+        ]
+      ],
+      "seconds": 0.010508799998206086,
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "construction_table_required_0061",
+      "question": "How do the predicted construction types compare with the reference categories in terms of misclassification rates for S-DH, TH, and MFH?",
+      "domain": "construction",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "construction_4280740",
+          10
+        ],
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "construction_4280740",
+          12
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "construction_4280740",
+          12
+        ],
+        [
+          "construction_4280740",
+          9
+        ],
+        [
+          "construction_4280740",
+          8
+        ],
+        [
+          "construction_4280740",
+          7
+        ],
+        [
+          "construction_4280740",
+          14
+        ],
+        [
+          "construction_4280740",
+          15
+        ],
+        [
+          "energy_4971670",
+          7
+        ],
+        [
+          "construction_4280740",
+          16
+        ],
+        [
+          "construction_6799387",
+          8
+        ],
+        [
+          "construction_4280740",
+          10
+        ],
+        [
+          "construction_4280740",
+          13
+        ],
+        [
+          "crm_6543180",
+          10
+        ],
+        [
+          "construction_6799387",
+          7
+        ],
+        [
+          "crm_6543180",
+          15
+        ],
+        [
+          "education_5138607",
+          7
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          20
+        ],
+        [
+          "education_1871769",
+          16
+        ],
+        [
+          "construction_2844324",
+          3
+        ],
+        [
+          "construction_4280740",
+          1
+        ]
+      ],
+      "seconds": 0.004738500007078983,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.6666666666666666,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.6666666666666666,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.6666666666666666,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "education_image_only_0120",
+      "question": "How are the z-scores distributed for 'Can obtain beverages at school' across the different models of obesity risk classes?",
+      "domain": "education",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "education_7860274",
+          9
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_7860274",
+          7
+        ],
+        [
+          "education_7860274",
+          9
+        ],
+        [
+          "education_7860274",
+          8
+        ],
+        [
+          "education_7860274",
+          12
+        ],
+        [
+          "education_7860274",
+          6
+        ],
+        [
+          "education_7860274",
+          11
+        ],
+        [
+          "finance_1326258",
+          17
+        ],
+        [
+          "finance_1326258",
+          15
+        ],
+        [
+          "education_7860274",
+          10
+        ],
+        [
+          "education_7860274",
+          4
+        ],
+        [
+          "finance_1326258",
+          19
+        ],
+        [
+          "education_7860274",
+          5
+        ],
+        [
+          "education_7860274",
+          16
+        ],
+        [
+          "healthcare_3428789",
+          2
+        ],
+        [
+          "healthcare_3428789",
+          4
+        ],
+        [
+          "finance_4070954",
+          19
+        ],
+        [
+          "healthcare_3428789",
+          5
+        ],
+        [
+          "healthcare_3428789",
+          6
+        ],
+        [
+          "finance_1326258",
+          14
+        ],
+        [
+          "healthcare_3428789",
+          7
+        ]
+      ],
+      "seconds": 0.005223799991654232,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "finance_text_only_0236",
+      "question": "What impact does creating a silicon conduit within the SiOx layer have on the resistance levels of a memory cell developed by WBT?",
+      "domain": "finance",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "finance_5492147",
+          7
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "finance_5492147",
+          2
+        ],
+        [
+          "finance_5492147",
+          7
+        ],
+        [
+          "energy_7670244",
+          1
+        ],
+        [
+          "energy_7670244",
+          8
+        ],
+        [
+          "education_5427083",
+          4
+        ],
+        [
+          "finance_5492147",
+          3
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "finance_5492147",
+          4
+        ],
+        [
+          "finance_5492147",
+          1
+        ],
+        [
+          "energy_7670244",
+          4
+        ],
+        [
+          "finance_5492147",
+          5
+        ],
+        [
+          "energy_7670244",
+          10
+        ],
+        [
+          "energy_0348555",
+          7
+        ],
+        [
+          "finance_5492147",
+          8
+        ]
+      ],
+      "seconds": 0.0042575999977998435,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "construction_text_only_0079",
+      "question": "In Indonesia, what drives the interest in LVL, particularly for earthquake-safe building needs and export purposes to Japan, and how is it mainly utilized?",
+      "domain": "construction",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "construction_4005140",
+          8
+        ],
+        [
+          "construction_4005140",
+          9
+        ],
+        [
+          "construction_4005140",
+          17
+        ],
+        [
+          "construction_4005140",
+          18
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_4005140",
+          17
+        ],
+        [
+          "construction_4005140",
+          15
+        ],
+        [
+          "construction_4005140",
+          19
+        ],
+        [
+          "construction_4005140",
+          20
+        ],
+        [
+          "construction_4005140",
+          18
+        ],
+        [
+          "construction_4005140",
+          2
+        ],
+        [
+          "finance_7501084",
+          25
+        ],
+        [
+          "construction_4005140",
+          6
+        ],
+        [
+          "construction_4005140",
+          5
+        ],
+        [
+          "finance_7501084",
+          28
+        ],
+        [
+          "finance_1372325",
+          3
+        ],
+        [
+          "construction_4005140",
+          4
+        ],
+        [
+          "construction_4005140",
+          3
+        ],
+        [
+          "construction_4005140",
+          13
+        ],
+        [
+          "construction_4005140",
+          1
+        ],
+        [
+          "construction_4005140",
+          21
+        ],
+        [
+          "finance_1372325",
+          4
+        ],
+        [
+          "finance_7501084",
+          16
+        ],
+        [
+          "construction_4005140",
+          8
+        ],
+        [
+          "energy_2357218",
+          10
+        ]
+      ],
+      "seconds": 0.0035968000011052936,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.25,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.25,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.5,
+      "hit@20": 1,
+      "all_pages@20": 0,
+      "page_recall@20": 0.75
+    },
+    {
+      "sample_id": "finance_table_required_0225",
+      "question": "In comparing the various parameters like ω2 and β2, what are their respective η2 measurements?",
+      "domain": "finance",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "finance_1326258",
+          28
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_1326258",
+          27
+        ],
+        [
+          "finance_1326258",
+          28
+        ],
+        [
+          "finance_1326258",
+          16
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "finance_1326258",
+          17
+        ],
+        [
+          "energy_0348555",
+          7
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "finance_1326258",
+          5
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "education_2442094",
+          8
+        ],
+        [
+          "education_7932805",
+          14
+        ],
+        [
+          "education_7932805",
+          15
+        ],
+        [
+          "finance_1326258",
+          18
+        ],
+        [
+          "education_0192892",
+          7
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "finance_1659677",
+          3
+        ],
+        [
+          "education_0192892",
+          9
+        ],
+        [
+          "energy_5387778",
+          8
+        ],
+        [
+          "energy_5387778",
+          9
+        ]
+      ],
+      "seconds": 0.007471899996744469,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "crm_image_only_0085",
+      "question": "At the McDixon Apple Orchard, how does water flow from the area with Container Shrubs towards the water purification section?",
+      "domain": "crm",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "crm_4502338",
+          10
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_4502338",
+          10
+        ],
+        [
+          "construction_2928102",
+          11
+        ],
+        [
+          "crm_4502338",
+          15
+        ],
+        [
+          "crm_4502338",
+          14
+        ],
+        [
+          "energy_0648106",
+          2
+        ],
+        [
+          "finance_3702513",
+          8
+        ],
+        [
+          "construction_2928102",
+          3
+        ],
+        [
+          "education_5427083",
+          13
+        ],
+        [
+          "construction_2928102",
+          9
+        ],
+        [
+          "construction_2844324",
+          1
+        ],
+        [
+          "crm_4502338",
+          17
+        ],
+        [
+          "education_5427083",
+          3
+        ],
+        [
+          "energy_5387778",
+          2
+        ],
+        [
+          "education_5427083",
+          1
+        ],
+        [
+          "construction_4481874",
+          3
+        ],
+        [
+          "energy_2342156",
+          3
+        ],
+        [
+          "crm_4502338",
+          16
+        ],
+        [
+          "construction_2844324",
+          7
+        ],
+        [
+          "education_5427083",
+          11
+        ],
+        [
+          "construction_2928102",
+          6
+        ]
+      ],
+      "seconds": 0.003099100009421818,
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "education_image_plus_text_as_answer_0131",
+      "question": "Which stages are included in Kemmis and McTaggart's 1988 cyclical approach to action research?",
+      "domain": "education",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "education_5882492",
+          4
+        ],
+        [
+          "education_5882492",
+          5
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_5882492",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "education_5882492",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          11
+        ],
+        [
+          "legal_3134069",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          8
+        ],
+        [
+          "commerce_manufacturing_3429581",
+          4
+        ],
+        [
+          "education_7860274",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          1
+        ],
+        [
+          "education_5882492",
+          7
+        ],
+        [
+          "education_7860274",
+          7
+        ],
+        [
+          "finance_5492147",
+          5
+        ],
+        [
+          "education_5882492",
+          5
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "finance_5913150",
+          15
+        ],
+        [
+          "commerce_manufacturing_3429581",
+          14
+        ],
+        [
+          "commerce_manufacturing_3274043",
+          10
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          7
+        ],
+        [
+          "healthcare_7083619",
+          4
+        ],
+        [
+          "construction_0992970",
+          8
+        ]
+      ],
+      "seconds": 0.005435099999886006,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.5,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "energy_image_plus_text_as_answer_0175",
+      "question": "For the rear surface treatment in mono-like silicon PERCs employing a three-layer silicon nitride hydrogenated stack, what exact nanometer-scale dimensions are utilized for each deposited PECVD layer?",
+      "domain": "energy",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          2
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_0348555",
+          1
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "energy_0348555",
+          8
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_7670244",
+          1
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_7670244",
+          4
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "energy_7670244",
+          3
+        ],
+        [
+          "crm_3525203",
+          3
+        ],
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "energy_4971670",
+          3
+        ],
+        [
+          "legal_1095340",
+          4
+        ],
+        [
+          "legal_1095340",
+          11
+        ],
+        [
+          "energy_0348555",
+          7
+        ],
+        [
+          "energy_7670244",
+          8
+        ]
+      ],
+      "seconds": 0.00421660000574775,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "construction_image_only_0046",
+      "question": "In what ways do the flexibility and fire resistance of RC, SRC, S, and CFT structural types differ?",
+      "domain": "construction",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "construction_0992970",
+          2
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_6066619",
+          17
+        ],
+        [
+          "construction_0992970",
+          2
+        ],
+        [
+          "construction_0992970",
+          3
+        ],
+        [
+          "construction_2844324",
+          5
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          13
+        ],
+        [
+          "energy_4971670",
+          5
+        ],
+        [
+          "construction_2844324",
+          4
+        ],
+        [
+          "construction_0992970",
+          7
+        ],
+        [
+          "construction_4005140",
+          13
+        ],
+        [
+          "construction_0992970",
+          12
+        ],
+        [
+          "construction_2844324",
+          3
+        ],
+        [
+          "finance_5492147",
+          6
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          16
+        ],
+        [
+          "construction_6799387",
+          8
+        ],
+        [
+          "education_1871769",
+          3
+        ],
+        [
+          "energy_2357218",
+          6
+        ],
+        [
+          "energy_2357218",
+          7
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          4
+        ],
+        [
+          "education_0192892",
+          12
+        ],
+        [
+          "construction_0992970",
+          10
+        ]
+      ],
+      "seconds": 0.005009500004234724,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "education_table_required_0147",
+      "question": "Between dense flint and crown glasses, which exhibits a larger disparity in refractive indices at the wavelengths 656.3 nm and 404.7 nm?",
+      "domain": "education",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "education_0982243",
+          4
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_0982243",
+          4
+        ],
+        [
+          "energy_0348555",
+          5
+        ],
+        [
+          "energy_0348555",
+          6
+        ],
+        [
+          "energy_7670244",
+          7
+        ],
+        [
+          "energy_0348555",
+          4
+        ],
+        [
+          "energy_7670244",
+          8
+        ],
+        [
+          "education_0192892",
+          19
+        ],
+        [
+          "energy_0348555",
+          3
+        ],
+        [
+          "construction_4280740",
+          11
+        ],
+        [
+          "energy_0348555",
+          2
+        ],
+        [
+          "education_0982243",
+          3
+        ],
+        [
+          "education_5334866",
+          9
+        ],
+        [
+          "finance_1326258",
+          8
+        ],
+        [
+          "healthcare_4455078",
+          9
+        ],
+        [
+          "construction_2928102",
+          15
+        ],
+        [
+          "education_0982243",
+          1
+        ],
+        [
+          "energy_7670244",
+          4
+        ],
+        [
+          "healthcare_4455078",
+          8
+        ],
+        [
+          "finance_1326258",
+          9
+        ],
+        [
+          "healthcare_4455078",
+          10
+        ]
+      ],
+      "seconds": 0.0014833000022917986,
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "energy_image_only_0166",
+      "question": "Which high, medium, and lower voltage dataset categories are managed by the intelligent remote control unit within the advanced substation framework?",
+      "domain": "energy",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "energy_0648106",
+          4
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_0648106",
+          3
+        ],
+        [
+          "energy_0648106",
+          2
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "energy_0648106",
+          4
+        ],
+        [
+          "legal_3134069",
+          4
+        ],
+        [
+          "energy_0648106",
+          1
+        ],
+        [
+          "construction_4280740",
+          13
+        ],
+        [
+          "construction_4280740",
+          14
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          8
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          2
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          10
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          4
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          5
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          14
+        ],
+        [
+          "finance_7501084",
+          16
+        ],
+        [
+          "crm_5963931",
+          26
+        ],
+        [
+          "construction_6799387",
+          7
+        ],
+        [
+          "construction_6799387",
+          5
+        ],
+        [
+          "education_6071633",
+          2
+        ],
+        [
+          "construction_4280740",
+          9
+        ]
+      ],
+      "seconds": 0.004963100000168197,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 0,
+      "all_pages@3": 0,
+      "page_recall@3": 0.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "healthcare_image_plus_text_as_answer_0254",
+      "question": "In what way does the calculated fluidity differ between Species A and Species C as the genome count changes, according to the theoretical model and its variances?",
+      "domain": "healthcare",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "healthcare_1846776",
+          5
+        ],
+        [
+          "healthcare_1846776",
+          6
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_1846776",
+          6
+        ],
+        [
+          "healthcare_1846776",
+          5
+        ],
+        [
+          "healthcare_1846776",
+          4
+        ],
+        [
+          "healthcare_1846776",
+          7
+        ],
+        [
+          "healthcare_1846776",
+          3
+        ],
+        [
+          "healthcare_1846776",
+          10
+        ],
+        [
+          "healthcare_1846776",
+          2
+        ],
+        [
+          "healthcare_1846776",
+          8
+        ],
+        [
+          "education_1871769",
+          7
+        ],
+        [
+          "education_5138607",
+          4
+        ],
+        [
+          "education_1871769",
+          2
+        ],
+        [
+          "healthcare_1846776",
+          9
+        ],
+        [
+          "education_5138607",
+          5
+        ],
+        [
+          "education_7860274",
+          10
+        ],
+        [
+          "education_7860274",
+          4
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "crm_7646651",
+          6
+        ],
+        [
+          "finance_7812631",
+          2
+        ],
+        [
+          "education_5138607",
+          25
+        ],
+        [
+          "finance_7812631",
+          5
+        ]
+      ],
+      "seconds": 0.00529449999157805,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "construction_image_only_0047",
+      "question": "Which machinery is usually employed to clear snow on River Street during December 2008 as depicted?",
+      "domain": "construction",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "construction_1676343",
+          12
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "construction_1676343",
+          12
+        ],
+        [
+          "construction_1676343",
+          15
+        ],
+        [
+          "construction_1676343",
+          21
+        ],
+        [
+          "construction_1676343",
+          19
+        ],
+        [
+          "education_1871769",
+          16
+        ],
+        [
+          "construction_1676343",
+          16
+        ],
+        [
+          "finance_5910185",
+          23
+        ],
+        [
+          "finance_5910185",
+          21
+        ],
+        [
+          "construction_1676343",
+          9
+        ],
+        [
+          "construction_1676343",
+          5
+        ],
+        [
+          "construction_1676343",
+          17
+        ],
+        [
+          "construction_1676343",
+          4
+        ],
+        [
+          "finance_5910185",
+          12
+        ],
+        [
+          "finance_5910185",
+          10
+        ],
+        [
+          "energy_4343531",
+          14
+        ],
+        [
+          "construction_1676343",
+          1
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          12
+        ],
+        [
+          "construction_1676343",
+          10
+        ],
+        [
+          "education_5427083",
+          2
+        ],
+        [
+          "finance_5910185",
+          18
+        ]
+      ],
+      "seconds": 0.003339999995660037,
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "energy_text_only_0195",
+      "question": "How much energy from biomass is anticipated to be supplied to the UK's total primary energy under the DECC scenario referred to as SBF, when measured in terawatt-hours?",
+      "domain": "energy",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "energy_2357218",
+          15
+        ],
+        [
+          "energy_2357218",
+          16
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_2357218",
+          12
+        ],
+        [
+          "energy_2357218",
+          15
+        ],
+        [
+          "energy_2357218",
+          16
+        ],
+        [
+          "energy_2357218",
+          13
+        ],
+        [
+          "energy_2357218",
+          14
+        ],
+        [
+          "energy_2357218",
+          11
+        ],
+        [
+          "energy_2357218",
+          21
+        ],
+        [
+          "energy_4343531",
+          7
+        ],
+        [
+          "energy_2357218",
+          17
+        ],
+        [
+          "energy_2357218",
+          18
+        ],
+        [
+          "energy_2357218",
+          4
+        ],
+        [
+          "energy_4343531",
+          4
+        ],
+        [
+          "energy_2357218",
+          3
+        ],
+        [
+          "energy_2357218",
+          22
+        ],
+        [
+          "energy_2357218",
+          1
+        ],
+        [
+          "energy_2357218",
+          20
+        ],
+        [
+          "energy_2357218",
+          19
+        ],
+        [
+          "energy_4343531",
+          8
+        ],
+        [
+          "energy_4343531",
+          2
+        ],
+        [
+          "finance_6786265",
+          6
+        ]
+      ],
+      "seconds": 0.007288099994184449,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "education_table_required_0148",
+      "question": "In the context of the English system, which unit is used to measure kinematic viscosity as outlined in the dimensions chart?",
+      "domain": "education",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "education_5427083",
+          16
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "education_5427083",
+          9
+        ],
+        [
+          "education_5427083",
+          8
+        ],
+        [
+          "education_5427083",
+          16
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "energy_7116675",
+          7
+        ],
+        [
+          "energy_7116675",
+          6
+        ],
+        [
+          "energy_7116675",
+          3
+        ],
+        [
+          "construction_2928102",
+          4
+        ],
+        [
+          "education_3106261",
+          3
+        ],
+        [
+          "energy_7670244",
+          3
+        ],
+        [
+          "crm_4159712",
+          5
+        ],
+        [
+          "energy_7116675",
+          11
+        ],
+        [
+          "education_2765782",
+          2
+        ],
+        [
+          "construction_2844324",
+          4
+        ],
+        [
+          "education_2765782",
+          15
+        ],
+        [
+          "education_5427083",
+          5
+        ]
+      ],
+      "seconds": 0.007231399999000132,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "healthcare_table_required_0266",
+      "question": "How should the timing of COVID-19 vaccination be managed for patients undergoing autologous HSCT, both prior to and following the procedure?",
+      "domain": "healthcare",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "healthcare_7083619",
+          5
+        ],
+        [
+          "healthcare_7083619",
+          6
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_7083619",
+          4
+        ],
+        [
+          "healthcare_7083619",
+          2
+        ],
+        [
+          "healthcare_7083619",
+          3
+        ],
+        [
+          "healthcare_7083619",
+          5
+        ],
+        [
+          "healthcare_7083619",
+          1
+        ],
+        [
+          "education_5138607",
+          8
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          2
+        ],
+        [
+          "healthcare_7083619",
+          6
+        ],
+        [
+          "education_5138607",
+          18
+        ],
+        [
+          "crm_5963931",
+          2
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          10
+        ],
+        [
+          "healthcare_4476277",
+          6
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          1
+        ],
+        [
+          "education_3501298",
+          9
+        ],
+        [
+          "education_3501298",
+          1
+        ],
+        [
+          "healthcare_4476277",
+          2
+        ],
+        [
+          "education_2765782",
+          5
+        ],
+        [
+          "healthcare_4476277",
+          1
+        ],
+        [
+          "commerce_manufacturing_3274043",
+          12
+        ]
+      ],
+      "seconds": 0.003753899989533238,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 0,
+      "all_pages@3": 0,
+      "page_recall@3": 0.0,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "crm_image_only_0088",
+      "question": "How effective is Automize's latest service portal application in terms of automation success with ServiceNow?",
+      "domain": "crm",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "crm_3280862",
+          1
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_3280862",
+          1
+        ],
+        [
+          "crm_3280862",
+          3
+        ],
+        [
+          "crm_3280862",
+          2
+        ],
+        [
+          "commerce_manufacturing_2290435",
+          14
+        ],
+        [
+          "commerce_manufacturing_2290435",
+          5
+        ],
+        [
+          "crm_3870349",
+          1
+        ],
+        [
+          "commerce_manufacturing_2701564",
+          6
+        ],
+        [
+          "construction_1676343",
+          9
+        ],
+        [
+          "commerce_manufacturing_0820977",
+          4
+        ],
+        [
+          "finance_5910185",
+          28
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          10
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          4
+        ],
+        [
+          "crm_5169330",
+          7
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          5
+        ],
+        [
+          "commerce_manufacturing_2290435",
+          12
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "construction_4280740",
+          2
+        ]
+      ],
+      "seconds": 0.005667699995683506,
+      "hit@1": 1,
+      "all_pages@1": 1,
+      "page_recall@1": 1.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "legal_text_only_0313",
+      "question": "In the March 2016 town records, what was happening at the location 400 NH RT 45?",
+      "domain": "legal",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "legal_5880007",
+          1
+        ],
+        [
+          "legal_5880007",
+          2
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "legal_5880007",
+          2
+        ],
+        [
+          "legal_5880007",
+          1
+        ],
+        [
+          "finance_4880250",
+          11
+        ],
+        [
+          "legal_5880007",
+          3
+        ],
+        [
+          "finance_4880250",
+          5
+        ],
+        [
+          "legal_5880007",
+          4
+        ],
+        [
+          "finance_4880250",
+          6
+        ],
+        [
+          "finance_4880250",
+          10
+        ],
+        [
+          "finance_5910185",
+          4
+        ],
+        [
+          "finance_4880250",
+          1
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          19
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          6
+        ],
+        [
+          "finance_5910185",
+          23
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          16
+        ],
+        [
+          "construction_1676343",
+          14
+        ],
+        [
+          "construction_1676343",
+          19
+        ],
+        [
+          "finance_4880250",
+          12
+        ],
+        [
+          "education_4813144",
+          12
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          7
+        ],
+        [
+          "commerce_manufacturing_6066619",
+          1
+        ]
+      ],
+      "seconds": 0.0031608999997843057,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "crm_table_required_0105",
+      "question": "In the context of Bosch's system, what is indicated when the FAULT light blinks?",
+      "domain": "crm",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "crm_5963931",
+          7
+        ],
+        [
+          "crm_5963931",
+          8
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_5963931",
+          7
+        ],
+        [
+          "crm_5963931",
+          18
+        ],
+        [
+          "crm_5963931",
+          17
+        ],
+        [
+          "crm_5963931",
+          12
+        ],
+        [
+          "crm_5963931",
+          2
+        ],
+        [
+          "crm_5963931",
+          24
+        ],
+        [
+          "crm_5963931",
+          6
+        ],
+        [
+          "crm_5963931",
+          1
+        ],
+        [
+          "crm_5963931",
+          19
+        ],
+        [
+          "crm_5963931",
+          5
+        ],
+        [
+          "crm_5963931",
+          25
+        ],
+        [
+          "crm_5963931",
+          4
+        ],
+        [
+          "crm_1900612",
+          1
+        ],
+        [
+          "crm_5963931",
+          3
+        ],
+        [
+          "crm_5963931",
+          10
+        ],
+        [
+          "crm_5963931",
+          27
+        ],
+        [
+          "crm_5963931",
+          22
+        ],
+        [
+          "crm_5963931",
+          23
+        ],
+        [
+          "crm_5963931",
+          21
+        ],
+        [
+          "crm_5963931",
+          28
+        ]
+      ],
+      "seconds": 0.006925399997271597,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.5,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.5,
+      "hit@20": 1,
+      "all_pages@20": 0,
+      "page_recall@20": 0.5
+    },
+    {
+      "sample_id": "finance_image_plus_text_as_answer_0210",
+      "question": "Can you list the soft caps and min/max contribution limits for ETHERMOON, HANSFRITZ, and Fire Waka Floki Flame tokens available on DxSale?",
+      "domain": "finance",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "finance_3702513",
+          6
+        ],
+        [
+          "finance_3702513",
+          7
+        ],
+        [
+          "finance_3702513",
+          8
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "finance_3702513",
+          7
+        ],
+        [
+          "construction_2928102",
+          4
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          3
+        ],
+        [
+          "finance_3702513",
+          5
+        ],
+        [
+          "finance_3702513",
+          4
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          4
+        ],
+        [
+          "healthcare_4455078",
+          1
+        ],
+        [
+          "construction_4481874",
+          3
+        ],
+        [
+          "legal_6716847",
+          15
+        ],
+        [
+          "education_6071633",
+          14
+        ],
+        [
+          "energy_5387778",
+          6
+        ],
+        [
+          "finance_5913150",
+          9
+        ],
+        [
+          "construction_2928102",
+          9
+        ],
+        [
+          "crm_2114132",
+          2
+        ],
+        [
+          "crm_2114132",
+          3
+        ],
+        [
+          "construction_2928102",
+          14
+        ],
+        [
+          "construction_2928102",
+          12
+        ],
+        [
+          "finance_3702513",
+          9
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          1
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          2
+        ]
+      ],
+      "seconds": 0.0029089000017847866,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.3333333333333333,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.3333333333333333,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.3333333333333333,
+      "hit@10": 1,
+      "all_pages@10": 0,
+      "page_recall@10": 0.3333333333333333,
+      "hit@20": 1,
+      "all_pages@20": 0,
+      "page_recall@20": 0.3333333333333333
+    },
+    {
+      "sample_id": "healthcare_image_plus_text_as_answer_0253",
+      "question": "What were the differences in plasma corticosterone levels between the control group and those receiving AHS1, AHS2, and Vit-C water supplements in heat-stressed broiler chickens?",
+      "domain": "healthcare",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "healthcare_0028060",
+          6
+        ],
+        [
+          "healthcare_0028060",
+          7
+        ],
+        [
+          "healthcare_0028060",
+          8
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_0028060",
+          5
+        ],
+        [
+          "healthcare_0028060",
+          6
+        ],
+        [
+          "healthcare_3428789",
+          5
+        ],
+        [
+          "healthcare_3428789",
+          4
+        ],
+        [
+          "healthcare_0028060",
+          8
+        ],
+        [
+          "healthcare_0028060",
+          9
+        ],
+        [
+          "healthcare_0028060",
+          7
+        ],
+        [
+          "healthcare_0028060",
+          1
+        ],
+        [
+          "healthcare_0028060",
+          2
+        ],
+        [
+          "healthcare_3428789",
+          1
+        ],
+        [
+          "healthcare_3428789",
+          3
+        ],
+        [
+          "crm_6543180",
+          17
+        ],
+        [
+          "healthcare_0028060",
+          10
+        ],
+        [
+          "crm_6543180",
+          13
+        ],
+        [
+          "crm_4502338",
+          18
+        ],
+        [
+          "crm_6543180",
+          9
+        ],
+        [
+          "healthcare_0028060",
+          3
+        ],
+        [
+          "education_7860274",
+          16
+        ],
+        [
+          "healthcare_0028060",
+          11
+        ],
+        [
+          "healthcare_0028060",
+          4
+        ]
+      ],
+      "seconds": 0.005287000007228926,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.3333333333333333,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.6666666666666666,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "legal_image_plus_text_as_answer_0294",
+      "question": "How are ion signals for cocaine, heroin, and THC impacted in fingermarks under varying spike conditions in MALDI MS as detailed in the Scientific Reports article with DOI: 10.1038/srep11716?",
+      "domain": "legal",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "legal_1095340",
+          8
+        ],
+        [
+          "legal_1095340",
+          9
+        ],
+        [
+          "legal_1095340",
+          10
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "legal_1095340",
+          1
+        ],
+        [
+          "legal_1095340",
+          2
+        ],
+        [
+          "legal_1095340",
+          10
+        ],
+        [
+          "legal_1095340",
+          11
+        ],
+        [
+          "legal_1095340",
+          5
+        ],
+        [
+          "legal_1095340",
+          13
+        ],
+        [
+          "legal_1095340",
+          9
+        ],
+        [
+          "legal_1095340",
+          7
+        ],
+        [
+          "legal_1095340",
+          8
+        ],
+        [
+          "legal_1095340",
+          3
+        ],
+        [
+          "legal_1095340",
+          6
+        ],
+        [
+          "legal_1095340",
+          12
+        ],
+        [
+          "legal_1095340",
+          4
+        ],
+        [
+          "healthcare_3428789",
+          1
+        ],
+        [
+          "healthcare_1846776",
+          11
+        ],
+        [
+          "education_3106261",
+          14
+        ],
+        [
+          "education_3106261",
+          3
+        ],
+        [
+          "construction_4280740",
+          1
+        ],
+        [
+          "education_3106261",
+          7
+        ]
+      ],
+      "seconds": 0.003493900003377348,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.3333333333333333,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.3333333333333333,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "legal_image_only_0288",
+      "question": "In business risk evaluations, what weaknesses are connected to the absence of fire detection mechanisms?",
+      "domain": "legal",
+      "answer_type": "image_only",
+      "expected_pages": [
+        [
+          "legal_7691267",
+          12
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "legal_7691267",
+          7
+        ],
+        [
+          "legal_7691267",
+          12
+        ],
+        [
+          "legal_7691267",
+          10
+        ],
+        [
+          "legal_7691267",
+          6
+        ],
+        [
+          "legal_7691267",
+          11
+        ],
+        [
+          "crm_7720078",
+          5
+        ],
+        [
+          "legal_7691267",
+          5
+        ],
+        [
+          "crm_7720078",
+          2
+        ],
+        [
+          "legal_7691267",
+          13
+        ],
+        [
+          "commerce_manufacturing_3274043",
+          10
+        ],
+        [
+          "legal_3134069",
+          4
+        ],
+        [
+          "energy_5731992",
+          3
+        ],
+        [
+          "commerce_manufacturing_0501317",
+          3
+        ],
+        [
+          "commerce_manufacturing_6532134",
+          13
+        ],
+        [
+          "finance_3702513",
+          1
+        ],
+        [
+          "legal_3134069",
+          3
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          5
+        ],
+        [
+          "commerce_manufacturing_3341761",
+          7
+        ],
+        [
+          "crm_5963931",
+          20
+        ],
+        [
+          "energy_2357218",
+          10
+        ]
+      ],
+      "seconds": 0.0027182000048924237,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "commerce_manufacturing_image_plus_text_as_answer_0018",
+      "question": "What was the trend in VAP rates over the months after implementing the IHI Ventilator Bundle in the ICU?",
+      "domain": "commerce_manufacturing",
+      "answer_type": "image_plus_text_as_answer",
+      "expected_pages": [
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          10
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_3501298",
+          9
+        ],
+        [
+          "education_3501298",
+          9
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          10
+        ],
+        [
+          "education_3501298",
+          10
+        ],
+        [
+          "finance_3769357",
+          13
+        ],
+        [
+          "finance_3769357",
+          12
+        ],
+        [
+          "commerce_manufacturing_3501298",
+          12
+        ],
+        [
+          "education_3501298",
+          12
+        ],
+        [
+          "finance_6786265",
+          9
+        ],
+        [
+          "finance_4070954",
+          6
+        ],
+        [
+          "finance_4070954",
+          15
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          12
+        ],
+        [
+          "finance_3769357",
+          17
+        ],
+        [
+          "finance_6440218",
+          18
+        ],
+        [
+          "healthcare_4476277",
+          2
+        ],
+        [
+          "finance_4880250",
+          8
+        ],
+        [
+          "education_5466518",
+          4
+        ],
+        [
+          "finance_6440218",
+          13
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          9
+        ],
+        [
+          "finance_4274052",
+          3
+        ]
+      ],
+      "seconds": 0.0035333999985596165,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "crm_text_only_0118",
+      "question": "In the Twitter graph study, how does the relationship between affinity and tweet similarity differ from that between ASP distance and tweet similarity?",
+      "domain": "crm",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "crm_4159712",
+          8
+        ],
+        [
+          "crm_4159712",
+          9
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "crm_4159712",
+          7
+        ],
+        [
+          "crm_4159712",
+          9
+        ],
+        [
+          "crm_4159712",
+          1
+        ],
+        [
+          "crm_4159712",
+          8
+        ],
+        [
+          "crm_4159712",
+          4
+        ],
+        [
+          "crm_4159712",
+          6
+        ],
+        [
+          "finance_3702513",
+          9
+        ],
+        [
+          "crm_4159712",
+          2
+        ],
+        [
+          "crm_4159712",
+          3
+        ],
+        [
+          "crm_2114132",
+          9
+        ],
+        [
+          "education_2765782",
+          17
+        ],
+        [
+          "crm_4159712",
+          5
+        ],
+        [
+          "crm_4159712",
+          10
+        ],
+        [
+          "healthcare_0439127",
+          14
+        ],
+        [
+          "healthcare_0439127",
+          11
+        ],
+        [
+          "legal_7691267",
+          12
+        ],
+        [
+          "energy_4971670",
+          7
+        ],
+        [
+          "education_2765782",
+          14
+        ],
+        [
+          "crm_2114132",
+          6
+        ]
+      ],
+      "seconds": 0.002665000007255003,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "energy_table_required_0186",
+      "question": "What was the shift in accumulated profits for EQTEC plc over the period from mid-2015 to the end of 2016?",
+      "domain": "energy",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "energy_4343531",
+          12
+        ],
+        [
+          "energy_4343531",
+          13
+        ],
+        [
+          "energy_4343531",
+          14
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "energy_4343531",
+          9
+        ],
+        [
+          "energy_4343531",
+          13
+        ],
+        [
+          "energy_4343531",
+          14
+        ],
+        [
+          "energy_4343531",
+          1
+        ],
+        [
+          "energy_4343531",
+          11
+        ],
+        [
+          "energy_4343531",
+          10
+        ],
+        [
+          "energy_4343531",
+          16
+        ],
+        [
+          "energy_4343531",
+          2
+        ],
+        [
+          "finance_4880250",
+          7
+        ],
+        [
+          "energy_4343531",
+          12
+        ],
+        [
+          "energy_4343531",
+          3
+        ],
+        [
+          "energy_4343531",
+          23
+        ],
+        [
+          "finance_6440218",
+          9
+        ],
+        [
+          "finance_5910185",
+          14
+        ],
+        [
+          "finance_5910185",
+          2
+        ],
+        [
+          "finance_5910185",
+          9
+        ],
+        [
+          "energy_4343531",
+          19
+        ],
+        [
+          "commerce_manufacturing_4426481",
+          7
+        ],
+        [
+          "energy_4343531",
+          4
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          2
+        ]
+      ],
+      "seconds": 0.004284199996618554,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.6666666666666666,
+      "hit@5": 1,
+      "all_pages@5": 0,
+      "page_recall@5": 0.6666666666666666,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "healthcare_text_only_0273",
+      "question": "In terms of deflection, what influence does quantum Maxwell stress have on DNA beams, specifically adjusting the deflection magnitude?",
+      "domain": "healthcare",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "healthcare_4455078",
+          12
+        ],
+        [
+          "healthcare_4455078",
+          13
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "healthcare_4455078",
+          13
+        ],
+        [
+          "healthcare_4455078",
+          12
+        ],
+        [
+          "healthcare_4455078",
+          8
+        ],
+        [
+          "healthcare_4455078",
+          10
+        ],
+        [
+          "healthcare_4455078",
+          14
+        ],
+        [
+          "healthcare_4455078",
+          3
+        ],
+        [
+          "healthcare_4455078",
+          5
+        ],
+        [
+          "healthcare_4455078",
+          4
+        ],
+        [
+          "healthcare_4455078",
+          1
+        ],
+        [
+          "energy_4971670",
+          7
+        ],
+        [
+          "healthcare_4455078",
+          11
+        ],
+        [
+          "healthcare_4455078",
+          6
+        ],
+        [
+          "crm_6543180",
+          10
+        ],
+        [
+          "healthcare_4455078",
+          9
+        ],
+        [
+          "energy_4971670",
+          3
+        ],
+        [
+          "crm_6543180",
+          1
+        ],
+        [
+          "crm_6543180",
+          17
+        ],
+        [
+          "crm_6543180",
+          23
+        ],
+        [
+          "energy_7670244",
+          2
+        ],
+        [
+          "energy_7670244",
+          1
+        ]
+      ],
+      "seconds": 0.002597399987280369,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 1,
+      "page_recall@3": 1.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "commerce_manufacturing_text_only_0037",
+      "question": "What are the key steps involved in the value stream mapping process?",
+      "domain": "commerce_manufacturing",
+      "answer_type": "text_only",
+      "expected_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          7
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_0999705",
+          6
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          5
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          1
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          7
+        ],
+        [
+          "crm_2114132",
+          4
+        ],
+        [
+          "energy_5387778",
+          2
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          9
+        ],
+        [
+          "crm_2114132",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          3
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          10
+        ],
+        [
+          "commerce_manufacturing_0999705",
+          2
+        ],
+        [
+          "energy_1803053",
+          4
+        ],
+        [
+          "energy_7116675",
+          11
+        ],
+        [
+          "energy_5387778",
+          3
+        ],
+        [
+          "crm_4159712",
+          4
+        ],
+        [
+          "crm_1900612",
+          3
+        ],
+        [
+          "energy_5387778",
+          5
+        ],
+        [
+          "energy_0648106",
+          2
+        ],
+        [
+          "commerce_manufacturing_4429497",
+          6
+        ],
+        [
+          "energy_0648106",
+          3
+        ]
+      ],
+      "seconds": 0.0038902000087546185,
+      "hit@1": 1,
+      "all_pages@1": 0,
+      "page_recall@1": 0.5,
+      "hit@3": 1,
+      "all_pages@3": 0,
+      "page_recall@3": 0.5,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    },
+    {
+      "sample_id": "commerce_manufacturing_table_required_0028",
+      "question": "How did current taxes in Hong Kong and outside Hong Kong differ for the six months ended 30 September 2014 compared to 2013?",
+      "domain": "commerce_manufacturing",
+      "answer_type": "table_required",
+      "expected_pages": [
+        [
+          "commerce_manufacturing_6783432",
+          6
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          7
+        ]
+      ],
+      "retrieved_pages": [
+        [
+          "commerce_manufacturing_6783432",
+          1
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          2
+        ],
+        [
+          "finance_5910185",
+          1
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          6
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          7
+        ],
+        [
+          "finance_5910185",
+          24
+        ],
+        [
+          "finance_5910185",
+          6
+        ],
+        [
+          "finance_5910185",
+          23
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          11
+        ],
+        [
+          "finance_5910185",
+          21
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          12
+        ],
+        [
+          "finance_6440218",
+          15
+        ],
+        [
+          "finance_5910185",
+          14
+        ],
+        [
+          "commerce_manufacturing_6783432",
+          4
+        ],
+        [
+          "finance_5910185",
+          22
+        ],
+        [
+          "finance_4880250",
+          7
+        ],
+        [
+          "finance_6440218",
+          6
+        ],
+        [
+          "finance_5910185",
+          5
+        ],
+        [
+          "finance_5910185",
+          28
+        ],
+        [
+          "finance_6440218",
+          2
+        ]
+      ],
+      "seconds": 0.005875100003322586,
+      "hit@1": 0,
+      "all_pages@1": 0,
+      "page_recall@1": 0.0,
+      "hit@3": 0,
+      "all_pages@3": 0,
+      "page_recall@3": 0.0,
+      "hit@5": 1,
+      "all_pages@5": 1,
+      "page_recall@5": 1.0,
+      "hit@10": 1,
+      "all_pages@10": 1,
+      "page_recall@10": 1.0,
+      "hit@20": 1,
+      "all_pages@20": 1,
+      "page_recall@20": 1.0
+    }
+  ]
+}

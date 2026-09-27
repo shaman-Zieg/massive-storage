@@ -1,0 +1,8 @@
+mineru-parsed/** filter=lfs diff=lfs merge=lfs -text
+original_pdf_files_100/** filter=lfs diff=lfs merge=lfs -text
+索引与demo代码-0730/RAG-Anything-0713/RAG_STORAGE_0713_retry/** filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text

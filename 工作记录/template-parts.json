@@ -1,0 +1,98 @@
+[
+  {
+    "path": "[Content_Types].xml",
+    "bytes": 1957,
+    "sha256": "ec5bf70cddf88a4e2a85636f99937ba7fd7d65dd3dc2b7b3d81b130e72746cb0",
+    "classification": "preserve"
+  },
+  {
+    "path": "_rels/.rels",
+    "bytes": 737,
+    "sha256": "c30fe099dbcfed4ecc4ae544ccf82f432c8d3bb665e2a301df283738b196d803",
+    "classification": "preserve"
+  },
+  {
+    "path": "word/_rels/document.xml.rels",
+    "bytes": 1337,
+    "sha256": "b9d628d3747b5dbaab225dfcf5a8d79a7f1009cb1031e05b6bbc47bc19b54d29",
+    "classification": "preserve"
+  },
+  {
+    "path": "word/document.xml",
+    "bytes": 23491,
+    "sha256": "38dbd1b5033e5691fde1f9e214bd4c3e504922c92378ebee194a8f24fc7000ff",
+    "classification": "editable"
+  },
+  {
+    "path": "word/footnotes.xml",
+    "bytes": 2456,
+    "sha256": "156258d651ed149f7892153e5e81f64be4f9ec371be08a37191f1ad23fbacba8",
+    "classification": "preserve"
+  },
+  {
+    "path": "word/endnotes.xml",
+    "bytes": 2450,
+    "sha256": "8a9a4d88b1dd70509423f61c37d1b125109f2fa80d85ebe3fa5616592ad51e64",
+    "classification": "preserve"
+  },
+  {
+    "path": "word/footer1.xml",
+    "bytes": 2728,
+    "sha256": "fd55abf2367adc49ed2df6eb4c540e146ee4ce3d13b404e4473304c509dc2bb4",
+    "classification": "editable"
+  },
+  {
+    "path": "word/footer2.xml",
+    "bytes": 3454,
+    "sha256": "3b70f74b01b45c492cc2a453f384514efe82a2ca9440833724a4b4674a606704",
+    "classification": "editable"
+  },
+  {
+    "path": "word/theme/theme1.xml",
+    "bytes": 6466,
+    "sha256": "b594bb12a8729a001dc40a0843715103cc633d98cdc594a9a145a5d05c5dbd4a",
+    "classification": "preserve"
+  },
+  {
+    "path": "word/settings.xml",
+    "bytes": 6581,
+    "sha256": "b2d2023823d9169113f6f1db9cd8b3264245a5cb6b0df797595480c660317ea6",
+    "classification": "editable"
+  },
+  {
+    "path": "word/styles.xml",
+    "bytes": 25437,
+    "sha256": "32ee37f3247f31faf40fa4ba6e26b2605f3d97ba3addb2d9a325f6482d564ab1",
+    "classification": "editable"
+  },
+  {
+    "path": "word/webSettings.xml",
+    "bytes": 604,
+    "sha256": "3d7800a2ac39a10a7feb274b8c176e6376685e50d46689dbcda4b2ad66eddcf8",
+    "classification": "preserve"
+  },
+  {
+    "path": "docProps/custom.xml",
+    "bytes": 999,
+    "sha256": "17acb2cd3757ee9be6fe52c10a4d4896eee5782eff33a0864f87222016046c9b",
+    "classification": "preserve"
+  },
+  {
+    "path": "docProps/app.xml",
+    "bytes": 743,
+    "sha256": "caff3b3ce3f34038e872181942073f9ca0bd9801ff2256782c8c1aa7ad7b9131",
+    "classification": "preserve"
+  },
+  {
+    "path": "docProps/core.xml",
+    "bytes": 663,
+    "sha256": "b56d5a53551b464ad5f8524f9a04507674952e27a379d030a830bcb118782e68",
+    "classification": "preserve"
+  },
+  {
+    "path": "word/fontTable.xml",
+    "bytes": 2457,
+    "sha256": "e313a91bf12f1584f43e8c5abdced1695563e714abe4d491d6a4b8fffc519723",
+    "classification": "preserve"
+  }
+]

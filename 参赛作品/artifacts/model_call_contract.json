@@ -1,0 +1,19 @@
+{
+  "evidence_type": "synthetic mock regression contract, not an end-to-end performance benchmark",
+  "test": "tests/test_agent_v2.py::AgentV2.test_multiple_queries_embed_once_and_rerank_once",
+  "result": "passed",
+  "rounds": 1,
+  "query_count": 3,
+  "queries": ["exchange report", "exchange value", "report period"],
+  "embedding_requests": 1,
+  "embedding_input_count": 3,
+  "retrieval_search_calls": 3,
+  "per_query_rerank_enabled": false,
+  "final_original_question_rerank_requests": 1,
+  "llm_method_calls": 3,
+  "llm_stages": ["plan", "synthesize", "verify"],
+  "real_model_services_called": false,
+  "model_accuracy_measured": false,
+  "end_to_end_speedup_measured": false,
+  "notes": "This verifies call batching and removal of redundant rerank requests. It does not establish model latency, official accuracy, official score, or award rank. All regression tests passed in the validation run; count may increase as independent tests are added."
+}

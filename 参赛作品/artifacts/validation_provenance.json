@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "corpus_sha256": "22835a3d94a5f8b2798451d226c5c030ce3ae8b95cadc0854e6457e88658cc2d",
+  "source_sha256": {
+    "evidence_rag/agent.py": "73e23226f951f585773c270e010ecf6d2287a7481f7edf5cbb7f22e117893a25",
+    "evidence_rag/evaluate.py": "a85148e0c8c1b4a7e840539fb4331f6634f5cbb55950c9603ff31bc667de7f36",
+    "evidence_rag/index.py": "9f5c0ad7b57f5099cbc4ca1c0cb4826c81aa189fdb167b63978eefddf89fa138",
+    "evidence_rag/models.py": "7be9427762f5c789309e135dc155266b017448f17f969317ca952ca0bcbd22f5",
+    "evidence_rag/retrieval.py": "f949123a4fdc3c3d179ce24818b87bc6f7693410c88372f12090f7627238c6e9",
+    "evidence_rag/server.py": "e270eb87740b287a6f17b946653e4f68f06d537c8e710c4d84c6beef34d5bc42",
+    "evidence_rag/tables.py": "c581dd801c30f5dbe09b0c055ef4cf96927e8a30e064b0f002610f56f4e0f2fd",
+    "evidence_rag/__init__.py": "1cb25cf367d9ea1eb9a9d1307c25b1d14d7fe75545407547bf791d76df6dd989",
+    "evidence_rag/__main__.py": "3e4b8ff8993ca33e429026464dd00e170b71a6fc538eaf4b2a30593556bca841",
+    "tests/test_agent_v2.py": "b95260d14cf6798a32d6d23a672ded6315386e368630d4f0a18b61173dbaa2f4",
+    "tests/test_evaluate.py": "6fd99ea5dd74e4a47d92de8dedad2a268f15a0ca4fa3a3d31610b01a5c35e330",
+    "tests/test_http.py": "07173cd0d6d545bd9644aaaa10f368c9a7442e504c57b873afaef259d491aff5",
+    "tests/test_retrieval_v2.py": "1c23e3ce6a445e87ec9b0ed05800c0da40ff0b6f0f16eb6a9231e36695eb2ffd",
+    "tests/test_scoring.py": "dec20dbd08537e8639e7307b877883111c6c6d253dd260604d5d7c219fd466a7",
+    "tests/test_system.py": "1710389298d3663071d0e5b782195200a4b850dcecf5ded87d1ce8481e3d7bc8"
+  },
+  "test_count": 74,
+  "official_qa_accuracy": null,
+  "official_score": null,
+  "frozen_v1": "benchmarks/v1/PROVENANCE.json"
+}

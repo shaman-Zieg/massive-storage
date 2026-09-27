@@ -1,0 +1,92 @@
+test_citation_format_repaired_using_same_evidence (test_agent_v2.AgentV2.test_citation_format_repaired_using_same_evidence) ... ok
+test_corrupt_page_image_does_not_drop_text_evidence (test_agent_v2.AgentV2.test_corrupt_page_image_does_not_drop_text_evidence) ... ok
+test_deterministic_arithmetic_failure_is_not_sent_to_a_lenient_verifier (test_agent_v2.AgentV2.test_deterministic_arithmetic_failure_is_not_sent_to_a_lenient_verifier) ... ok
+test_explicit_page_read_expands_context_and_passes_followup_keywords (test_agent_v2.AgentV2.test_explicit_page_read_expands_context_and_passes_followup_keywords) ... ok
+test_failed_page_render_is_not_repeated_and_text_evidence_survives (test_agent_v2.AgentV2.test_failed_page_render_is_not_repeated_and_text_evidence_survives) ... ok
+test_failed_verification_can_repair_without_an_unrelated_search (test_agent_v2.AgentV2.test_failed_verification_can_repair_without_an_unrelated_search) ... ok
+test_missing_queries_does_not_prematurely_stop (test_agent_v2.AgentV2.test_missing_queries_does_not_prematurely_stop) ... ok
+test_model_page_request_is_resolved_and_pinned (test_agent_v2.AgentV2.test_model_page_request_is_resolved_and_pinned) ... ok
+test_multiple_queries_embed_once_and_rerank_once (test_agent_v2.AgentV2.test_multiple_queries_embed_once_and_rerank_once) ... ok
+test_packer_reserves_main_page_coverage (test_agent_v2.AgentV2.test_packer_reserves_main_page_coverage) ... ok
+test_page_requests_reject_unknown_pages_boolean_pages_and_unseen_documents (test_agent_v2.AgentV2.test_page_requests_reject_unknown_pages_boolean_pages_and_unseen_documents) ... ok
+test_repairs_are_bounded_and_bad_citations_remain_rejected (test_agent_v2.AgentV2.test_repairs_are_bounded_and_bad_citations_remain_rejected) ... ok
+test_valid_json_with_wrong_boolean_schema_gets_one_repair (test_agent_v2.AgentV2.test_valid_json_with_wrong_boolean_schema_gets_one_repair) ... ok
+test_failed_http_attempt_consumes_the_llm_budget (test_agent_v2.ModelV2.test_failed_http_attempt_consumes_the_llm_budget) ... ok
+test_hard_llm_call_budget (test_agent_v2.ModelV2.test_hard_llm_call_budget) ... ok
+test_json_repair_is_only_once_per_question (test_agent_v2.ModelV2.test_json_repair_is_only_once_per_question) ... ok
+test_rerank_rejects_non_finite_scores (test_agent_v2.ModelV2.test_rerank_rejects_non_finite_scores) ... ok
+test_rerank_uses_scores_if_endpoint_returns_input_order (test_agent_v2.ModelV2.test_rerank_uses_scores_if_endpoint_returns_input_order) ... ok
+test_cluster_bootstrap_is_reproducible_and_preserves_perfect_score (test_evaluate.EvaluationStatistics.test_cluster_bootstrap_is_reproducible_and_preserves_perfect_score) ... ok
+test_old_report_path_recovers_six_pages_without_inventing_packed_metrics (test_evaluate.EvaluationStatistics.test_old_report_path_recovers_six_pages_without_inventing_packed_metrics) ... ok
+test_paired_comparison_aligns_ids_not_input_positions (test_evaluate.EvaluationStatistics.test_paired_comparison_aligns_ids_not_input_positions) ... ok
+test_paired_comparison_validates_labels_questions_and_duplicate_ids (test_evaluate.EvaluationStatistics.test_paired_comparison_validates_labels_questions_and_duplicate_ids) ... ok
+test_single_document_cannot_provide_independent_holdout (test_evaluate.EvaluationStatistics.test_single_document_cannot_provide_independent_holdout) ... ok
+test_split_is_deterministic_order_independent_and_document_disjoint (test_evaluate.EvaluationStatistics.test_split_is_deterministic_order_independent_and_document_disjoint) ... ok
+test_labels_do_not_enter_search_or_evidence_pack_and_metrics_distinguish_coverage (test_evaluate.RetrievalReportContract.test_labels_do_not_enter_search_or_evidence_pack_and_metrics_distinguish_coverage) ... ok
+test_real_packer_obeys_small_context_budget (test_evaluate.RetrievalReportContract.test_real_packer_obeys_small_context_budget) ... ok
+test_real_http_adapters_and_agent (test_http.Integration.test_real_http_adapters_and_agent) ... INFO:nano-vectordb:Init {'embedding_dim': 4, 'metric': 'cosine', 'storage_file': 'C:\\Users\\Qing2\\AppData\\Local\\Temp\\tmplc65s90b\\index\\vectors.building.json'} 0 data
+embedded 3/5
+embedded 5/5
+INFO:nano-vectordb:Load (5, 4) data
+INFO:nano-vectordb:Init {'embedding_dim': 4, 'metric': 'cosine', 'storage_file': 'C:\\Users\\Qing2\\AppData\\Local\\Temp\\tmplc65s90b\\index\\vectors.json'} 5 data
+ok
+"POST /query HTTP/1.1" 200 -
+"POST /query HTTP/1.1" 400 -
+test_service_rejects_labels_and_returns_compatible_response (test_http.Integration.test_service_rejects_labels_and_returns_compatible_response) ... ok
+test_long_text_focus_can_reach_tail_and_preserves_source_values (test_retrieval_v2.FocusedSourceTests.test_long_text_focus_can_reach_tail_and_preserves_source_values) ... ok
+test_short_source_is_returned_unchanged (test_retrieval_v2.FocusedSourceTests.test_short_source_is_returned_unchanged) ... ok
+test_cross_document_question_keeps_both_sources_reachable (test_retrieval_v2.RetrievalDiversityTests.test_cross_document_question_keeps_both_sources_reachable) ... ok
+test_dense_page_cannot_exhaust_neighbor_budget_before_second_seed (test_retrieval_v2.RetrievalDiversityTests.test_dense_page_cannot_exhaust_neighbor_budget_before_second_seed) ... ok
+test_empty_or_image_only_table_has_no_invented_cells (test_retrieval_v2.TableEvidenceTests.test_empty_or_image_only_table_has_no_invented_cells) ... ok
+test_empty_source_row_occupied_by_rowspan_is_retained (test_retrieval_v2.TableEvidenceTests.test_empty_source_row_occupied_by_rowspan_is_retained) ... ok
+test_long_table_selects_late_matching_rows_with_column_context (test_retrieval_v2.TableEvidenceTests.test_long_table_selects_late_matching_rows_with_column_context) ... ok
+test_numeric_sign_percentage_units_and_entities_remain_verbatim (test_retrieval_v2.TableEvidenceTests.test_numeric_sign_percentage_units_and_entities_remain_verbatim) ... ok
+test_rowspan_and_colspan_keep_cell_coordinates (test_retrieval_v2.TableEvidenceTests.test_rowspan_and_colspan_keep_cell_coordinates) ... ok
+test_rowspan_cannot_extend_into_a_separate_table (test_retrieval_v2.TableEvidenceTests.test_rowspan_cannot_extend_into_a_separate_table) ... ok
+test_tight_budget_still_retains_unique_matching_late_row (test_retrieval_v2.TableEvidenceTests.test_tight_budget_still_retains_unique_matching_late_row) ... ok
+test_build_timing_file_imports_only_build_measurement (test_scoring.ScoringCompatibility.test_build_timing_file_imports_only_build_measurement) ... ok
+test_cli_forwards_build_timing_options (test_scoring.ScoringCompatibility.test_cli_forwards_build_timing_options) ... ok
+test_explicit_positive_build_time_produces_official_timing_keys (test_scoring.ScoringCompatibility.test_explicit_positive_build_time_produces_official_timing_keys) ... ok
+test_invalid_build_times_rejected_before_any_http_request (test_scoring.ScoringCompatibility.test_invalid_build_times_rejected_before_any_http_request) ... ok
+test_invalid_server_timing_invalidates_old_scoring_manifest (test_scoring.ScoringCompatibility.test_invalid_server_timing_invalidates_old_scoring_manifest) ... ok
+test_partial_http_failure_preserves_completed_answers_but_never_ready (test_scoring.ScoringCompatibility.test_partial_http_failure_preserves_completed_answers_but_never_ready) ... ok
+test_unchanged_official_loader_accepts_generated_file_when_available (test_scoring.ScoringCompatibility.test_unchanged_official_loader_accepts_generated_file_when_available) ... ok
+test_without_build_duration_answers_are_saved_but_scoring_is_not_ready (test_scoring.ScoringCompatibility.test_without_build_duration_answers_are_saved_but_scoring_is_not_ready) ... ok
+test_arithmetic_and_injection (test_system.Contracts.test_arithmetic_and_injection) ... ok
+test_bm25_chinese_and_no_match (test_system.Contracts.test_bm25_chinese_and_no_match) ... ok
+test_deadline (test_system.Contracts.test_deadline) ... ok
+test_inline_citation_must_match (test_system.Contracts.test_inline_citation_must_match) ... ok
+test_json_malformed_and_nonobject (test_system.Contracts.test_json_malformed_and_nonobject) ... ok
+test_path_traversal (test_system.Contracts.test_path_traversal) ... ok
+test_payload_rejects_label_injection (test_system.Contracts.test_payload_rejects_label_injection) ... ok
+test_payload_validation (test_system.Contracts.test_payload_validation) ... ok
+test_queries_bounded_and_deduplicated (test_system.Contracts.test_queries_bounded_and_deduplicated) ... ok
+test_reference_path_parser (test_system.Contracts.test_reference_path_parser) ... ok
+test_rerank_duplicate_index (test_system.Contracts.test_rerank_duplicate_index) ... ok
+test_unicode_latex_formula_alignment (test_system.Contracts.test_unicode_latex_formula_alignment) ... ok
+test_zero_or_misordered_embeddings (test_system.Contracts.test_zero_or_misordered_embeddings) ... ok
+test_actual_nano_index_and_stale_manifest (test_system.CorpusFixture.test_actual_nano_index_and_stale_manifest) ... INFO:nano-vectordb:Init {'embedding_dim': 4, 'metric': 'cosine', 'storage_file': 'C:\\Users\\Qing2\\AppData\\Local\\Temp\\tmpdqgci3q2\\index\\vectors.building.json'} 0 data
+embedded 2/5
+embedded 4/5
+embedded 5/5
+INFO:nano-vectordb:Load (5, 4) data
+INFO:nano-vectordb:Init {'embedding_dim': 4, 'metric': 'cosine', 'storage_file': 'C:\\Users\\Qing2\\AppData\\Local\\Temp\\tmpdqgci3q2\\index\\vectors.json'} 5 data
+ok
+test_agent_accepts_verified_answer (test_system.CorpusFixture.test_agent_accepts_verified_answer) ... ok
+test_agent_rejects_bad_arithmetic (test_system.CorpusFixture.test_agent_rejects_bad_arithmetic) ... ok
+test_agent_rejects_bad_citation (test_system.CorpusFixture.test_agent_rejects_bad_citation) ... ok
+test_agent_retrieves_again_when_missing (test_system.CorpusFixture.test_agent_retrieves_again_when_missing) ... ok
+test_context_budget (test_system.CorpusFixture.test_context_budget) ... ok
+test_counts_and_one_based_pages (test_system.CorpusFixture.test_counts_and_one_based_pages) ... ok
+test_cross_page_reference_edge (test_system.CorpusFixture.test_cross_page_reference_edge) ... ok
+test_graph_ablation (test_system.CorpusFixture.test_graph_ablation) ... ok
+test_html_preserved (test_system.CorpusFixture.test_html_preserved) ... ok
+test_no_qa_leak (test_system.CorpusFixture.test_no_qa_leak) ... ok
+test_official_pdf_origin_suffix (test_system.CorpusFixture.test_official_pdf_origin_suffix) ... ok
+test_relocation_stable (test_system.CorpusFixture.test_relocation_stable) ... ok
+test_retrieval_exact_value (test_system.CorpusFixture.test_retrieval_exact_value) ... ok
+
+----------------------------------------------------------------------
+Ran 74 tests in 2.439s
+
+OK

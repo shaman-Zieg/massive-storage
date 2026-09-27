@@ -1,0 +1,143 @@
+{
+  "mode": "real_corpus_no_model_visual_packing",
+  "question": "What variation occurred in the Bureau de Change (BDC) segment's average exchange rate in Nigeria between the first quarter of 2012 and the last quarter of 2013, as detailed in the FY-2013 Economic Report and 2014 Outlook?",
+  "sources": {
+    "finance_3769357:p16:b112": {
+      "doc": "finance_3769357",
+      "page": 16,
+      "kind": "image"
+    },
+    "finance_3769357:p15:b107": {
+      "doc": "finance_3769357",
+      "page": 15,
+      "kind": "text"
+    },
+    "finance_3769357:p3:b12": {
+      "doc": "finance_3769357",
+      "page": 3,
+      "kind": "text"
+    },
+    "finance_3769357:p14:b101": {
+      "doc": "finance_3769357",
+      "page": 14,
+      "kind": "image"
+    },
+    "finance_3769357:p17:b119": {
+      "doc": "finance_3769357",
+      "page": 17,
+      "kind": "text"
+    },
+    "finance_3769357:p8:b48": {
+      "doc": "finance_3769357",
+      "page": 8,
+      "kind": "text"
+    },
+    "finance_3769357:p3:b14": {
+      "doc": "finance_3769357",
+      "page": 3,
+      "kind": "text"
+    },
+    "finance_3769357:p8:b49": {
+      "doc": "finance_3769357",
+      "page": 8,
+      "kind": "text"
+    },
+    "finance_3769357:p15:b110": {
+      "doc": "finance_3769357",
+      "page": 15,
+      "kind": "text"
+    },
+    "finance_3769357:p3:b10": {
+      "doc": "finance_3769357",
+      "page": 3,
+      "kind": "text"
+    },
+    "finance_3769357:p1:b0": {
+      "doc": "finance_3769357",
+      "page": 1,
+      "kind": "text"
+    },
+    "finance_3769357:p14:b100": {
+      "doc": "finance_3769357",
+      "page": 14,
+      "kind": "text"
+    },
+    "finance_3769357:p16:page": {
+      "doc": "finance_3769357",
+      "page": 16,
+      "kind": "page_image"
+    },
+    "finance_3769357:p15:page": {
+      "doc": "finance_3769357",
+      "page": 15,
+      "kind": "page_image"
+    },
+    "finance_3769357:p3:page": {
+      "doc": "finance_3769357",
+      "page": 3,
+      "kind": "page_image"
+    },
+    "finance_3769357:p14:page": {
+      "doc": "finance_3769357",
+      "page": 14,
+      "kind": "page_image"
+    }
+  },
+  "stats": {
+    "text_chars": 6351,
+    "images": 6,
+    "warnings": []
+  },
+  "images": [
+    {
+      "label": "[finance_3769357:p16:page] Original full PDF page",
+      "dimensions": [
+        1237,
+        1600
+      ],
+      "bytes": 374468
+    },
+    {
+      "label": "[finance_3769357:p15:page] Original full PDF page",
+      "dimensions": [
+        1237,
+        1600
+      ],
+      "bytes": 232390
+    },
+    {
+      "label": "[finance_3769357:p16:b112] Original visual crop",
+      "dimensions": [
+        1270,
+        653
+      ],
+      "bytes": 132239
+    },
+    {
+      "label": "[finance_3769357:p14:b101] Original visual crop",
+      "dimensions": [
+        1278,
+        592
+      ],
+      "bytes": 121661
+    },
+    {
+      "label": "[finance_3769357:p3:page] Original full PDF page",
+      "dimensions": [
+        1237,
+        1600
+      ],
+      "bytes": 334345
+    },
+    {
+      "label": "[finance_3769357:p14:page] Original full PDF page",
+      "dimensions": [
+        1237,
+        1600
+      ],
+      "bytes": 258493
+    }
+  ],
+  "answer_accuracy": null,
+  "note": "Image decoding/provenance check only; not VLM reading or answer judging."
+}

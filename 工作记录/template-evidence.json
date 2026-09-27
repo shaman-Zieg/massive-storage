@@ -1,0 +1,41 @@
+{
+  "sections": [
+    {
+      "page_width_twips": 11906,
+      "page_height_twips": 16838,
+      "top_twips": 1440,
+      "bottom_twips": 1440,
+      "left_twips": 1620,
+      "right_twips": 1466,
+      "header_twips": 851,
+      "footer_twips": 992
+    },
+    {
+      "page_width_twips": 11906,
+      "page_height_twips": 16838,
+      "top_twips": 1440,
+      "bottom_twips": 1440,
+      "left_twips": 1620,
+      "right_twips": 1466,
+      "header_twips": 851,
+      "footer_twips": 992
+    }
+  ],
+  "styles": [
+    {
+      "name": "Normal",
+      "id": "a",
+      "xml": "<w:style xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" w:type=\"paragraph\" w:default=\"1\" w:styleId=\"a\">\n  <w:name w:val=\"Normal\"/>\n  <w:qFormat/>\n  <w:pPr>\n    <w:widowControl w:val=\"0\"/>\n    <w:jc w:val=\"both\"/>\n  </w:pPr>\n  <w:rPr>\n    <w:kern w:val=\"2\"/>\n    <w:sz w:val=\"21\"/>\n    <w:szCs w:val=\"24\"/>\n  </w:rPr>\n</w:style>\n"
+    },
+    {
+      "name": "Heading 1",
+      "id": "1",
+      "xml": "<w:style xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" w:type=\"paragraph\" w:styleId=\"1\">\n  <w:name w:val=\"heading 1\"/>\n  <w:basedOn w:val=\"a\"/>\n  <w:next w:val=\"a\"/>\n  <w:link w:val=\"10\"/>\n  <w:qFormat/>\n  <w:pPr>\n    <w:keepNext/>\n    <w:keepLines/>\n    <w:spacing w:before=\"340\" w:after=\"330\" w:line=\"578\" w:lineRule=\"auto\"/>\n    <w:outlineLvl w:val=\"0\"/>\n  </w:pPr>\n  <w:rPr>\n    <w:b/>\n    <w:bCs/>\n    <w:kern w:val=\"44\"/>\n    <w:sz w:val=\"44\"/>\n    <w:szCs w:val=\"44\"/>\n    <w:lang w:val=\"zh-CN\"/>\n  </w:rPr>\n</w:style>\n"
+    },
+    {
+      "name": "Heading 2",
+      "id": "2",
+      "xml": "<w:style xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" xmlns:mc=\"http://schemas.openxmlformats.org/markup-compatibility/2006\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\" xmlns:w14=\"http://schemas.microsoft.com/office/word/2010/wordml\" xmlns:w15=\"http://schemas.microsoft.com/office/word/2012/wordml\" xmlns:w16cid=\"http://schemas.microsoft.com/office/word/2016/wordml/cid\" xmlns:w16se=\"http://schemas.microsoft.com/office/word/2015/wordml/symex\" w:type=\"paragraph\" w:styleId=\"2\">\n  <w:name w:val=\"heading 2\"/>\n  <w:basedOn w:val=\"a\"/>\n  <w:next w:val=\"a\"/>\n  <w:uiPriority w:val=\"9\"/>\n  <w:unhideWhenUsed/>\n  <w:qFormat/>\n  <w:pPr>\n    <w:keepNext/>\n    <w:keepLines/>\n    <w:spacing w:before=\"260\" w:after=\"260\" w:line=\"416\" w:lineRule=\"auto\"/>\n    <w:outlineLvl w:val=\"1\"/>\n  </w:pPr>\n  <w:rPr>\n    <w:rFonts w:asciiTheme=\"majorHAnsi\" w:eastAsiaTheme=\"majorEastAsia\" w:hAnsiTheme=\"majorHAnsi\" w:cstheme=\"majorBidi\"/>\n    <w:b/>\n    <w:bCs/>\n    <w:sz w:val=\"32\"/>\n    <w:szCs w:val=\"32\"/>\n  </w:rPr>\n</w:style>\n"
+    }
+  ]
+}

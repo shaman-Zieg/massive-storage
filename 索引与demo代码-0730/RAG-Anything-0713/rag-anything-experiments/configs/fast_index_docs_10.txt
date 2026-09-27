@@ -1,0 +1,13 @@
+# Conservative index-build candidates.
+# Excludes documents that have triggered Worker timeout, failed status,
+# or unstable processing in previous benchmark/build logs.
+crm_7646651.pdf
+crm_5169330.pdf
+education_5334866.pdf
+education_0982243.pdf
+commerce_manufacturing_2024985.pdf
+commerce_manufacturing_4426481.pdf
+commerce_manufacturing_4429497.pdf
+crm_7720078.pdf
+construction_6565973.pdf
+education_2442094.pdf

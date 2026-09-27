@@ -1,0 +1,52 @@
+{
+  "design_pages": 14,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "renderer": "Microsoft Word read-only export + bundled Poppler; LibreOffice unavailable",
+  "changed_template_parts": [
+    "word/document.xml",
+    "word/footer2.xml",
+    "word/settings.xml",
+    "word/styles.xml"
+  ],
+  "original_template_sha256": "e4b0575a9bc948f1cbdbf47b3a707c9a85789dd185e23dc0d9eda554efc8dfa4",
+  "design_docx_sha256": "91d4368fef9a54c973036eefe7c9c5a204128a79dfc8851a19f5d6e53dbbfd4e",
+  "preserved_sections": true,
+  "preserved_original_styles": true,
+  "retained_relationships_byte_identical": true,
+  "originality_declaration": "official original copied unchanged; unsigned",
+  "final_render": "工作记录/design-render-final-v2",
+  "unchanged_render_pages_verified_by_pixel_comparison": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14
+  ],
+  "changed_final_pages_reinspected": [
+    10,
+    13
+  ],
+  "status": "passed"
+}
